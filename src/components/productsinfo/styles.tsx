@@ -7,15 +7,15 @@ type colorType = {
 
 export const Conteiner = styled.div`
      width: 55%;
+     padding-top: 1rem;
      display: flex;
      flex-direction: column;
-     justify-content: space-between;
-     padding-top: 1rem;
+     gap: 1rem;
 `;
 export const TitleType = styled.div`
      display: flex;
      align-items: center;
-     gap: 3rem;
+     gap: 2rem;
      .title {
           text-transform: capitalize;
      }
@@ -25,7 +25,8 @@ export const TitleType = styled.div`
      }
 `;
 export const ColorType = styled.span<colorType>`
-     padding: 0.5rem;
+     padding: 0.5rem 2rem;
+     border-radius: 5px;
      color: white;
      background-color: ${({ color }) => {
           return colorTypes[color];
@@ -56,6 +57,7 @@ export const SizeSelect = styled.div`
           gap: 1rem;
 
           button {
+               text-transform: uppercase;
                padding: 1rem;
                border: 1px solid grey;
                background-color: transparent;

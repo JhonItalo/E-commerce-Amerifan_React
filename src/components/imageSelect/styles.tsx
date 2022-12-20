@@ -8,10 +8,11 @@ type activeImage = {
 
 export const Conteiner = styled.div`
      width: 45%;
+     height: 500px;
      display: flex;
      align-items: center;
-     gap: 6rem;
-     //background-color: blue;
+     gap: 5rem;
+     // background-color: blue;
 `;
 export const ButtonsSelect = styled.div`
      display: flex;

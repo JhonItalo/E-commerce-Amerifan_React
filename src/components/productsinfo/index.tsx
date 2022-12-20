@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import * as S from "./styles";
 import ButtonAddCart from "../buttonAddCart/index";
 
@@ -7,6 +7,8 @@ type props = {
 };
 
 const ProductsInfo = ({ pokemon }: props) => {
+     const [color, setColor] = useState<string>("white");
+     const [size, setSize] = useState<string>("s");
      return (
           <S.Conteiner>
                <S.TitleType>
@@ -30,19 +32,34 @@ const ProductsInfo = ({ pokemon }: props) => {
                <S.ColorSelect>
                     <span>Color</span>
                     <div>
-                         <button style={{ background: "white" }}>
+                         <button
+                              style={{ background: "white", border: `${color === "white" ? "1px solid black" : ""}` }}
+                              onClick={() => setColor("white")}
+                         >
                               <p>red</p>
                          </button>
-                         <button style={{ background: "blue" }}>
+                         <button
+                              style={{ background: "blue", border: `${color === "blue" ? "1px solid black" : ""}` }}
+                              onClick={() => setColor("blue")}
+                         >
                               <p>green</p>
                          </button>
-                         <button style={{ background: "green" }}>
+                         <button
+                              style={{ background: "green", border: `${color === "green" ? "1px solid black" : ""}` }}
+                              onClick={() => setColor("green")}
+                         >
                               <p>blue</p>
                          </button>
-                         <button style={{ background: "yellow" }}>
+                         <button
+                              style={{ background: "yellow", border: `${color === "yellow" ? "1px solid black" : ""}` }}
+                              onClick={() => setColor("yellow")}
+                         >
                               <p>brown</p>
                          </button>
-                         <button style={{ background: "red" }}>
+                         <button
+                              style={{ background: "red", border: `${color === "red" ? "1px solid black" : ""}` }}
+                              onClick={() => setColor("red")}
+                         >
                               <p>yellow</p>
                          </button>
                     </div>
@@ -50,11 +67,21 @@ const ProductsInfo = ({ pokemon }: props) => {
                <S.SizeSelect>
                     <span>Size</span>
                     <div>
-                         <button>s</button>
-                         <button>m</button>
-                         <button>l</button>
-                         <button>xl</button>
-                         <button>xxl</button>
+                         <button style={{ background: `${size === "s" ? "#f0e68c" : ""}` }} onClick={() => setSize("s")}>
+                              s
+                         </button>
+                         <button style={{ background: `${size === "m" ? "#f0e68c" : ""}` }} onClick={() => setSize("m")}>
+                              m
+                         </button>
+                         <button style={{ background: `${size === "l" ? "#f0e68c" : ""}` }} onClick={() => setSize("l")}>
+                              l
+                         </button>
+                         <button style={{ background: `${size === "xl" ? "#f0e68c" : ""}` }} onClick={() => setSize("xl")}>
+                              xl
+                         </button>
+                         <button style={{ background: `${size === "xxl" ? "#f0e68c" : ""}` }} onClick={() => setSize("xxl")}>
+                              xxl
+                         </button>
                     </div>
                </S.SizeSelect>
                <S.Addtocart>

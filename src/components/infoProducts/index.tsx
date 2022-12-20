@@ -39,9 +39,47 @@ const InfoProducts = ({ pokemon }: props) => {
                          lectus id, gravida ornare nisl.
                     </p>
                </S.Describe>
-               
+
                <S.TechnicalInformation>
                     <h3>Technical information:</h3>
+
+                    <table className="demo">
+                         <caption>Technical Info</caption>
+                         <thead>
+                              <tr>
+                                   <th>epsum</th>
+                                   <th>em lorem lor</th>
+                                   <th>eu lorem spspum loem</th>
+                                   <th>espp</th>
+                              </tr>
+                         </thead>
+                         <tbody>
+                              <tr>
+                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
+                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elitS</td>
+                              </tr>
+                              <tr>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                              </tr>
+                              <tr>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                              </tr>
+                              <tr>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                              </tr>
+                         </tbody>
+                    </table>
                </S.TechnicalInformation>
           </>
      );
