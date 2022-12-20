@@ -1,4 +1,5 @@
 import { useState, useCallback, useRef } from "react";
+import { Link } from "react-router-dom";
 import * as S from "./styles";
 import { pokemonSmall } from "../../types/types";
 import { FiSearch } from "react-icons/fi";
@@ -13,7 +14,7 @@ const Search = () => {
      const [activeModal, setActiveModal] = useState<boolean>(false);
      const inputRef = useRef<HTMLInputElement>(null);
 
-     const request = useCallback(() => {
+     const handleClickRequest = useCallback(() => {
           fetchData({ setDataPokemons });
      }, []);
 
@@ -26,10 +27,12 @@ const Search = () => {
                <input
                     ref={inputRef}
                     value={search}
-                    onClick={request}
+                    onClick={handleClickRequest}
                     onChange={changeInput}
                     onFocus={() => setActiveModal(true)}
-                    onBlur={() => setActiveModal(false)}
+                    onBlur={() => {
+                         const timeCloseModal = setTimeout(() => setActiveModal(false), 200);
+                    }}
                     type="text"
                     placeholder="O que você está procurando?"
                />
@@ -39,7 +42,15 @@ const Search = () => {
                {activeModal && filterPokemons.length > 0 && (
                     <S.ModalSearch>
                          {filterPokemons.map((item: pokemonSmall) => (
-                              <li key={item.name}>{item.name}</li>
+                              <Link
+                                   to={`/products/${item.name}`}
+                                   key={item.name}
+                                   onClick={() => {
+                                        setSearch("");
+                                   }}
+                              >
+                                   <li>{item.name}</li>
+                              </Link>
                          ))}
                     </S.ModalSearch>
                )}

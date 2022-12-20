@@ -13,9 +13,9 @@ const Home = () => {
                <Categorys />
                <PromotionSpan />
                <BannerMain />
-               <section>
-                    <ShowProducts isLoading={isLoading} title="Best Seller" dataPokemons={data && data.bestSeller} />
-                    <ShowProducts isLoading={isLoading} title="New products" dataPokemons={data && data.newProducts} />
+               <section >
+                    <ShowProducts title="Best Seller" isLoading={isLoading} dataPokemons={data && data.bestSeller} />
+                    <ShowProducts title="New products" isLoading={isLoading} dataPokemons={data && data.newProducts} />
                </section>
                <RegistrationOffers />
           </main>

@@ -20,11 +20,7 @@ const Card = ({ pokemon }: any) => {
                               </div>
                          </div>
 
-                         <ButtonAddCart
-                              name={pokemon.name}
-                              id={pokemon.id}
-                              image={`${pokemon.sprites.other.dream_world.front_default}`}
-                         >
+                         <ButtonAddCart name={pokemon.name} image={`${pokemon.sprites.other.dream_world.front_default}`}>
                               Add to Cart
                          </ButtonAddCart>
                     </>

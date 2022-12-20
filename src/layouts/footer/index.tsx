@@ -12,10 +12,10 @@ const Footer = () => {
                          <p className="title">Baixe o nosso App</p>
 
                          <Link to="teste">
-                              <img src="/google.png" alt="" />
+                              <img src="/google.webp" alt="" />
                          </Link>
                          <Link to="teste">
-                              <img src="/iphone.png" alt="" style={{ width: "60%", height: "30px" }} />
+                              <img src="/iphone.webp" alt="" style={{ width: "60%", height: "30px" }} />
                          </Link>
                     </div>
                     <div className="redesSociais">

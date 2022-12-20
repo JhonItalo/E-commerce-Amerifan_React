@@ -6,14 +6,13 @@ type props = {
 };
 
 const useProductsFetch = ({ name }: props) => {
-  
      const requestUniqPokemon = async () => {
           return fetch(`${URL}${name}`)
                .then((pokemon) => pokemon.json())
                .catch((error) => error);
      };
 
-     return useQuery("UniqPokemonFetch", requestUniqPokemon, {
+     return useQuery(`UniqPokemonFetch${name}`, requestUniqPokemon, {
           staleTime: 1000 * 60 * 60,
      });
 };

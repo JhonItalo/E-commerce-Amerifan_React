@@ -21,18 +21,16 @@ export const Conteiner = styled.div`
                align-items: center;
                position: absolute;
                left: -150%;
-               animation: first 20s infinite;
+               animation: animate 20s infinite;
                animation-timing-function: linear;
                span {
                     font-weight: bold;
                }
           }
-          .first {
-          }
           .second {
                animation-delay: 11s;
           }
-          @keyframes first {
+          @keyframes animate {
                0% {
                     left: -150%;
                     top: 150%;

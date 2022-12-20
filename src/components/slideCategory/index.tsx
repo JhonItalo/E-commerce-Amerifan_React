@@ -97,10 +97,12 @@ const Categorys = () => {
                               </Link>
                          </div>
                     </S.Slide>
-                    <button className="previous" onClick={() => handlePreviousSlide()}>
+                    <button className="previous btn_slide" onClick={() => handlePreviousSlide()}>
+                         <p>previous slide</p>
                          <IoIosArrowBack />
                     </button>
-                    <button className="next" onClick={() => handleNextSlide()}>
+                    <button className="next btn_slide" onClick={() => handleNextSlide()}>
+                         <p>next slide</p>
                          <IoIosArrowForward />
                     </button>
                </S.ConteinerSlide>

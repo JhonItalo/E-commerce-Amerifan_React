@@ -1,6 +1,5 @@
 import { useEffect, useState, useContext } from "react";
 import { CartContext } from "../contexts/CartContext";
-import useFirstRender from "../hooks/useFirstRender";
 
 interface props {
      name: string;
@@ -8,12 +7,11 @@ interface props {
 }
 
 const UseAddCart = ({ name, image }: props) => {
-     const [AdiconarCarrinho, setAdcionarCarrinho] = useState<boolean>(false);
+     const [adiconarCarrinho, setAdcionarCarrinho] = useState<number>(0);
      const { storage, setStorage } = useContext(CartContext);
-     const firstRender = useFirstRender();
 
      useEffect(() => {
-          if (firstRender === false) {
+          if (adiconarCarrinho > 0) {
                const copyStorage = storage.concat();
                for (let i = 0; i < storage.length; i++) {
                     if (copyStorage[i].name === name) {
@@ -28,7 +26,7 @@ const UseAddCart = ({ name, image }: props) => {
                setStorage(copyStorage);
                return;
           }
-     }, [AdiconarCarrinho]);
+     }, [adiconarCarrinho]);
 
      return { setAdcionarCarrinho };
 };

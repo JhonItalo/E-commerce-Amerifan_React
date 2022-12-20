@@ -4,7 +4,6 @@ import UseAddCart from "../../hooks/useAddCart";
 
 interface props {
      name: string;
-     id: number;
      image: string;
      children: React.ReactNode;
 }
@@ -12,7 +11,7 @@ const ButtonAddCart = ({ name, image, children }: props) => {
      const { setAdcionarCarrinho } = UseAddCart({ name, image });
 
      const HandleClickAddCart = () => {
-          setAdcionarCarrinho((prevstate) => !prevstate);
+          setAdcionarCarrinho((prevstate) => prevstate + 1);
      };
 
      return (

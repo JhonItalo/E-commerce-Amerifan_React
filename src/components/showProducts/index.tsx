@@ -3,7 +3,6 @@ import * as S from "./styles";
 import Card from "../Card";
 import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import Loading from "../loading";
-import { MdPlayArrow } from "react-icons/md";
 
 type props = {
      title: string;
@@ -38,15 +37,17 @@ const ShowProducts = ({ title, dataPokemons, isLoading }: props) => {
                                    ))}
                               </S.Slide>
                               <button className="next btn_slide" onClick={handleScrollright}>
+                                   <p>scrol to right</p>
                                    <BiRightArrow />
                               </button>
                               <button className="previous btn_slide" onClick={handleScrollleft}>
+                                   <p>scrol to left</p>
                                    <BiLeftArrow />
                               </button>
                          </>
                     )}
-                    {isLoading && <Loading width="100px" height="100px" />}
                </S.ConteinerSlide>
+               {isLoading && <Loading width="100px" height="100px" />}
           </S.Conteiner>
      );
 };

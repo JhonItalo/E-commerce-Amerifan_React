@@ -11,20 +11,25 @@ export const ConteinerSlide = styled.div`
      margin: 0 auto;
      position: relative;
 
-     button {
+     .btn_slide {
           border: none;
           background-color: transparent;
           transform: translate(0, -50%);
           position: absolute;
           font-size: 2rem;
           color: white;
+          top: 50%;
+          cursor: pointer;
+          p {
+               font-size: 0.5rem;
+               position: absolute;
+               opacity: 0;
+          }
      }
      .next {
-          top: 50%;
           right: -5%;
      }
      .previous {
-          top: 50%;
           left: -5%;
      }
 `;

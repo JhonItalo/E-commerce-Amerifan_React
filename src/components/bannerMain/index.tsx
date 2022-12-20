@@ -61,30 +61,50 @@ const BannerMain = () => {
           <S.Banner>
                <S.ConteinerSlide className="conteinerSlide">
                     <S.Slide ref={Carrosel}>
-                         <img src="/assets/banner/tarde5.png" alt="" />
-                         <img src="/assets/banner/tarde10.png" alt="" />
-                         <img src="/assets/banner/tarde5.png" alt="" />
+                         <img src="/assets/banner/banner1.webp" alt="" />
+                         <img src="/assets/banner/banner2.webp" alt="" />
+                         <img src="/assets/banner/banner1.webp" alt="" />
                     </S.Slide>
                     <button className="next btn_slide" onClick={handleNextSlide}>
+                         <p>next slide</p>
                          <IoIosArrowForward />
                     </button>
                     <button className="previous btn_slide" onClick={handlePreviousSlide}>
+                         <p>previous slide</p>
                          <IoIosArrowBack />
                     </button>
                </S.ConteinerSlide>
 
                <S.Radios>
-                    <button onClick={handleRadio1}></button>
-                    <button onClick={handleRadio2}></button>
-                    <button onClick={handleRadio3}></button>
-                    <button onClick={handleRadio1}></button>
-                    <button onClick={handleRadio2}></button>
-                    <button onClick={handleRadio3}></button>
-                    <button onClick={handleRadio1}></button>
-                    <button onClick={handleRadio2}></button>
-                    <button onClick={handleRadio3}></button>
+                    <button onClick={handleRadio1}>
+                         <p>slide 1</p>
+                    </button>
+                    <button onClick={handleRadio2}>
+                         <p>slide 2</p>
+                    </button>
+                    <button onClick={handleRadio3}>
+                         <p>slide 3</p>
+                    </button>
+                    <button onClick={handleRadio1}>
+                         <p>slide 4</p>
+                    </button>
+                    <button onClick={handleRadio2}>
+                         <p>slide 5</p>
+                    </button>
+                    <button onClick={handleRadio3}>
+                         <p>slide 6</p>
+                    </button>
+                    <button onClick={handleRadio1}>
+                         <p>slide 7</p>
+                    </button>
+                    <button onClick={handleRadio2}>
+                         <p>slide 8</p>
+                    </button>
+                    <button onClick={handleRadio3}>
+                         <p>slide 9</p>
+                    </button>
                </S.Radios>
-               
+
                <div className="whiteRow"></div>
           </S.Banner>
      );

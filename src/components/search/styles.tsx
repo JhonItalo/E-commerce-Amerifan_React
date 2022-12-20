@@ -39,17 +39,18 @@ export const ModalSearch = styled.ul`
      left: 1%;
      z-index: 1;
      overflow-y: auto;
+     a {
+          li {
+               padding: 0.5rem;
+               background-color: white;
+               border-top: 1px solid grey;
+               text-transform: capitalize;
 
-     li {
-          padding: 0.5rem;
-          background-color: white;
-          border-top: 1px solid grey;
-          text-transform: capitalize;
-
-          &:hover {
-               background-color: #58738b;
-               color: white;
-               font-weight: bold;
+               &:hover {
+                    background-color: #58738b;
+                    color: white;
+                    font-weight: bold;
+               }
           }
      }
 `;

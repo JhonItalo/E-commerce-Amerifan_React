@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
 import * as S from "./styles";
-import { HiOutlineUser } from "react-icons/hi";
 import Nav from "../nav";
 import Search from "../../components/search";
 import Cart from "../../components/cart";
 import Logo from "../../components/logo";
+import { HiOutlineUser } from "react-icons/hi";
 
 const Header = () => {
      console.log("header render");

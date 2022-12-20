@@ -31,6 +31,8 @@ const useHomeFetch = () => {
 
      return useQuery("HomeFetch", resolveListPromises, {
           staleTime: 1000 * 60 * 60,
+          refetchOnWindowFocus: false, //foco,
+          retry: 5, // tentar novamente
      });
 };
 

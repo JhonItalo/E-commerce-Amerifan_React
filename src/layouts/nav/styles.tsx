@@ -31,7 +31,7 @@ export const Li = styled.li<propsLi>`
           }
      }
 `;
-export const Departments = styled.div`
+export const Departments = styled.li`
      height: 100%;
      display: flex;
      align-items: center;

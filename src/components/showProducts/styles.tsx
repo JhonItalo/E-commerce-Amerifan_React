@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Conteiner = styled.div`
-     background-image: url("/purple2.jpg");
+     background-image: url("/assets/background/SPbackground.webp");
      width: 90%;
      height: 435px;
      margin: 0 auto;
@@ -12,6 +12,7 @@ export const Conteiner = styled.div`
      border-radius: 10px;
      background-color: white;
      margin-bottom: 3rem;
+     position: relative;
 
      h3 {
           font-size: 2rem;
@@ -33,6 +34,14 @@ export const ConteinerSlide = styled.div`
           transform: translate(0, -50%);
           border: 1px solid grey;
           color: #0f31c9;
+          P {
+               font-size: 0.5rem;
+               position: absolute;
+               opacity: 0;
+          }
+          &:hover {
+               border: 1px solid red;
+          }
      }
      .next {
           right: 2%;
@@ -49,5 +58,4 @@ export const Slide = styled.div`
      gap: 3%;
      overflow-x: hidden;
      scroll-behavior: smooth;
-     position: relative;
 `;

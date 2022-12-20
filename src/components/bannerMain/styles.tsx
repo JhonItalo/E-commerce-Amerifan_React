@@ -21,7 +21,6 @@ export const ConteinerSlide = styled.div`
      width: 100%;
      height: 500px;
      position: relative;
-     background-color: red;
 
      .btn_slide {
           width: 2rem;
@@ -33,6 +32,12 @@ export const ConteinerSlide = styled.div`
           border: none;
           transform: translate(0, -50%);
           background-color: transparent;
+          cursor: pointer;
+          p {
+               font-size: 0.5rem;
+               position: absolute;
+               opacity: 0;
+          }
      }
      .previous {
           left: 7%;
@@ -79,5 +84,14 @@ export const Radios = styled.div`
           border: none;
           border-radius: 50%;
           background-color: #c7c2c2;
+
+          p {
+               font-size: 0.2rem;
+               position: absolute;
+               opacity: 0;
+          }
+          &:hover {
+               border: 1px solid blue;
+          }
      }
 `;
