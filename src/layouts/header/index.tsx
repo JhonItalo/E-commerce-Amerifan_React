@@ -11,14 +11,14 @@ const Header = () => {
      return (
           <S.Header>
                <S.InitialPromotionSpan></S.InitialPromotionSpan>
-               <S.Conteiner>
+               <S.Content>
                     <S.Atendimento>
                          <Link to="/teste">Chame o vendedor</Link>
                          <Link to="/teste">Atendimento</Link>
                          <Link to="/teste">Lista de Presents</Link>
                     </S.Atendimento>
 
-                    <S.Content>
+                    <S.MainContent>
                          <Logo />
                          <Search />
                          <S.Account>
@@ -30,8 +30,8 @@ const Header = () => {
                               </Link>
                          </S.Account>
                          <Cart />
-                    </S.Content>
-               </S.Conteiner>
+                    </S.MainContent>
+               </S.Content>
                <Nav />
           </S.Header>
      );

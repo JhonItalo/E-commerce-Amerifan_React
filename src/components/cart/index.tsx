@@ -8,6 +8,7 @@ const Cart = () => {
      return (
           <S.Conteiner>
                <Link to="/cart">
+                    <span style={{ position: "absolute", visibility: "hidden" }}>Cart</span>
                     <p>{storage.length > 0 && storage.length}</p>
                     <BsCart3 />
                </Link>

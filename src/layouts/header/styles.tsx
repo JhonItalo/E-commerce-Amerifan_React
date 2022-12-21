@@ -1,16 +1,19 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-     height: 36vh;
+     height: 225px;
      background-color: #000336;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
 `;
 export const InitialPromotionSpan = styled.div`
-     height: 22.5%;
+     height: 20%;
      background-color: black;
 `;
-export const Conteiner = styled.div`
+export const Content = styled.div`
      width: 100%;
-     height: 52.7%;
+     height: 55%;
      padding: 0 5rem;
 `;
 export const Atendimento = styled.div`
@@ -23,7 +26,7 @@ export const Atendimento = styled.div`
      gap: 1.5rem;
      color: white;
 `;
-export const Content = styled.div`
+export const MainContent = styled.div`
      width: 100%;
      height: 55%;
      padding-bottom: 1rem;

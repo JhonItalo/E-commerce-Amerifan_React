@@ -51,6 +51,7 @@ export const Slide = styled.div`
           justify-content: space-around;
           align-items: center;
           a {
+               position: relative;
                img {
                     width: 100px;
                     height: auto;

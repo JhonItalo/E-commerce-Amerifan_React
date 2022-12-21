@@ -61,9 +61,9 @@ const BannerMain = () => {
           <S.Banner>
                <S.ConteinerSlide className="conteinerSlide">
                     <S.Slide ref={Carrosel}>
-                         <img src="/assets/banner/banner1.webp" alt="" />
-                         <img src="/assets/banner/banner2.webp" alt="" />
-                         <img src="/assets/banner/banner1.webp" alt="" />
+                         <img src="/assets/banner/banner1.webp" alt="70% de desconto" width="100%" height="500px" />
+                         <img src="/assets/banner/banner2.webp" alt="promoção Black Friday" width="100%" height="500px" />
+                         <img src="/assets/banner/banner1.webp" alt="ganhe premios" width="100%" height="500px" />
                     </S.Slide>
                     <button className="next btn_slide" onClick={handleNextSlide}>
                          <p>next slide</p>

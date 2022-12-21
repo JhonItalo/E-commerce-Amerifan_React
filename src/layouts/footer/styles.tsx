@@ -41,10 +41,7 @@ export const ItemComposto = styled.div`
                color: #575757;
           }
           a {
-               img {
-                    width: 70%;
-                    height: 40px;
-               }
+               position: relative;
           }
      }
      .redesSociais {
@@ -55,6 +52,7 @@ export const ItemComposto = styled.div`
                flex-direction: row;
                justify-content: space-between;
                a {
+                    position: relative;
                     svg {
                          font-size: 2rem;
                          color: #007ac2;

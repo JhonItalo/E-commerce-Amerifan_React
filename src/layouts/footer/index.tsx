@@ -10,24 +10,38 @@ const Footer = () => {
                <S.ItemComposto>
                     <div>
                          <p className="title">Baixe o nosso App</p>
-
                          <Link to="teste">
-                              <img src="/google.webp" alt="" />
+                              <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.5rem" }}>
+                                   Vá para o Google play
+                              </span>
+                              <img src="/google.webp" alt="Google play" style={{ width: "70%", height: "40px" }} />
                          </Link>
                          <Link to="teste">
-                              <img src="/iphone.webp" alt="" style={{ width: "60%", height: "30px" }} />
+                              <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.5rem" }}>
+                                   Vá para o Apple store
+                              </span>
+                              <img src="/iphone.webp" alt="Apple Store" style={{ width: "60%", height: "30px" }} />
                          </Link>
                     </div>
                     <div className="redesSociais">
                          <p className="title">Redes Sociais</p>
                          <div className="icons">
                               <Link to="/teste">
+                                   <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.2rem" }}>
+                                        Vá para o Facebook
+                                   </span>
                                    <GrFacebook />
                               </Link>
                               <Link to="/teste">
+                                   <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.2rem" }}>
+                                        Vá para o Twitter
+                                   </span>
                                    <AiFillTwitterSquare />
                               </Link>
                               <Link to="/teste">
+                                   <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.2rem" }}>
+                                        Vá para o Youtube
+                                   </span>
                                    <FaYoutubeSquare />
                               </Link>
                          </div>
@@ -79,7 +93,7 @@ const Footer = () => {
                     </Link>
                </S.Item>
                <S.Item>
-                    <p className="title">Extra</p>
+                    <p className="title">Amerifan</p>
                     <Link to="/teste">
                          <p> Serviços</p>
                     </Link>

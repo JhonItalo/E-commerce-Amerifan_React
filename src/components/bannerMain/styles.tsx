@@ -62,8 +62,6 @@ export const Slide = styled.div`
      }
      img {
           flex: none;
-          width: 100%;
-          height: 100%;
      }
 `;
 export const Radios = styled.div`
