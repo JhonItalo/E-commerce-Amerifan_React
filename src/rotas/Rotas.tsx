@@ -37,12 +37,11 @@ const Rotas = () => {
                          <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
                </CarrinhoContext>
-               <Footer />
           </BrowserRouter>
      );
 };
 
 export default Rotas;
-/*   <Route path="/products">
-                              <Route path=":name" element={<Products />} />
-                         </Route>*/
+/*   
+  <Footer />
+*/

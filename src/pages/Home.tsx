@@ -13,7 +13,7 @@ const Home = () => {
                <Categorys />
                <PromotionSpan />
                <BannerMain />
-               <section >
+               <section>
                     <ShowProducts title="Best Seller" isLoading={isLoading} dataPokemons={data && data.bestSeller} />
                     <ShowProducts title="New products" isLoading={isLoading} dataPokemons={data && data.newProducts} />
                </section>
@@ -23,4 +23,3 @@ const Home = () => {
 };
 
 export default Home;
-/**  */
