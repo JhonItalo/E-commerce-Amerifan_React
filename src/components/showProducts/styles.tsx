@@ -20,6 +20,8 @@ export const Conteiner = styled.div`
      }
 `;
 export const ConteinerSlide = styled.div`
+     width: 100%;
+     height: 350px;
      position: relative;
      .btn_slide {
           background-color: white;
@@ -53,7 +55,7 @@ export const ConteinerSlide = styled.div`
 
 export const Slide = styled.div`
      width: 100%;
-     height: 350px;
+     height: 100%;
      display: flex;
      gap: 3%;
      overflow-x: hidden;

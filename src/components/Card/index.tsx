@@ -8,7 +8,7 @@ const Card = ({ pokemon }: any) => {
           <S.Conteiner>
                {pokemon && (
                     <>
-                         <img src={pokemon.sprites.other.dream_world.front_default} alt="" />
+                         <img src={pokemon.sprites.other.dream_world.front_default} alt={pokemon.name} width="140px" height="158px" />
                          <div className="info">
                               <p className="name">{pokemon.name}</p>
                               <div className="type">

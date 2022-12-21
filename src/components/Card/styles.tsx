@@ -17,10 +17,6 @@ export const Conteiner = styled.div`
      background: rgba(255, 255, 255, 0.24);
      border: 1px solid rgba(255, 255, 255, 0.3);
 
-     img {
-          width: 60%;
-          height: 50%;
-     }
      .info {
           margin-top: 0.5rem;
           display: flex;
