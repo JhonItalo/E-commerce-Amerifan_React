@@ -40,60 +40,114 @@ const Categorys = () => {
                     <S.Slide ref={Carrosel}>
                          <div className="item">
                               <Link to="/teste">
-                                   <img src="/assets/poke/bulba.png" alt="pokemon bulbassaur" />
+                                   <img src="/assets/poke/bulba.png" alt="pokemon bulbassaur" width="100px" height="100px" />
                               </Link>
                               <Link to="/teste">
-                                   <img src="/assets/poke/snorlax.png" alt="pokemon snorlax" />
+                                   <img src="/assets/poke/snorlax.png" alt="pokemon snorlax" width="100px" height="100px" />
                               </Link>
                               <Link to="/teste">
-                                   <img src="/assets/poke/eevee.png" alt=" pokemon eevee" />
+                                   <img src="/assets/poke/eevee.png" alt=" pokemon eevee" width="100px" height="100px" />
                               </Link>
                               <Link to="/teste">
-                                   <img src="/assets/poke/psyduck.png" alt="pokemon psyduck" />
+                                   <img src="/assets/poke/psyduck.png" alt="pokemon psyduck" width="100px" height="100px" />
                               </Link>
                               <Link to="/teste">
-                                   <img src="/assets/poke/squirtle.png" alt="pokemon squirtle" />
+                                   <img src="/assets/poke/squirtle.png" alt="pokemon squirtle" width="100px" height="100px" />
                               </Link>
                               <Link to="/teste">
-                                   <img src="/assets/poke/caterpie.png" alt="pokemon caterpie" />
+                                   <img src="/assets/poke/caterpie.png" alt="pokemon caterpie" width="100px" height="100px" />
                               </Link>
                               <Link to="/teste">
-                                   <img src="/assets/poke/dratini.png" alt="pokemon dratini" />
+                                   <img src="/assets/poke/dratini.png" alt="pokemon dratini" width="100px" height="100px" />
                               </Link>
                               <Link to="/teste">
-                                   <img src="/assets/poke/abra.png" alt="pokemon abra" />
+                                   <img src="/assets/poke/abra.png" alt="pokemon abra" width="100px" height="100px" />
                               </Link>
                               <Link to="/teste">
-                                   <img src="/assets/poke/bellsprout.png" alt="pokemon bellsprout" />
+                                   <img src="/assets/poke/bellsprout.png" alt="pokemon bellsprout" width="100px" height="100px" />
                               </Link>
                          </div>
                          <div className="item">
                               <Link to="/teste">
-                                   <img className="ball" src="/assets/balls/ball3.png" alt="pokemon abra" />{" "}
+                                   <img
+                                        className="ball"
+                                        src="/assets/balls/ball3.png"
+                                        alt="pokemon abra"
+                                        width="80px"
+                                        height="80px"
+                                   />
                               </Link>
                               <Link to="/teste">
-                                   <img className="ball" src="/assets/balls/ball7.png" alt="pokemon abra" />{" "}
+                                   <img
+                                        className="ball"
+                                        src="/assets/balls/ball7.png"
+                                        alt="pokemon abra"
+                                        width="80px"
+                                        height="80px"
+                                   />
                               </Link>
                               <Link to="/teste">
-                                   <img className="ball" src="/assets/balls/ball8.png" alt="pokemon bellsprout" />{" "}
+                                   <img
+                                        className="ball"
+                                        src="/assets/balls/ball8.png"
+                                        alt="pokemon bellsprout"
+                                        width="80px"
+                                        height="80px"
+                                   />
                               </Link>
                               <Link to="/teste">
-                                   <img className="ball" src="/assets/balls/ball4.png" alt="pokemon bellsprout" />{" "}
+                                   <img
+                                        className="ball"
+                                        src="/assets/balls/ball4.png"
+                                        alt="pokemon bellsprout"
+                                        width="80px"
+                                        height="80px"
+                                   />
                               </Link>
                               <Link to="/teste">
-                                   <img className="ball" src="/assets/balls/ball1.png" alt="pokemon caterpie" />{" "}
+                                   <img
+                                        className="ball"
+                                        src="/assets/balls/ball1.png"
+                                        alt="pokemon caterpie"
+                                        width="80px"
+                                        height="80px"
+                                   />
                               </Link>
                               <Link to="/teste">
-                                   <img className="ball" src="/assets/balls/ball2.png" alt="pokemon dratini" />{" "}
+                                   <img
+                                        className="ball"
+                                        src="/assets/balls/ball2.png"
+                                        alt="pokemon dratini"
+                                        width="80px"
+                                        height="80px"
+                                   />
                               </Link>
                               <Link to="/teste">
-                                   <img className="ball" src="/assets/balls/ball5.png" alt="pokemon caterpie" />{" "}
+                                   <img
+                                        className="ball"
+                                        src="/assets/balls/ball5.png"
+                                        alt="pokemon caterpie"
+                                        width="80px"
+                                        height="80px"
+                                   />
                               </Link>
                               <Link to="/teste">
-                                   <img className="ball" src="/assets/balls/ball6.png" alt="pokemon dratini" />{" "}
+                                   <img
+                                        className="ball"
+                                        src="/assets/balls/ball6.png"
+                                        alt="pokemon dratini"
+                                        width="80px"
+                                        height="80px"
+                                   />
                               </Link>
                               <Link to="/teste">
-                                   <img className="ball" src="/assets/balls/ball9.png" alt="pokemon bellsprout" />{" "}
+                                   <img
+                                        className="ball"
+                                        src="/assets/balls/ball9.png"
+                                        alt="pokemon bellsprout"
+                                        width="80px"
+                                        height="80px"
+                                   />
                               </Link>
                          </div>
                     </S.Slide>

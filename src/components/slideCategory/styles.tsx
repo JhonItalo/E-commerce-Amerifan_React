@@ -52,13 +52,6 @@ export const Slide = styled.div`
           align-items: center;
           a {
                position: relative;
-               img {
-                    width: 100px;
-                    height: auto;
-               }
-               .ball {
-                    transform: scale(0.8);
-               }
           }
      }
 `;
