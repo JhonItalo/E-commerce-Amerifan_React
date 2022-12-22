@@ -10,6 +10,8 @@ export const Footer = styled.div`
      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 `;
 export const Item = styled.div`
+     width: 200px;
+     height: 300px;
      display: flex;
      flex-direction: column;
      gap: 1rem;
@@ -25,6 +27,9 @@ export const Item = styled.div`
      }
 `;
 export const ItemComposto = styled.div`
+     width: 200px;
+     height: 300px;
+
      div {
           display: flex;
           flex-direction: column;
@@ -45,12 +50,13 @@ export const ItemComposto = styled.div`
           }
      }
      .redesSociais {
-          margin-top: 3rem;
+          margin-top: 2rem;
 
           .icons {
                display: flex;
                flex-direction: row;
-               justify-content: space-between;
+               justify-content: flex-start;
+               gap: 1rem;
                a {
                     position: relative;
                     svg {

@@ -5,25 +5,22 @@ import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaYoutubeSquare } from "react-icons/fa";
 
 const Footer = () => {
-     return <S.Footer></S.Footer>;
-};
-
-export default Footer;
-/**
-  <S.ItemComposto>
+     return (
+          <S.Footer>
+               <S.ItemComposto>
                     <div>
                          <p className="title">Baixe o nosso App</p>
                          <Link to="teste">
                               <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.5rem" }}>
                                    Vá para o Google play
                               </span>
-                              <img src="/google.webp" alt="Google play" style={{ width: "70%", height: "40px" }} />
+                              <img src="/google.webp" alt="Google play" style={{ width: "100px", height: "40px" }} />
                          </Link>
                          <Link to="teste">
                               <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.5rem" }}>
                                    Vá para o Apple store
                               </span>
-                              <img src="/iphone.webp" alt="Apple Store" style={{ width: "60%", height: "30px" }} />
+                              <img src="/iphone.webp" alt="Apple Store" style={{ width: "80px", height: "30px" }} />
                          </Link>
                     </div>
                     <div className="redesSociais">
@@ -101,7 +98,7 @@ export default Footer;
                          <p> Serviços</p>
                     </Link>
                     <Link to="/teste">
-                         <p>Blog Extra.com.br</p>
+                         <p>Blog Amerifan.com.br</p>
                     </Link>
                     <Link to="/teste">
                          <p>Trabalhe conosco</p>
@@ -113,7 +110,7 @@ export default Footer;
                          <p>Black Friday</p>
                     </Link>
                     <Link to="/teste">
-                         <p>Venda seus produtos no Extra.com.br</p>
+                         <p>Venda seus produtos no Amerifan.com.br</p>
                     </Link>
                     <Link to="/teste">
                          <p>Segurança Digital</p>
@@ -121,8 +118,9 @@ export default Footer;
                </S.Item>
                <S.Item>
                     <p className="title">Cartão Amerifan</p>
-               </S.Item> 
+               </S.Item>
+          </S.Footer>
+     );
+};
 
-
-
- */
+export default Footer;
