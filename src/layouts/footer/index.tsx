@@ -5,6 +5,7 @@ import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaYoutubeSquare } from "react-icons/fa";
 
 const Footer = () => {
+     console.log("footer render");
      return (
           <S.Footer>
                <S.Item>

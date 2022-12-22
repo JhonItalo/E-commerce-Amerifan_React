@@ -4,6 +4,7 @@ import PromotionSpan from "../components/promotion";
 import BannerMain from "../components/bannerMain";
 import ShowProducts from "../components/showProducts";
 import RegistrationOffers from "../components/registrationOffers";
+import Footer from "../layouts/footer";
 
 const Home = () => {
      console.log("home renderizou");
@@ -18,6 +19,7 @@ const Home = () => {
                     <ShowProducts title="New products" isLoading={isLoading} dataPokemons={data && data.newProducts} />
                </section>
                <RegistrationOffers />
+               <Footer />
           </main>
      );
 };

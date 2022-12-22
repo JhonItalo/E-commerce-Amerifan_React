@@ -7,6 +7,7 @@ const Products = React.lazy(() => import("../pages/Products"));
 import CarrinhoContext from "../contexts/CartContext";
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
+import Layout from "../layouts/Layout";
 
 const Rotas = () => {
      return (
@@ -34,7 +35,6 @@ const Rotas = () => {
                          <Route path="/teste" element={<p>sobre</p>} />
                          <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
-                    <div style={{ width: "100%", height: "400px", background: "white" }}></div>
                </CarrinhoContext>
           </BrowserRouter>
      );
@@ -42,5 +42,5 @@ const Rotas = () => {
 
 export default Rotas;
 /*   
-    <Footer />
+
 */
