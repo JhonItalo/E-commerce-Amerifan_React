@@ -7,8 +7,6 @@ const Products = React.lazy(() => import("../pages/Products"));
 import CarrinhoContext from "../contexts/CartContext";
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
-//import Home from "../pages/Home";
-//import Products from "../pages/Products";
 
 const Rotas = () => {
      return (
