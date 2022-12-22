@@ -34,7 +34,7 @@ const Rotas = () => {
                          <Route path="/teste" element={<p>sobre</p>} />
                          <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
-                    <Footer />
+                    <div style={{ width: "100%", height: "400px", background: "white" }}></div>
                </CarrinhoContext>
           </BrowserRouter>
      );
@@ -42,5 +42,5 @@ const Rotas = () => {
 
 export default Rotas;
 /*   
- 
+    <Footer />
 */
