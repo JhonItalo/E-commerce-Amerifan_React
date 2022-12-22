@@ -5,9 +5,12 @@ import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaYoutubeSquare } from "react-icons/fa";
 
 const Footer = () => {
-     return (
-          <S.Footer>
-               <S.ItemComposto>
+     return <S.Footer></S.Footer>;
+};
+
+export default Footer;
+/**
+  <S.ItemComposto>
                     <div>
                          <p className="title">Baixe o nosso App</p>
                          <Link to="teste">
@@ -118,9 +121,8 @@ const Footer = () => {
                </S.Item>
                <S.Item>
                     <p className="title">Cartão Amerifan</p>
-               </S.Item>
-          </S.Footer>
-     );
-};
+               </S.Item> 
 
-export default Footer;
+
+
+ */
