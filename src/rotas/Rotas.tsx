@@ -36,6 +36,7 @@ const Rotas = () => {
                          <Route path="/teste" element={<p>sobre</p>} />
                          <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
+                    <Footer />
                </CarrinhoContext>
           </BrowserRouter>
      );
@@ -43,5 +44,5 @@ const Rotas = () => {
 
 export default Rotas;
 /*   
-  <Footer />
+ 
 */

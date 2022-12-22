@@ -7,67 +7,6 @@ import { FaYoutubeSquare } from "react-icons/fa";
 const Footer = () => {
      return (
           <S.Footer>
-               <S.ItemComposto>
-                    <div>
-                         <p className="title">Baixe o nosso App</p>
-                         <Link to="teste">
-                              <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.5rem" }}>
-                                   Vá para o Google play
-                              </span>
-                              <img src="/google.webp" alt="Google play" style={{ width: "70%", height: "40px" }} />
-                         </Link>
-                         <Link to="teste">
-                              <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.5rem" }}>
-                                   Vá para o Apple store
-                              </span>
-                              <img src="/iphone.webp" alt="Apple Store" style={{ width: "60%", height: "30px" }} />
-                         </Link>
-                    </div>
-                    <div className="redesSociais">
-                         <p className="title">Redes Sociais</p>
-                         <div className="icons">
-                              <Link to="/teste">
-                                   <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.2rem" }}>
-                                        Vá para o Facebook
-                                   </span>
-                                   <GrFacebook />
-                              </Link>
-                              <Link to="/teste">
-                                   <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.2rem" }}>
-                                        Vá para o Twitter
-                                   </span>
-                                   <AiFillTwitterSquare />
-                              </Link>
-                              <Link to="/teste">
-                                   <span style={{ position: "absolute", visibility: "hidden", fontSize: "0.2rem" }}>
-                                        Vá para o Youtube
-                                   </span>
-                                   <FaYoutubeSquare />
-                              </Link>
-                         </div>
-                    </div>
-               </S.ItemComposto>
-               <S.ItemComposto>
-                    <div>
-                         <p className="title">Atendimento</p>
-
-                         <p>loja online: 0000 0000</p>
-
-                         <p>loja Física: 0800 000 000</p>
-
-                         <p>Rio de Janeiro e região: 0800 000 0000</p>
-
-                         <Link to="/teste">
-                              <p>Fale pelo Whatsapp</p>
-                         </Link>
-                    </div>
-                    <div>
-                         <p className="title">Central de Vendas</p>
-                         <Link to="/teste">
-                              <p>Compre pelo WhatsApp</p>
-                         </Link>
-                    </div>
-               </S.ItemComposto>
                <S.Item>
                     <p className="title">Ajuda</p>
                     <Link to="/teste">
