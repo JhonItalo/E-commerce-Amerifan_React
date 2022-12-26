@@ -19,7 +19,6 @@ const Home = () => {
                     <ShowProducts title="New products" isLoading={isLoading} dataPokemons={data && data.newProducts} />
                </section>
                <RegistrationOffers />
-               <Footer />
           </main>
      );
 };
