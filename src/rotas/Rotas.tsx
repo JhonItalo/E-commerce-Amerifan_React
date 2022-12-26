@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 const Home = React.lazy(() => import("../pages/Home"));
 const Products = React.lazy(() => import("../pages/Products"));
 import CarrinhoContext from "../contexts/CartContext";
+import Footer from "../layouts/footer";
 import Header from "../layouts/header";
 
 const Rotas = () => {
