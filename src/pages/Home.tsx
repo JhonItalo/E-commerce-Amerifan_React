@@ -4,7 +4,6 @@ import PromotionSpan from "../components/promotion";
 import BannerMain from "../components/bannerMain";
 import ShowProducts from "../components/showProducts";
 import RegistrationOffers from "../components/registrationOffers";
-import Footer from "../layouts/footer";
 
 const Home = () => {
      console.log("home renderizou");

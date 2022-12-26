@@ -1,20 +1,21 @@
-import React from "react";
+import { Link } from "react-router-dom";
 import ButtonAddCart from "../buttonAddCart";
 import * as S from "./styles";
 
 const Card = ({ pokemon }: any) => {
-     //console.log(pokemon, "dentro do card pokemons");
      return (
           <S.Conteiner>
                {pokemon && (
                     <>
-                         <img
-                              src={pokemon.sprites.other.dream_world.front_default}
-                              alt={pokemon.name}
-                              width="140px"
-                              height="158px"
-                              loading="lazy"
-                         />
+                         <Link to={`/products/${pokemon.name}`}>
+                              <img
+                                   src={pokemon.sprites.other.dream_world.front_default}
+                                   alt={pokemon.name}
+                                   width="140px"
+                                   height="158px"
+                                   loading="lazy"
+                              />
+                         </Link>
                          <div className="info">
                               <p className="name">{pokemon.name}</p>
                               <div className="type">
