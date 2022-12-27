@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./styles";
 import ButtonAddCart from "../buttonAddCart/index";
+import AccessibleLinkName from "../AcessibleName";
 
 type props = {
      pokemon: any;
@@ -36,31 +37,31 @@ const ProductsInfo = ({ pokemon }: props) => {
                               style={{ background: "white", border: `${color === "white" ? "1px solid black" : ""}` }}
                               onClick={() => setColor("white")}
                          >
-                              <p>red</p>
+                              <AccessibleLinkName name="select color white" />
                          </button>
                          <button
                               style={{ background: "blue", border: `${color === "blue" ? "1px solid black" : ""}` }}
                               onClick={() => setColor("blue")}
                          >
-                              <p>green</p>
+                              <AccessibleLinkName name=" select color blue" />
                          </button>
                          <button
                               style={{ background: "green", border: `${color === "green" ? "1px solid black" : ""}` }}
                               onClick={() => setColor("green")}
                          >
-                              <p>blue</p>
+                              <AccessibleLinkName name="select color green" />
                          </button>
                          <button
                               style={{ background: "yellow", border: `${color === "yellow" ? "1px solid black" : ""}` }}
                               onClick={() => setColor("yellow")}
                          >
-                              <p>brown</p>
+                              <AccessibleLinkName name=" select color yellow" />
                          </button>
                          <button
                               style={{ background: "red", border: `${color === "red" ? "1px solid black" : ""}` }}
                               onClick={() => setColor("red")}
                          >
-                              <p>yellow</p>
+                              <AccessibleLinkName name=" select color red" />
                          </button>
                     </div>
                </S.ColorSelect>

@@ -20,11 +20,6 @@ export const ConteinerSlide = styled.div`
           color: white;
           top: 50%;
           cursor: pointer;
-          p {
-               font-size: 0.5rem;
-               position: absolute;
-               opacity: 0;
-          }
      }
      .next {
           right: -5%;

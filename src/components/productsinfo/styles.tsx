@@ -42,10 +42,8 @@ export const ColorSelect = styled.div`
                padding: 1rem;
                border: 1px solid grey;
                border-radius: 50%;
-               p {
-                    position: absolute;
-                    visibility: hidden;
-               }
+               position: relative;
+               cursor: pointer;
           }
      }
 `;
@@ -61,6 +59,7 @@ export const SizeSelect = styled.div`
                padding: 1rem;
                border: 1px solid grey;
                background-color: transparent;
+               cursor: pointer;
           }
      }
 `;

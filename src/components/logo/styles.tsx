@@ -2,5 +2,7 @@ import styled from "styled-components";
 
 export const Conteiner = styled.div`
      height: 100%;
-     position: relative;
+     a {
+          position: relative;
+     }
 `;

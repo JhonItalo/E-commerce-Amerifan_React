@@ -2,18 +2,17 @@ import { URL } from "../utils/Constains";
 import { useQuery } from "react-query";
 
 type props = {
-     name?: string;
+     params?: string;
 };
 
-const useProductsFetch = ({ name }: props) => {
+const useProductsFetch = ({ params }: props) => {
      const requestUniqPokemon = async () => {
-          return fetch(`${URL}${name}`)
-               .then((pokemon) => pokemon.json())
-               .catch((error) => error);
+          return fetch(`${URL}${params}`).then((pokemon) => pokemon.json());
      };
 
-     return useQuery(`UniqPokemonFetch${name}`, requestUniqPokemon, {
+     return useQuery(`UniqPokemonIDCache${params}`, requestUniqPokemon, {
           staleTime: 1000 * 60 * 60,
+          retry: 0,
      });
 };
 

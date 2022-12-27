@@ -1,6 +1,8 @@
 import React, { useRef, useEffect } from "react";
 import * as S from "./styles";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import AccessibleName from "../AcessibleName";
+import AccessibleButtonName from "../AcessibleButtonName";
 
 const BannerMain = () => {
      const Carrosel = useRef<HTMLDivElement | null>(null);
@@ -66,42 +68,42 @@ const BannerMain = () => {
                          <img src="/assets/banner/banner1.webp" alt="ganhe premios" width="100%" height="500px" />
                     </S.Slide>
                     <button className="next btn_slide" onClick={handleNextSlide}>
-                         <p>next slide</p>
+                         <AccessibleButtonName name="next slide" />
                          <IoIosArrowForward />
                     </button>
                     <button className="previous btn_slide" onClick={handlePreviousSlide}>
-                         <p>previous slide</p>
+                         <AccessibleButtonName name="previous slide" />
                          <IoIosArrowBack />
                     </button>
                </S.ConteinerSlide>
 
                <S.Radios>
                     <button onClick={handleRadio1}>
-                         <p>slide 1</p>
+                         <AccessibleButtonName name="slide 1" />
                     </button>
                     <button onClick={handleRadio2}>
-                         <p>slide 2</p>
+                         <AccessibleButtonName name="slide 2" />
                     </button>
                     <button onClick={handleRadio3}>
-                         <p>slide 3</p>
+                         <AccessibleButtonName name="slide 3" />
                     </button>
                     <button onClick={handleRadio1}>
-                         <p>slide 4</p>
+                         <AccessibleButtonName name="slide 4" />
                     </button>
                     <button onClick={handleRadio2}>
-                         <p>slide 5</p>
+                         <AccessibleButtonName name="slide 5" />
                     </button>
                     <button onClick={handleRadio3}>
-                         <p>slide 6</p>
+                         <AccessibleButtonName name="slide 6" />
                     </button>
                     <button onClick={handleRadio1}>
-                         <p>slide 7</p>
+                         <AccessibleButtonName name="slide 7" />
                     </button>
                     <button onClick={handleRadio2}>
-                         <p>slide 8</p>
+                         <AccessibleButtonName name="slide 8" />
                     </button>
                     <button onClick={handleRadio3}>
-                         <p>slide 9</p>
+                         <AccessibleButtonName name="slide 9" />
                     </button>
                </S.Radios>
 

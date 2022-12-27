@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import AccessibleName from "../AcessibleName";
 import ButtonAddCart from "../buttonAddCart";
 import * as S from "./styles";
 
@@ -8,6 +9,7 @@ const Card = ({ pokemon }: any) => {
                {pokemon && (
                     <>
                          <Link to={`/products/${pokemon.name}`}>
+                              <AccessibleName name="imagem do pokemon" />
                               <img
                                    src={pokemon.sprites.other.dream_world.front_default}
                                    alt={pokemon.name}

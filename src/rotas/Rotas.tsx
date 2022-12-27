@@ -27,6 +27,7 @@ const Rotas = () => {
                               element={
                                    <React.Suspense fallback="loading">
                                         <Products />
+                                        <Footer />
                                    </React.Suspense>
                               }
                          />

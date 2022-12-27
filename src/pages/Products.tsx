@@ -1,8 +1,9 @@
 import { useParams } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import InfoProducts from "../components/infoProducts";
 import useProductsFetch from "../hooks/useProductsFetch";
 import useFirstRender from "../hooks/useFirstRender";
+import Loading from "../components/loading";
 
 type propsParams = {
      params: string;
@@ -11,14 +12,12 @@ type propsParams = {
 const Products = () => {
      console.log("products render");
      const { params } = useParams<propsParams>();
-     const [name, setName] = useState<string | undefined>(params);
      const firstRender = useFirstRender();
 
-     const { data, isLoading, refetch } = useProductsFetch({ name });
+     const { data, isLoading, refetch, error } = useProductsFetch({ params });
 
      useEffect(() => {
           if (firstRender === false) {
-               setName(params);
                refetch();
           }
      }, [params]);
@@ -31,7 +30,9 @@ const Products = () => {
                     padding: "1rem 1rem 1rem 2rem ",
                }}
           >
-               <InfoProducts pokemon={data} />
+               {data && <InfoProducts pokemon={data} />}
+               {isLoading && <Loading width="300px" height="300" />}
+               {error && <p>Produto não existe</p>}
           </main>
      );
 };

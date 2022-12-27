@@ -16,7 +16,9 @@ export const Conteiner = styled.div`
      -webkit-backdrop-filter: blur(4.4px);
      background: rgba(255, 255, 255, 0.24);
      border: 1px solid rgba(255, 255, 255, 0.3);
-
+     &:hover {
+          border: 1px solid white;
+     }
      .info {
           margin-top: 0.5rem;
           display: flex;
