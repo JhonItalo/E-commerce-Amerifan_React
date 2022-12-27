@@ -12,7 +12,6 @@ export const Conteiner = styled.div`
      display: flex;
      align-items: center;
      gap: 5rem;
-     // background-color: blue;
 `;
 export const ButtonsSelect = styled.div`
      display: flex;
@@ -31,7 +30,6 @@ export const Button = styled.div<activeButton>`
 export const ConteinerImage = styled.div<activeImage>`
      height: 100%;
      padding: 2rem;
-     //border: 1px solid black;
      background-color: ${({ active }) => {
           if (active === "2") {
                return "#ffe4c4";
@@ -39,8 +37,4 @@ export const ConteinerImage = styled.div<activeImage>`
                return "#d1ffd0 ";
           }
      }};
-     img {
-          width: 350px;
-          height: 100%;
-     }
 `;

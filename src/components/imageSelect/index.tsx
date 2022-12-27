@@ -27,7 +27,12 @@ const ImageSelect = ({ pokemon }: props) => {
                </S.ButtonsSelect>
 
                <S.ConteinerImage active={imageSelect}>
-                    <img src={pokemon.sprites.other.dream_world.front_default} alt="Foto selecionado do pokemon" />
+                    <img
+                         src={pokemon.sprites.other.dream_world.front_default}
+                         alt="Foto selecionado do pokemon"
+                         width="350px"
+                         height="100%"
+                    />
                </S.ConteinerImage>
           </S.Conteiner>
      );
