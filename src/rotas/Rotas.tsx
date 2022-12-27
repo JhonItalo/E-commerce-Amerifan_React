@@ -26,9 +26,11 @@ const Rotas = () => {
                          <Route
                               path="/products/:params"
                               element={
-                                   <React.Suspense fallback="loading">
-                                        <Products />
-                                   </React.Suspense>
+                                   <main style={{ minHeight: "150vh" }}>
+                                        <React.Suspense fallback="loading">
+                                             <Products />
+                                        </React.Suspense>
+                                   </main>
                               }
                          />
                          <Route path="/teste" element={<p>sobre</p>} />

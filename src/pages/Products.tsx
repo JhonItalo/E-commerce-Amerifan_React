@@ -23,7 +23,7 @@ const Products = () => {
      }, [params]);
 
      return (
-          <main
+          <div
                style={{
                     minHeight: "150vh",
                     background: "white",
@@ -34,7 +34,7 @@ const Products = () => {
                {data && <InfoProducts pokemon={data} />}
                {isLoading && <Loading width="300px" height="300" />}
                {error && <p>Produto não existe</p>}
-          </main>
+          </div>
      );
 };
 
