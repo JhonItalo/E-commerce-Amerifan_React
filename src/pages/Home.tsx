@@ -9,7 +9,7 @@ const Home = () => {
      console.log("home renderizou");
      const { data, isLoading } = useHomeFetch();
      return (
-          <main>
+          <>
                <Categorys />
                <PromotionSpan />
                <BannerMain />
@@ -18,7 +18,7 @@ const Home = () => {
                     <ShowProducts title="New products" isLoading={isLoading} dataPokemons={data && data.newProducts} />
                </section>
                <RegistrationOffers />
-          </main>
+          </>
      );
 };
 

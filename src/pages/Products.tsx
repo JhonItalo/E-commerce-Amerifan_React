@@ -25,6 +25,7 @@ const Products = () => {
      return (
           <main
                style={{
+                    minHeight: "150vh",
                     background: "white",
                     width: "100%",
                     padding: "1rem 1rem 1rem 2rem ",

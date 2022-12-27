@@ -16,10 +16,11 @@ const Rotas = () => {
                               path="/"
                               index
                               element={
-                                   <React.Suspense fallback="loading">
-                                        <Home />
-                                        <Footer />
-                                   </React.Suspense>
+                                   <main style={{ minHeight: "150vh" }}>
+                                        <React.Suspense fallback="loading">
+                                             <Home />
+                                        </React.Suspense>
+                                   </main>
                               }
                          />
                          <Route
@@ -27,13 +28,13 @@ const Rotas = () => {
                               element={
                                    <React.Suspense fallback="loading">
                                         <Products />
-                                        <Footer />
                                    </React.Suspense>
                               }
                          />
                          <Route path="/teste" element={<p>sobre</p>} />
                          <Route path="*" element={<Navigate to="/" />} />
                     </Routes>
+                    <Footer />
                </CarrinhoContext>
           </BrowserRouter>
      );

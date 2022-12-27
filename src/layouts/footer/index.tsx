@@ -13,6 +13,7 @@ const Footer = () => {
 
      useEffect(() => {
           RenderLast.current = true;
+          console.log("efect");
      }, []);
 
      return (
