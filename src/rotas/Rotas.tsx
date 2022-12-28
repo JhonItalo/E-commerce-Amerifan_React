@@ -11,31 +11,29 @@ const Rotas = () => {
           <BrowserRouter>
                <CarrinhoContext>
                     <Header />
-                    <Routes>
-                         <Route
-                              path="/"
-                              index
-                              element={
-                                   <main style={{ minHeight: "150vh" }}>
-                                        <React.Suspense fallback="loading">
+                    <main style={{ minHeight: "70vh" }}>
+                         <Routes>
+                              <Route
+                                   path="/"
+                                   index
+                                   element={
+                                        <React.Suspense>
                                              <Home />
                                         </React.Suspense>
-                                   </main>
-                              }
-                         />
-                         <Route
-                              path="/products/:params"
-                              element={
-                                   <main style={{ minHeight: "150vh" }}>
-                                        <React.Suspense fallback="loading">
+                                   }
+                              />
+                              <Route
+                                   path="/products/:params"
+                                   element={
+                                        <React.Suspense>
                                              <Products />
                                         </React.Suspense>
-                                   </main>
-                              }
-                         />
-                         <Route path="/teste" element={<p>sobre</p>} />
-                         <Route path="*" element={<Navigate to="/" />} />
-                    </Routes>
+                                   }
+                              />
+                              <Route path="/teste" element={<p>sobre</p>} />
+                              <Route path="*" element={<Navigate to="/" />} />
+                         </Routes>
+                    </main>
                     <Footer />
                </CarrinhoContext>
           </BrowserRouter>

@@ -11,6 +11,7 @@ type props = {
 const ProductsInfo = ({ pokemon }: props) => {
      const [color, setColor] = useState<string>("white");
      const [size, setSize] = useState<string>("s");
+     
      return (
           <S.Conteiner>
                <S.TitleType>

@@ -8,11 +8,9 @@ import { fetchData } from "../../request/BuscaFetch";
 
 const Search = () => {
      console.log("busca render");
-
-     const [dataPokemons, setDataPokemons] = useState<pokemonSmall[]>([]);
-     const { search, setSearch, filterPokemons } = UseFilterPokemons({ dataPokemons });
-     const [activeModal, setActiveModal] = useState<boolean>(false);
      const inputRef = useRef<HTMLInputElement>(null);
+
+     const { search, setSearch, filterPokemons, setDataPokemons, activeModal, setActiveModal } = UseFilterPokemons();
 
      const handleClickRequest = useCallback(() => {
           fetchData({ setDataPokemons });
@@ -36,7 +34,7 @@ const Search = () => {
                     type="text"
                     placeholder="O que você está procurando?"
                />
-               <div className="iconSearch">
+               <div role="button" className="iconSearch">
                     <FiSearch />
                </div>
                {activeModal && filterPokemons.length > 0 && (

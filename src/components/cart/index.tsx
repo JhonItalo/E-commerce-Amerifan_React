@@ -9,9 +9,9 @@ const Cart = () => {
      return (
           <S.Conteiner>
                <Link to="/cart">
-                    <AccessibleName name="cart" />
-                    <p>{storage.length > 0 && storage.length}</p>
+                    <span>{storage.length > 0 && storage.length}</span>
                     <BsCart3 />
+                    <AccessibleName name="cart" />
                </Link>
           </S.Conteiner>
      );

@@ -178,7 +178,6 @@ const Categorys = () => {
                     </button>
                     <button className="next btn_slide" onClick={() => handleNextSlide()}>
                          <AccessibleButtonName name="next slide" />
-
                          <IoIosArrowForward />
                     </button>
                </S.ConteinerSlide>

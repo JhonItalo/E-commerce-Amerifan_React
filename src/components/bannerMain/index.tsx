@@ -1,7 +1,6 @@
 import React, { useRef, useEffect } from "react";
 import * as S from "./styles";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import AccessibleName from "../AcessibleName";
 import AccessibleButtonName from "../AcessibleButtonName";
 
 const BannerMain = () => {
@@ -61,12 +60,13 @@ const BannerMain = () => {
 
      return (
           <S.Banner>
-               <S.ConteinerSlide className="conteinerSlide">
+               <S.ConteinerSlide>
                     <S.Slide ref={Carrosel}>
-                         <img src="/assets/banner/banner1.webp" alt="70% de desconto" width="100%" height="500px" />
-                         <img src="/assets/banner/banner2.webp" alt="promoção Black Friday" width="100%" height="500px" />
-                         <img src="/assets/banner/banner1.webp" alt="ganhe premios" width="100%" height="500px" />
+                         <S.Item src="/assets/banner/banner1.webp" alt="70% de desconto" width="100%" height="500px" />
+                         <S.Item src="/assets/banner/banner2.webp" alt="promoção Black Friday" width="100%" height="500px" />
+                         <S.Item src="/assets/banner/banner1.webp" alt="ganhe premios" width="100%" height="500px" />
                     </S.Slide>
+
                     <button className="next btn_slide" onClick={handleNextSlide}>
                          <AccessibleButtonName name="next slide" />
                          <IoIosArrowForward />
@@ -106,8 +106,7 @@ const BannerMain = () => {
                          <AccessibleButtonName name="slide 9" />
                     </button>
                </S.Radios>
-
-               <div className="whiteRow"></div>
+               <div className="whiteRow" />
           </S.Banner>
      );
 };

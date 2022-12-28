@@ -13,15 +13,15 @@ const ImageSelect = ({ pokemon }: props) => {
           <S.Conteiner>
                <S.ButtonsSelect>
                     <S.Button active={imageSelect === "1"} onClick={() => setImageSelect("1")}>
-                         <AccessibleName name="select 1 imagem" />
+                         <AccessibleName name="select imagem 1" />
                          <img src={pokemon.sprites.front_default} alt="1 foto pokemon" width="100%" height="100%" />
                     </S.Button>
                     <S.Button active={imageSelect === "2"} onClick={() => setImageSelect("2")}>
-                         <AccessibleName name="select 2 imagem" />
+                         <AccessibleName name="select imagem 2" />
                          <img src={pokemon.sprites.back_default} alt="2 foto pokemon" width="100%" height="100%" />
                     </S.Button>
                     <S.Button active={imageSelect === "3"} onClick={() => setImageSelect("3")}>
-                         <AccessibleName name="select 3 imagem" />
+                         <AccessibleName name="select imagem 3" />
                          <img src={pokemon.sprites.front_default} alt="3 foto pokemon" width="100%" height="100%" />
                     </S.Button>
                </S.ButtonsSelect>

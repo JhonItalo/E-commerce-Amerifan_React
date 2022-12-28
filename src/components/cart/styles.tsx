@@ -9,7 +9,7 @@ export const Conteiner = styled.div`
           svg {
                font-size: 2.2rem;
           }
-          p {
+          span {
                padding: 0 0.3rem;
                font-size: 1.5rem;
                border-radius: 50%;

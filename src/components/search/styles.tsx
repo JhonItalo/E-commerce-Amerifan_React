@@ -24,6 +24,7 @@ export const Search = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
+          cursor: pointer;
 
           svg {
                font-size: 1.5rem;

@@ -1,25 +1,23 @@
-import { createContext, useState } from "react";
-import React from "react";
+import React, { createContext, useState, useEffect } from "react";
+import useFirstRender from "../hooks/useFirstRender";
 
-interface teste {
+type storageType = {
      name: string;
      image: string;
      count: number;
-}
+};
 
-interface context {
-     storage: teste[];
-     setStorage: React.Dispatch<React.SetStateAction<teste[]>>;
-}
+type contextType = {
+     storage: storageType[];
+     setStorage: React.Dispatch<React.SetStateAction<storageType[]>>;
+};
 const defaultValue = {
      storage: [],
      setStorage: () => {
           //nothing
      },
 };
-export const CartContext = createContext<context>(defaultValue);
-
-
+export const CartContext = createContext<contextType>(defaultValue);
 
 const InicitializeLocalStorage = () => {
      const localStorageString = localStorage.getItem("carrinho");
@@ -37,21 +35,20 @@ interface props {
 }
 const CarrinhoContext = ({ children }: props) => {
      console.log("coxtent render");
-     const [storage, setStorage] = useState<teste[]>(InicitializeLocalStorage);
-     console.log(storage, "dentro do contexto");
+     const [storage, setStorage] = useState<storageType[]>(InicitializeLocalStorage);
+     const firstRender = useFirstRender();
+
+     const writingNewValueLocalStorage = () => {
+          localStorage.setItem("carrinho", JSON.stringify(storage));
+     };
+
+     useEffect(() => {
+          if (firstRender === false) {
+               writingNewValueLocalStorage();
+          }
+     }, [storage]);
 
      return <CartContext.Provider value={{ storage, setStorage }}>{children}</CartContext.Provider>;
 };
 
 export default CarrinhoContext;
-/* useEffect(() => {
-          if (firstRender === false) {
-               const localStorageString = localStorage.getItem("carrinho");
-               const localStorageArray = JSON.parse(localStorageString!);
-               if (localStorageArray.length === 0) {
-                    return;
-               } else {
-                    setStorage(localStorageArray);
-               }
-          }
-     }, [storage]);*/
