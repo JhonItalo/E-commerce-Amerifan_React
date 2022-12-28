@@ -5,6 +5,7 @@ import { pokemonSmall } from "../../types/types";
 import { FiSearch } from "react-icons/fi";
 import UseFilterPokemons from "../../hooks/useFilterPokemons";
 import { fetchData } from "../../request/BuscaFetch";
+import AccessibleButtonName from "../AcessibleButtonName";
 
 const Search = () => {
      console.log("busca render");
@@ -34,9 +35,10 @@ const Search = () => {
                     type="text"
                     placeholder="O que você está procurando?"
                />
-               <div role="button" className="iconSearch">
+               <button className="iconSearch">
+                    <AccessibleButtonName name="buscar" />
                     <FiSearch />
-               </div>
+               </button>
                {activeModal && filterPokemons.length > 0 && (
                     <S.ModalSearch>
                          {filterPokemons.map((item: pokemonSmall) => (

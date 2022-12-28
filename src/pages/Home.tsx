@@ -7,7 +7,8 @@ import RegistrationOffers from "../components/registrationOffers";
 
 const Home = () => {
      console.log("home renderizou");
-     const { data, isLoading } = useHomeFetch();
+     const { data, isLoading, error } = useHomeFetch();
+     console.log(error);
      return (
           <>
                <Categorys />

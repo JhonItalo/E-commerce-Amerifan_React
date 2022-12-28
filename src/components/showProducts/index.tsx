@@ -8,9 +8,10 @@ type props = {
      title: string;
      dataPokemons: any;
      isLoading: boolean;
+     error?: boolean;
 };
 
-const ShowProducts = ({ title, dataPokemons, isLoading }: props) => {
+const ShowProducts = ({ title, dataPokemons, isLoading, error }: props) => {
      console.log("Best seller renderizou");
      const Carrosel = useRef<HTMLDivElement | null>(null);
 
@@ -46,6 +47,7 @@ const ShowProducts = ({ title, dataPokemons, isLoading }: props) => {
                               </button>
                          </>
                     )}
+                    {error && <p>Ocorreu algum imprevisto! Tente novamente</p>}
                </S.ConteinerSlide>
                {isLoading && <Loading width="100px" height="100px" />}
           </S.Conteiner>

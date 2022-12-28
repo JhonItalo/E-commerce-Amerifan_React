@@ -24,6 +24,8 @@ export const Search = styled.div`
           display: flex;
           justify-content: center;
           align-items: center;
+          border: none;
+          background-color: inherit;
           cursor: pointer;
 
           svg {
