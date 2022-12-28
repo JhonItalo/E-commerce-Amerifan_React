@@ -4,6 +4,7 @@ import { CartContext } from "../../contexts/CartContext";
 import { Link } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
 import AccessibleName from "../AcessibleName";
+import AccessibleButtonName from "../AcessibleButtonName";
 const Cart = () => {
      const { storage } = useContext(CartContext);
      return (
@@ -11,7 +12,7 @@ const Cart = () => {
                <Link to="/cart">
                     <span>{storage.length > 0 && storage.length}</span>
                     <BsCart3 />
-                    <AccessibleName name="cart" />
+                    <AccessibleButtonName name="cart" />
                </Link>
           </S.Conteiner>
      );
