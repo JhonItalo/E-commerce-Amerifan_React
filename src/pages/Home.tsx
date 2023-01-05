@@ -4,6 +4,7 @@ import PromotionSpan from "../components/promotion";
 import BannerMain from "../components/bannerMain";
 import ShowProducts from "../components/showProducts";
 import RegistrationOffers from "../components/registrationOffers";
+import DataProvider from "../contexts/DataProviderContext";
 
 const Home = () => {
      console.log("home renderizou");
@@ -14,10 +15,12 @@ const Home = () => {
                <Categorys />
                <PromotionSpan />
                <BannerMain />
-               <section>
-                    <ShowProducts title="Best Seller" isLoading={isLoading} dataPokemons={data && data.bestSeller} />
-                    <ShowProducts title="New products" isLoading={isLoading} dataPokemons={data && data.newProducts} />
-               </section>
+               <DataProvider data={data} isloading={isLoading} error={error}>
+                    <section>
+                         <ShowProducts title="Best Seller" data={data?.bestSeller} />
+                         <ShowProducts title="New products" data={data?.newProducts} />
+                    </section>
+               </DataProvider>
                <RegistrationOffers />
           </>
      );

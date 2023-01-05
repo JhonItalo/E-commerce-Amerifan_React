@@ -12,9 +12,12 @@ type propsParams = {
 const Products = () => {
      console.log("products render");
      const { params } = useParams<propsParams>();
+     const { data, isLoading, refetch, error } = useProductsFetch({ params });
      const firstRender = useFirstRender();
 
-     const { data, isLoading, refetch, error } = useProductsFetch({ params });
+     useEffect(() => {
+          window.scrollTo(0, 0);
+     }, []);
 
      useEffect(() => {
           if (firstRender === false) {
@@ -32,7 +35,7 @@ const Products = () => {
                }}
           >
                {data && <InfoProducts pokemon={data} />}
-               {isLoading && <Loading width="300px" height="300" />}
+               {isLoading && <Loading width="300px" height="300px" />}
                {error && <p>Produto não existe</p>}
           </div>
      );

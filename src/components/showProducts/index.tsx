@@ -1,18 +1,19 @@
-import { useRef } from "react";
+import { useContext, useRef } from "react";
 import * as S from "./styles";
 import Card from "../Card";
 import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import Loading from "../loading";
+import { DataProviderContext } from "../../contexts/DataProviderContext";
+import { DataProviderType } from "../../types/types";
 
 type props = {
      title: string;
-     dataPokemons: any;
-     isLoading: boolean;
-     error?: boolean;
+     data: any | undefined;
 };
 
-const ShowProducts = ({ title, dataPokemons, isLoading, error }: props) => {
+const ShowProducts = ({ title, data }: props) => {
      console.log("Best seller renderizou");
+     const { isloading, error } = useContext<DataProviderType>(DataProviderContext);
      const Carrosel = useRef<HTMLDivElement | null>(null);
 
      const handleScrollright = () => {
@@ -28,28 +29,31 @@ const ShowProducts = ({ title, dataPokemons, isLoading, error }: props) => {
 
      return (
           <S.Conteiner>
-               <h3>{title}</h3>
-               <S.ConteinerSlide>
-                    {dataPokemons && (
-                         <>
-                              <S.Slide ref={Carrosel}>
-                                   {dataPokemons.map((item: any) => (
-                                        <Card key={item.id} pokemon={item} />
-                                   ))}
-                              </S.Slide>
-                              <button className="next btn_slide" onClick={handleScrollright}>
-                                   <p>scrol to right</p>
-                                   <BiRightArrow />
-                              </button>
-                              <button className="previous btn_slide" onClick={handleScrollleft}>
-                                   <p>scrol to left</p>
-                                   <BiLeftArrow />
-                              </button>
-                         </>
-                    )}
-                    {error && <p>Ocorreu algum imprevisto! Tente novamente</p>}
-               </S.ConteinerSlide>
-               {isLoading && <Loading width="100px" height="100px" />}
+               <>
+                    <h2>{title}</h2>
+                    <S.ConteinerSlide>
+                         {data && (
+                              <>
+                                   <S.Slide ref={Carrosel}>
+                                        {data.map((item: any) => (
+                                             <Card key={item.id} pokemon={item} />
+                                        ))}
+                                   </S.Slide>
+                                   <button className="next btn_slide" onClick={handleScrollright}>
+                                        <p>scrol to right</p>
+                                        <BiRightArrow />
+                                   </button>
+                                   <button className="previous btn_slide" onClick={handleScrollleft}>
+                                        <p>scrol to left</p>
+                                        <BiLeftArrow />
+                                   </button>
+                              </>
+                         )}
+                         {error && <p>Ocorreu algum imprevisto! Tente novamente</p>}
+                    </S.ConteinerSlide>
+                    {isloading && <Loading width="100px" height="100px" />}
+                    {error && <p>Houve algum error</p>}
+               </>
           </S.Conteiner>
      );
 };

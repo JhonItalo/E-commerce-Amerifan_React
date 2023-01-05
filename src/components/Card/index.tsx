@@ -5,7 +5,7 @@ import * as S from "./styles";
 
 const Card = ({ pokemon }: any) => {
      return (
-          <S.Conteiner>
+          <S.Conteiner style={{ flex: "none" }}>
                {pokemon && (
                     <>
                          <Link to={`/products/${pokemon.name}`}>

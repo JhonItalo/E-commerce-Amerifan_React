@@ -5,7 +5,6 @@ export const Header = styled.header`
      background-color: #000336;
      display: flex;
      flex-direction: column;
-     justify-content: space-between;
 `;
 export const InitialPromotionSpan = styled.div`
      height: 20%;

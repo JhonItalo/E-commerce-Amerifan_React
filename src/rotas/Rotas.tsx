@@ -5,6 +5,7 @@ const Products = React.lazy(() => import("../pages/Products"));
 import CarrinhoContext from "../contexts/CartContext";
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
+import Category from "../pages/Category";
 
 const Rotas = () => {
      return (
@@ -27,6 +28,38 @@ const Rotas = () => {
                                    element={
                                         <React.Suspense>
                                              <Products />
+                                        </React.Suspense>
+                                   }
+                              />
+                              <Route
+                                   path="/telefonia"
+                                   element={
+                                        <React.Suspense>
+                                             <Category />
+                                        </React.Suspense>
+                                   }
+                              />
+                              <Route
+                                   path="/smartphones"
+                                   element={
+                                        <React.Suspense>
+                                             <Category />
+                                        </React.Suspense>
+                                   }
+                              />
+                              <Route
+                                   path="/eletrodomesticos"
+                                   element={
+                                        <React.Suspense>
+                                             <Category />
+                                        </React.Suspense>
+                                   }
+                              />
+                              <Route
+                                   path="/tvvideo"
+                                   element={
+                                        <React.Suspense>
+                                             <Category />
                                         </React.Suspense>
                                    }
                               />

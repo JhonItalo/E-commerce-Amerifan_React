@@ -3,8 +3,8 @@ import { colorTypes } from "../../utils/Constains";
 
 export const Conteiner = styled.div`
      flex: none;
-     width: 20%;
-     height: 100%;
+     width: 236px;
+     height: 350px;
      padding: 1rem 0;
      display: flex;
      flex-direction: column;

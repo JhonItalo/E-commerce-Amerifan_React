@@ -14,7 +14,7 @@ export const Conteiner = styled.div`
      margin-bottom: 3rem;
      position: relative;
 
-     h3 {
+     h2 {
           font-size: 2rem;
           color: white;
      }
