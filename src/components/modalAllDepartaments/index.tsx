@@ -7,130 +7,130 @@ const ModalAllDepartaments = () => {
                <ul className="items">
                     <p>Tecnologia</p>
                     <li>
-                         <Link to="/teste">Smarth TV</Link>
+                         <Link to="/telefonia">Smarth TV</Link>
                     </li>
                     <li>
-                         <Link to="/teste">TV 4K</Link>
+                         <Link to="/telefonia">TV 4K</Link>
                     </li>
                     <li>
-                         <Link to="/teste">TV 8K</Link>
+                         <Link to="/telefonia">TV 8K</Link>
                     </li>
                     <li>
-                         <Link to="/teste">LED</Link>
+                         <Link to="/telefonia">LED</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Crystal UHD</Link>
+                         <Link to="/telefonia">Crystal UHD</Link>
                     </li>
                     <li>
-                         <Link to="/teste">OLED</Link>
+                         <Link to="/telefonia">OLED</Link>
                     </li>
                     <li>
-                         <Link to="/teste">NanoCell</Link>
+                         <Link to="/telefonia">NanoCell</Link>
                     </li>
                </ul>
                <ul className="items">
                     <p>Acessórios</p>
                     <li>
-                         <Link to="/teste">Chromecast</Link>
+                         <Link to="/telefonia">Chromecast</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Suportes</Link>
+                         <Link to="/telefonia">Suportes</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Projetores</Link>
+                         <Link to="/telefonia">Projetores</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Acessórios pra TV</Link>
+                         <Link to="/telefonia">Acessórios pra TV</Link>
                     </li>
                </ul>
                <ul className="items">
                     <p>Home Theater & Áudio</p>
                     <li>
-                         <Link to="/teste">Home Theater</Link>
+                         <Link to="/telefonia">Home Theater</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Soundbar</Link>
+                         <Link to="/telefonia">Soundbar</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Mini System</Link>
+                         <Link to="/telefonia">Mini System</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Caixa de Som Portátil</Link>
+                         <Link to="/telefonia">Caixa de Som Portátil</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Caixa Acústica</Link>
+                         <Link to="/telefonia">Caixa Acústica</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Fone de Ouvido</Link>
+                         <Link to="/telefonia">Fone de Ouvido</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Headset Gamer</Link>
+                         <Link to="/telefonia">Headset Gamer</Link>
                     </li>
                </ul>
                <ul className="items">
                     <p>Informática</p>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                </ul>
                <ul className="items">
                     <p>Gamer</p>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                </ul>
                <ul className="items">
                     <p>Tablets</p>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                     <li>
-                         <Link to="/teste">Smarth</Link>
+                         <Link to="/telefonia">Smarth</Link>
                     </li>
                </ul>
           </S.Conteiner>

@@ -13,16 +13,16 @@ const Header = () => {
                <S.InitialPromotionSpan></S.InitialPromotionSpan>
                <S.Content>
                     <S.Atendimento>
-                         <Link to="/teste">Chame o vendedor</Link>
-                         <Link to="/teste">Atendimento</Link>
-                         <Link to="/teste">Lista de Presents</Link>
+                         <Link to="/telefonia">Chame o vendedor</Link>
+                         <Link to="/telefonia">Atendimento</Link>
+                         <Link to="/telefonia">Lista de Presents</Link>
                     </S.Atendimento>
 
                     <S.MainContent>
                          <Logo />
                          <Search />
                          <S.Account>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <HiOutlineUser />
                                    <p>
                                         <span>Entre ou Cadastre-se</span> <br /> para ver seus pedidos

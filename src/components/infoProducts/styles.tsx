@@ -13,14 +13,20 @@ export const Conteiner = styled.div`
 `;
 export const Describe = styled.section`
      // margin-top: 2rem;
+     h3 {
+          margin-bottom: 1rem;
+     }
      background-color: white;
 `;
 
 export const TechnicalInformation = styled.section`
      margin-top: 2rem;
      margin-bottom: 4rem;
+     h3 {
+          margin-bottom: 1rem;
+     }
+
      table {
-          margin-top: 2rem;
           width: 100%;
           border: 1px solid black;
           caption {

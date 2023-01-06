@@ -13,28 +13,22 @@ const ItemSubFilter = ({ state, nameLabel, id }: props) => {
      const copyFilter = Object.assign({}, filterAtual);
 
      const removeFilter = () => {
+          inputRefCheck.current ? inputRefCheck.current.removeAttribute("checked") : "";
           if (state === "type") {
                copyFilter.type = `${filterAtual.type.replace(id, "")}`;
           } else if (state === "color") {
                copyFilter.color = `${filterAtual.color.replace(id, "")}`;
           }
-
-          inputRefCheck.current ? inputRefCheck.current.removeAttribute("checked") : "";
-          if (copyFilter.color === "" && copyFilter.type === "") {
-               return { option: "all", type: "", color: "" };
-          } else {
-               return copyFilter;
-          }
+          return copyFilter;
      };
 
      const addFilter = () => {
-          copyFilter.option = "activeFilter";
+          inputRefCheck.current ? inputRefCheck.current.setAttribute("checked", "true") : "";
           if (state === "type") {
                copyFilter.type = filterAtual.type + id;
           } else if (state === "color") {
                copyFilter.color = filterAtual.color + id;
           }
-          inputRefCheck.current ? inputRefCheck.current.setAttribute("checked", "true") : "";
           return copyFilter;
      };
      const controlFilter = () => {
@@ -54,7 +48,7 @@ const ItemSubFilter = ({ state, nameLabel, id }: props) => {
           return copyFilter;
      };
 
-     const handleCheckFilter = (id: string, e: React.SyntheticEvent) => {
+     const handleCheckFilter = (e: React.SyntheticEvent) => {
           e.preventDefault();
           setFilterAtual(controlFilter());
      };
@@ -62,11 +56,14 @@ const ItemSubFilter = ({ state, nameLabel, id }: props) => {
           <li className="itemSub">
                <label
                     onClick={(e) => {
-                         handleCheckFilter(id, e);
+                         handleCheckFilter(e);
                     }}
                >
                     {nameLabel}:
-                    <input type="checkbox" ref={inputRefCheck} />
+                    <div>
+                         <p />
+                         <input type="checkbox" ref={inputRefCheck} />
+                    </div>
                </label>
           </li>
      );

@@ -41,45 +41,45 @@ const Categorys = () => {
                <S.ConteinerSlide>
                     <S.Slide ref={Carrosel}>
                          <div className="item">
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokemon bulbassaur" />
                                    <img src="/assets/poke/bulba.png" alt="pokemon bulbassaur" width="100px" height="100px" />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokemon snorlax" />
                                    <img src="/assets/poke/snorlax.png" alt="pokemon snorlax" width="100px" height="100px" />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokemon eevee" />
                                    <img src="/assets/poke/eevee.png" alt=" pokemon eevee" width="100px" height="100px" />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokemon psyduck" />
                                    <img src="/assets/poke/psyduck.png" alt="pokemon psyduck" width="100px" height="100px" />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokemon squirtle" />
                                    <img src="/assets/poke/squirtle.png" alt="pokemon squirtle" width="100px" height="100px" />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokemon caterpie" />
                                    <img src="/assets/poke/caterpie.png" alt="pokemon caterpie" width="100px" height="100px" />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokemon dratini" />
                                    <img src="/assets/poke/dratini.png" alt="pokemon dratini" width="100px" height="100px" />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokemon abra" />
                                    <img src="/assets/poke/abra.png" alt="pokemon abra" width="100px" height="100px" />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokemon bellsporut" />
                                    <img src="/assets/poke/bellsprout.png" alt="pokemon bellsprout" width="100px" height="100px" />
                               </Link>
                          </div>
                          <div className="item">
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokeball" />
                                    <img
                                         className="ball"
@@ -89,7 +89,7 @@ const Categorys = () => {
                                         height="80px"
                                    />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokeball 2" />
                                    <img
                                         className="ball"
@@ -99,7 +99,7 @@ const Categorys = () => {
                                         height="80px"
                                    />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokeball 3" />
                                    <img
                                         className="ball"
@@ -109,7 +109,7 @@ const Categorys = () => {
                                         height="80px"
                                    />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    7
                                    <AccessibleName name="pokeball 4" />
                                    <img
@@ -120,7 +120,7 @@ const Categorys = () => {
                                         height="80px"
                                    />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokeball 4" />
                                    <img
                                         className="ball"
@@ -130,7 +130,7 @@ const Categorys = () => {
                                         height="80px"
                                    />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokeball 5" />
                                    <img
                                         className="ball"
@@ -140,7 +140,7 @@ const Categorys = () => {
                                         height="80px"
                                    />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokeball 6" />
                                    <img
                                         className="ball"
@@ -150,7 +150,7 @@ const Categorys = () => {
                                         height="80px"
                                    />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokeball 7" />
                                    <img
                                         className="ball"
@@ -160,7 +160,7 @@ const Categorys = () => {
                                         height="80px"
                                    />
                               </Link>
-                              <Link to="/teste">
+                              <Link to="/telefonia">
                                    <AccessibleName name="pokeball 8" />
                                    <img
                                         className="ball"

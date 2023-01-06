@@ -2,12 +2,12 @@ import styled from "styled-components";
 
 export const ProductsByCategory = styled.main`
      background-color: white;
-     padding: 2rem 4rem;
+     padding: 3rem 4rem;
 
      h2 {
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
           font-size: 2rem;
-          color: red;
+          text-transform: capitalize;
      }
 `;
 

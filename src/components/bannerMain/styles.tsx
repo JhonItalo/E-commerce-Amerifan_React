@@ -51,6 +51,11 @@ export const Slide = styled.div`
      overflow-x: auto;
      scroll-behavior: smooth;
      color: white;
+     a {
+          flex: none;
+          width: 100%;
+          height: 100%;
+     }
 
      &::-webkit-scrollbar {
           display: none;

@@ -6,7 +6,7 @@ import { VscDebugBreakpointLogUnverified } from "react-icons/vsc";
 const PromotionSpan = () => {
      return (
           <S.Conteiner>
-               <Link to="/teste">
+               <Link to="/telefonia">
                     <pre className="first">
                          tem cumpom! <VscDebugBreakpointLogUnverified /> <span>black friday</span>{" "}
                          <VscDebugBreakpointLogUnverified /> tem cumpom! <VscDebugBreakpointLogUnverified />{" "}

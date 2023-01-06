@@ -6,39 +6,46 @@ import { DataProviderContext } from "../../contexts/DataProviderContext";
 import { FilterProviderContext, FiltercontextType } from "../../contexts/FilterContext";
 
 const AllFilterPokemonsList = () => {
+     console.log("list filter render");
      const { data, isloading, error } = useContext(DataProviderContext);
      const { filterAtual } = useContext<FiltercontextType>(FilterProviderContext);
 
-     console.log("list filter render");
-
-     const OptionSelectFilter: { [index: string]: any[] } = {
-          all: data ? data : undefined,
-          type: data
-               ? data.filter((item: any) => {
-                      for (let i = 0; i < item.types.length; i++) {
-                           if (filterAtual.type.includes(item.types[i].type.name)) {
-                                return item.name;
-                           }
-                      }
-                 })
-               : [],
-
-          color: data
-               ? data.filter((item: any) => {
-                      if (filterAtual.color.includes(item.name)) {
+     const type = data
+          ? data.filter((item: any) => {
+                 for (let i = 0; i < item.types.length; i++) {
+                      if (filterAtual.type.includes(item.types[i].type.name)) {
                            return item.name;
                       }
-                 })
-               : [],
-     };
-     console.log(OptionSelectFilter["color"], "color");
-     const filtrados = OptionSelectFilter["type"].concat(OptionSelectFilter["color"]);
+                 }
+            })
+          : [];
+
+     const color = data
+          ? data.filter((item: any) => {
+                 if (filterAtual.color.includes(item.name)) {
+                      return item.name;
+                 }
+            })
+          : [];
+
+     const RemoveDuplicatefilterConcats = type.concat(color);
+
+     const filtrados: any[] = [];
+
+     RemoveDuplicatefilterConcats.forEach((element: any[]) => {
+          if (!filtrados.includes(element)) {
+               filtrados.push(element);
+          }
+     });
+
+     console.log(type.length, "elgnth type");
+
      return (
           <S.ConteinerPokemons>
                <>
-                    {filterAtual.option === "all" && data && (
+                    {data && type.length === 0 && color.length === 0 && (
                          <>
-                              <div className="teste">
+                              <div className="titleOrder">
                                    <p style={{ color: "black" }}>{data.length} resultados encontrados</p>
                                    <select defaultValue="relevãncia">
                                         <option value="relevância">relevância</option>
@@ -56,9 +63,9 @@ const AllFilterPokemonsList = () => {
                          </>
                     )}
 
-                    {filterAtual.option === "activeFilter" && (
+                    {(type.length > 0 || color.length > 0) && (
                          <>
-                              <div className="teste">
+                              <div className="titleOrder">
                                    <p style={{ color: "black" }}>{filtrados.length} resultados encontrados</p>
                                    <select defaultValue="relevãncia">
                                         <option value="relevância">relevância</option>

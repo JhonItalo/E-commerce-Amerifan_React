@@ -2,6 +2,7 @@ import React, { useRef, useEffect } from "react";
 import * as S from "./styles";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import AccessibleButtonName from "../AcessibleButtonName";
+import { Link } from "react-router-dom";
 
 const BannerMain = () => {
      const Carrosel = useRef<HTMLDivElement | null>(null);
@@ -62,9 +63,15 @@ const BannerMain = () => {
           <S.Banner>
                <S.ConteinerSlide>
                     <S.Slide ref={Carrosel}>
-                         <S.Item src="/assets/banner/banner1.webp" alt="70% de desconto" width="100%" height="500px" />
-                         <S.Item src="/assets/banner/banner2.webp" alt="promoção Black Friday" width="100%" height="500px" />
-                         <S.Item src="/assets/banner/banner1.webp" alt="ganhe premios" width="100%" height="500px" />
+                         <Link to="/telefonia">
+                              <S.Item src="/assets/banner/banner1.webp" alt="70% de desconto" width="100%" height="500px" />
+                         </Link>
+                         <Link to="/telefonia">
+                              <S.Item src="/assets/banner/banner2.webp" alt="promoção Black Friday" width="100%" height="500px" />
+                         </Link>
+                         <Link to="/telefonia">
+                              <S.Item src="/assets/banner/banner1.webp" alt="ganhe premios" width="100%" height="500px" />
+                         </Link>
                     </S.Slide>
 
                     <button className="next btn_slide" onClick={handleNextSlide}>

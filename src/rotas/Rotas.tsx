@@ -32,6 +32,14 @@ const Rotas = () => {
                                    }
                               />
                               <Route
+                                   path="/cart"
+                                   element={
+                                        <React.Suspense>
+                                             <p>teste</p>
+                                        </React.Suspense>
+                                   }
+                              />
+                              <Route
                                    path="/telefonia"
                                    element={
                                         <React.Suspense>

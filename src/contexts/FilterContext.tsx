@@ -1,7 +1,6 @@
 import React, { createContext } from "react";
 
-type propsFilterAtual = {
-     option: string;
+export type propsFilterAtual = {
      type: string;
      color: string;
 };
@@ -11,7 +10,7 @@ export type FiltercontextType = {
      setFilterAtual: React.Dispatch<React.SetStateAction<propsFilterAtual>>;
 };
 const defaultValue = {
-     filterAtual: { option: "all", type: "", color: "" },
+     filterAtual: { type: "", color: "" },
      setFilterAtual: () => {
           //nothing
      },

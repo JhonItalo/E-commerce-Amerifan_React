@@ -36,11 +36,19 @@ export const Conteiner = styled.div`
                font-size: 0.9rem;
           }
      }
-     button {
+     .cart {
           margin-top: 2rem;
           padding: 0.5rem;
           border: none;
-          border-radius: 10px;
+          border-radius: 5px;
+          border: 1px solid white;
+          background-color: white;
+          font-weight: bold;
+          cursor: pointer;
+
+          &:hover {
+               border: 1px solid black;
+          }
      }
 `;
 

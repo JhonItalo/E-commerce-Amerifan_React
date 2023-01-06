@@ -34,10 +34,22 @@ export const SubFilter = styled.ul`
                justify-content: space-between;
                font-size: 1.2rem;
                border: none;
-               input {
+               div {
                     width: 1rem;
-                    background-color: inherit;
-                    border: none;
+                    height: 1rem;
+                    position: relative;
+                    input {
+                         width: 100%;
+                         height: 100%;
+                         background-color: inherit;
+                         border: none;
+                    }
+                    p {
+                         width: 1.5rem;
+                         height: 1.5rem;
+                         background-color: transparent;
+                         position: absolute;
+                    }
                }
           }
      }

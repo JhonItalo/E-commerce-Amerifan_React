@@ -7,7 +7,7 @@ export const ConteinerPokemons = styled.div`
      position: relative;
      border-top: 1px solid rgb(230, 230, 230);
 
-     .teste {
+     .titleOrder {
           display: flex;
           margin-bottom: 2rem;
           justify-content: space-between;
@@ -22,7 +22,6 @@ export const ConteinerPokemons = styled.div`
 export const ListPokemons = styled.div`
      width: 100%;
      display: flex;
-     justify-content: space-around;
      flex-wrap: wrap;
-     gap: 2rem;
+     gap: 3rem;
 `;

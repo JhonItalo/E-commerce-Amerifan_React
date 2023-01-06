@@ -35,7 +35,7 @@ const Products = () => {
                }}
           >
                {data && <InfoProducts pokemon={data} />}
-               {isLoading && <Loading width="300px" height="300px" />}
+               {isLoading && <Loading width="200px" height="200px" />}
                {error && <p>Produto não existe</p>}
           </div>
      );
