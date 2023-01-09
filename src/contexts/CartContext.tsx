@@ -1,7 +1,7 @@
 import React, { createContext, useState, useEffect } from "react";
 import useFirstRender from "../hooks/useFirstRender";
 
-type storageType = {
+export type storageType = {
      name: string;
      image: string;
      count: number;

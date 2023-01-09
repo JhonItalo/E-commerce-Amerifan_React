@@ -5,7 +5,6 @@ import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaYoutubeSquare } from "react-icons/fa";
 import AccessibleName from "../../components/AcessibleName";
 import AccessibleButtonName from "../../components/AcessibleButtonName";
-import { lazy } from "react";
 
 const Footer = () => {
      console.log("footer render");
@@ -17,21 +16,11 @@ const Footer = () => {
                               <p className="title">Baixe o nosso App</p>
                               <Link to="telefonia">
                                    <AccessibleName name="Vá para o Google play" />
-                                   <img
-                                        src="/google.webp"
-                                        alt="Google play"
-                                        style={{ width: "100px", height: "45px" }}
-                                        loading="lazy"
-                                   />
+                                   <img src="/google.webp" alt="Google play" style={{ width: "100px", height: "45px" }} />
                               </Link>
                               <Link to="telefonia">
                                    <AccessibleName name=" Vá para o Apple store" />
-                                   <img
-                                        src="/iphone.webp"
-                                        alt="Apple Store"
-                                        style={{ width: "75px", height: "30px" }}
-                                        loading="lazy"
-                                   />
+                                   <img src="/iphone.webp" alt="Apple Store" style={{ width: "75px", height: "30px" }} />
                               </Link>
                          </div>
                          <div className="redesSociais">

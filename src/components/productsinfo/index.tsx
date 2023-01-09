@@ -9,6 +9,7 @@ type props = {
 };
 
 const ProductsInfo = ({ pokemon }: props) => {
+     console.log("products info render")
      const [color, setColor] = useState<string>("white");
      const [size, setSize] = useState<string>("s");
      

@@ -1,11 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+const MyCart = React.lazy(() => import("../pages/MyCart"));
 const Home = React.lazy(() => import("../pages/Home"));
 const Products = React.lazy(() => import("../pages/Products"));
+const Category = React.lazy(() => import("../pages/Category"));
 import CarrinhoContext from "../contexts/CartContext";
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
-import Category from "../pages/Category";
 
 const Rotas = () => {
      return (
@@ -35,7 +36,7 @@ const Rotas = () => {
                                    path="/cart"
                                    element={
                                         <React.Suspense>
-                                             <p>teste</p>
+                                             <MyCart />
                                         </React.Suspense>
                                    }
                               />
@@ -57,14 +58,6 @@ const Rotas = () => {
                               />
                               <Route
                                    path="/eletrodomesticos"
-                                   element={
-                                        <React.Suspense>
-                                             <Category />
-                                        </React.Suspense>
-                                   }
-                              />
-                              <Route
-                                   path="/tvvideo"
                                    element={
                                         <React.Suspense>
                                              <Category />

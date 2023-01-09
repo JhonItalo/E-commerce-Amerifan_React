@@ -3,7 +3,7 @@ import * as S from "./styles";
 import { useLocation } from "react-router-dom";
 import FilterSelect from "../filterSelect";
 import AllFilterPokemonsList from "../allFilterPokemonsList";
-import FilterProvider  from "../../contexts/FilterContext";
+import FilterProvider from "../../contexts/FilterContext";
 
 type propsFilterAtual = {
      type: string;
@@ -17,7 +17,6 @@ const ProductsByCategory = () => {
      const [filterAtual, setFilterAtual] = useState<propsFilterAtual>({ type: "", color: "" });
 
      console.log("Produtos by category render");
-     console.log(filterAtual, "filter atual");
 
      return (
           <S.ProductsByCategory>

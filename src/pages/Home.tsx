@@ -9,7 +9,6 @@ import DataProvider from "../contexts/DataProviderContext";
 const Home = () => {
      console.log("home renderizou");
      const { data, isLoading, error } = useHomeFetch();
-     console.log(error);
      return (
           <>
                <Categorys />

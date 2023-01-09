@@ -8,6 +8,7 @@ type props = {
 };
 
 const ImageSelect = ({ pokemon }: props) => {
+     console.log("image sleect renser");
      const [imageSelect, setImageSelect] = useState<string>("1");
      return (
           <S.Conteiner>

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import { useContext } from "react";
 import * as S from "./styles";
 import Card from "../Card";
 import Loading from "../loading";
@@ -28,17 +28,18 @@ const AllFilterPokemonsList = () => {
             })
           : [];
 
-     const RemoveDuplicatefilterConcats = type.concat(color);
+     const processingArrayFilter = () => {
+          const filterConcats = type.concat(color);
+          const removeDuplicate: any[] = [];
 
-     const filtrados: any[] = [];
-
-     RemoveDuplicatefilterConcats.forEach((element: any[]) => {
-          if (!filtrados.includes(element)) {
-               filtrados.push(element);
-          }
-     });
-
-     console.log(type.length, "elgnth type");
+          filterConcats.forEach((element: any[]) => {
+               if (!removeDuplicate.includes(element)) {
+                    removeDuplicate.push(element);
+               }
+          });
+          return removeDuplicate;
+     };
+     const filtrados = processingArrayFilter();
 
      return (
           <S.ConteinerPokemons>

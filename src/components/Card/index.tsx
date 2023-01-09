@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import AccessibleName from "../AcessibleName";
 import ButtonAddCart from "../buttonAddCart";
 import * as S from "./styles";
@@ -11,12 +10,11 @@ const Card = ({ pokemon }: any) => {
                     <>
                          <Link to={`/products/${pokemon.name}`}>
                               <AccessibleName name={`imagem do pokemon ${pokemon.name}`} />
-                              <LazyLoadImage
+                              <img
                                    src={pokemon.sprites.other.dream_world.front_default}
                                    alt={pokemon.name}
                                    width="140px"
                                    height="158px"
-                                   loading="lazy"
                               />
                          </Link>
                          <div className="info">
