@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import * as S from "./styles";
-import ButtonAddCart from "../buttonAddCart/index";
+
 import AccessibleLinkName from "../AcessibleName";
 import AccessibleButtonName from "../AcessibleButtonName";
 
@@ -9,10 +9,10 @@ type props = {
 };
 
 const ProductsInfo = ({ pokemon }: props) => {
-     console.log("products info render")
+     console.log("products info render");
      const [color, setColor] = useState<string>("white");
      const [size, setSize] = useState<string>("s");
-     
+
      return (
           <S.Conteiner>
                <S.TitleType>
@@ -88,11 +88,7 @@ const ProductsInfo = ({ pokemon }: props) => {
                          </button>
                     </div>
                </S.SizeSelect>
-               <S.Addtocart>
-                    <ButtonAddCart name={pokemon.name} image={pokemon.sprites.other.dream_world.front_default}>
-                         Add to Cart
-                    </ButtonAddCart>
-               </S.Addtocart>
+               <S.Addtocart></S.Addtocart>
                <S.Frete>
                     <span>Calcule o frete e prazo de entrega</span>
                     <div>

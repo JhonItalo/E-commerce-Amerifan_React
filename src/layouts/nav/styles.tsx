@@ -8,7 +8,6 @@ export const Nav = styled.nav`
      padding: 0 5rem;
      position: relative;
      background-color: #01022a;
-
      ul {
           height: 100%;
           display: flex;
@@ -38,7 +37,6 @@ export const Departments = styled.li`
      text-transform: uppercase;
      gap: 0.7rem;
      cursor: default;
-
      p {
           font-size: 1rem;
      }

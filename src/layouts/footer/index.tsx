@@ -5,7 +5,6 @@ import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaYoutubeSquare } from "react-icons/fa";
 import AccessibleName from "../../components/AcessibleName";
 import AccessibleButtonName from "../../components/AcessibleButtonName";
-
 const Footer = () => {
      console.log("footer render");
      return (
@@ -15,35 +14,35 @@ const Footer = () => {
                          <div>
                               <p className="title">Baixe o nosso App</p>
                               <Link to="telefonia">
-                                   <AccessibleName name="Vá para o Google play" />
-                                   <img src="/google.webp" alt="Google play" style={{ width: "100px", height: "45px" }} />
+                                   <img src="/google.webp" alt="Google play" width="100px" height="45px" />
+                                   <AccessibleName name="google play" />
                               </Link>
                               <Link to="telefonia">
-                                   <AccessibleName name=" Vá para o Apple store" />
-                                   <img src="/iphone.webp" alt="Apple Store" style={{ width: "75px", height: "30px" }} />
+                                   <img src="/iphone.webp" alt="Apple store" width="75px" height="30px" />
+                                   <AccessibleName name="apple store" />
                               </Link>
                          </div>
                          <div className="redesSociais">
                               <p className="title">Redes Sociais</p>
                               <div className="icons">
                                    <Link to="/telefonia">
-                                        <AccessibleButtonName name="Vá para o facebook" />
                                         <GrFacebook />
+                                        <AccessibleButtonName name="vá para o facebook" />
                                    </Link>
                                    <Link to="/telefonia">
-                                        <AccessibleButtonName name="Vá para o Twitter" />
                                         <AiFillTwitterSquare />
+                                        <AccessibleButtonName name="vá para o facebook" />
                                    </Link>
                                    <Link to="/telefonia">
-                                        <AccessibleButtonName name="Vá para o Youtube" />
                                         <FaYoutubeSquare />
+                                        <AccessibleButtonName name="vá para o facebook" />
                                    </Link>
                               </div>
                          </div>
                     </S.ItemComposto>
                     <S.ItemComposto>
                          <div>
-                              <p className="title">Atendimento</p>
+                              <p className="title">Atendimenhref</p>
 
                               <p>loja online: 0000 0000</p>
 
@@ -104,7 +103,7 @@ const Footer = () => {
                               <p>Black Friday</p>
                          </Link>
                          <Link to="/telefonia">
-                              <p>Venda seus produtos no Amerifan.com.br</p>
+                              <p>Venda seus produhrefs no Amerifan.com.br</p>
                          </Link>
                          <Link to="/telefonia">
                               <p>Segurança Digital</p>

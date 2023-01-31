@@ -1,8 +1,9 @@
 import React, { useRef, useEffect } from "react";
 import * as S from "./styles";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import AccessibleButtonName from "../AcessibleButtonName";
 import { Link } from "react-router-dom";
+import AccessibleButtonName from "../AcessibleButtonName";
+import AccessibleName from "../AcessibleName";
 
 const BannerMain = () => {
      const Carrosel = useRef<HTMLDivElement | null>(null);
@@ -64,55 +65,59 @@ const BannerMain = () => {
                <S.ConteinerSlide>
                     <S.Slide ref={Carrosel}>
                          <Link to="/telefonia">
-                              <S.Item src="/assets/banner/banner1.webp" alt="70% de desconto" width="100%" height="500px" />
+                              <img src="/assets/banner/banner1.webp" alt="70% de desconto" />
+                              <AccessibleName name="70% de desconto" />
                          </Link>
                          <Link to="/telefonia">
-                              <S.Item src="/assets/banner/banner2.webp" alt="promoção Black Friday" width="100%" height="500px" />
+                              <img src="/assets/banner/banner2.webp" alt="promoção Black Friday" />
+                              <AccessibleName name="promo~ção black friday" />
                          </Link>
                          <Link to="/telefonia">
-                              <S.Item src="/assets/banner/banner1.webp" alt="ganhe premios" width="100%" height="500px" />
+                              <img src="/assets/banner/banner1.webp" alt="ganhe premios" />
+                              <AccessibleName name="ganhe premios" />
                          </Link>
                     </S.Slide>
 
                     <button className="next btn_slide" onClick={handleNextSlide}>
-                         <AccessibleButtonName name="next slide" />
                          <IoIosArrowForward />
+                         <AccessibleButtonName name="next slde" />
                     </button>
                     <button className="previous btn_slide" onClick={handlePreviousSlide}>
-                         <AccessibleButtonName name="previous slide" />
                          <IoIosArrowBack />
+                         <AccessibleButtonName name="previous slide" />
                     </button>
+
+                    <S.Radios>
+                         <button onClick={handleRadio1}>
+                              <AccessibleButtonName name="imgm 1" />
+                         </button>
+                         <button onClick={handleRadio2}>
+                              <AccessibleButtonName name="imgm 2" />
+                         </button>
+                         <button onClick={handleRadio3}>
+                              <AccessibleButtonName name="imgm 3" />
+                         </button>
+                         <button onClick={handleRadio1}>
+                              <AccessibleButtonName name="imgm 4" />
+                         </button>
+                         <button onClick={handleRadio2}>
+                              <AccessibleButtonName name="imgm 5" />
+                         </button>
+                         <button onClick={handleRadio3}>
+                              <AccessibleButtonName name="imgm 6" />
+                         </button>
+                         <button onClick={handleRadio1}>
+                              <AccessibleButtonName name="imgm 7" />
+                         </button>
+                         <button onClick={handleRadio2}>
+                              <AccessibleButtonName name="imgm 8" />
+                         </button>
+                         <button onClick={handleRadio3}>
+                              <AccessibleButtonName name="imgm 9" />
+                         </button>
+                    </S.Radios>
                </S.ConteinerSlide>
 
-               <S.Radios>
-                    <button onClick={handleRadio1}>
-                         <AccessibleButtonName name="slide 1" />
-                    </button>
-                    <button onClick={handleRadio2}>
-                         <AccessibleButtonName name="slide 2" />
-                    </button>
-                    <button onClick={handleRadio3}>
-                         <AccessibleButtonName name="slide 3" />
-                    </button>
-                    <button onClick={handleRadio1}>
-                         <AccessibleButtonName name="slide 4" />
-                    </button>
-                    <button onClick={handleRadio2}>
-                         <AccessibleButtonName name="slide 5" />
-                    </button>
-                    <button onClick={handleRadio3}>
-                         <AccessibleButtonName name="slide 6" />
-                    </button>
-                    <button onClick={handleRadio1}>
-                         <AccessibleButtonName name="slide 7" />
-                    </button>
-                    <button onClick={handleRadio2}>
-                         <AccessibleButtonName name="slide 8" />
-                    </button>
-                    <button onClick={handleRadio3}>
-                         <AccessibleButtonName name="slide 9" />
-                    </button>
-               </S.Radios>
                <div className="whiteRow" />
           </S.Banner>
      );

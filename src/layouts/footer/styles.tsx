@@ -15,7 +15,6 @@ export const Item = styled.div`
      display: flex;
      flex-direction: column;
      gap: 1rem;
-
      .title {
           color: #c11a26;
           font-weight: bold;
@@ -29,13 +28,11 @@ export const Item = styled.div`
 export const ItemComposto = styled.div`
      width: 200px;
      height: 300px;
-
      div {
           display: flex;
           flex-direction: column;
           gap: 1rem;
           margin-bottom: 1rem;
-
           .title {
                color: #c11a26;
                font-weight: bold;
@@ -51,7 +48,6 @@ export const ItemComposto = styled.div`
      }
      .redesSociais {
           margin-top: 2rem;
-
           .icons {
                display: flex;
                flex-direction: row;

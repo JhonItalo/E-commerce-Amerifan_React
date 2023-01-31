@@ -1,6 +1,6 @@
 import * as S from "./styles";
-import { useLocation } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { AiOutlineMenu } from "react-icons/ai";
 import { SlArrowDown } from "react-icons/sl";
 import ModalAllDepartaments from "../../components/modalAllDepartaments";
@@ -35,27 +35,27 @@ const Nav = () => {
                     </S.Li>
 
                     <S.Li active={pathname === "/videotv"}>
-                         <Link to="/videotv">
+                         <Link to="/">
                               <p>Tv e vídeo</p>
                          </Link>
                     </S.Li>
                     <S.Li active={pathname === "/moveis"}>
-                         <Link to="/moveis">
+                         <Link to="/">
                               <p>Movéis</p>
                          </Link>
                     </S.Li>
                     <S.Li active={pathname === "/eletroportateis"}>
-                         <Link to="/eletroportateis">
+                         <Link to="/">
                               <p>EletroPortáteis</p>
                          </Link>
                     </S.Li>
                     <S.Li active={pathname === "/informatica"}>
-                         <Link to="/informatica">
+                         <Link to="/">
                               <p>Informática</p>
                          </Link>
                     </S.Li>
                     <S.Li active={pathname === "/servicos"}>
-                         <Link to="/servicos">
+                         <Link to="/">
                               <p>Serviços</p>
                          </Link>
                     </S.Li>

@@ -12,7 +12,7 @@ type props = {
 };
 
 const ShowProducts = ({ title, data }: props) => {
-     console.log("Best seller renderizou");
+     console.log("show products", title);
      const { isloading, error } = useContext<DataProviderType>(DataProviderContext);
      const Carrosel = useRef<HTMLDivElement | null>(null);
 
@@ -52,7 +52,6 @@ const ShowProducts = ({ title, data }: props) => {
                          {error && <p>Ocorreu algum imprevisto! Tente novamente</p>}
                     </S.ConteinerSlide>
                     {isloading && <Loading width="100px" height="100px" />}
-                    {error && <p>Houve algum error</p>}
                </>
           </S.Conteiner>
      );

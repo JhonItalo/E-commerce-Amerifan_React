@@ -29,25 +29,24 @@ export const Conteiner = styled.div`
           .name {
                text-transform: uppercase;
           }
-
           .type {
                display: flex;
                gap: 0.5rem;
                font-size: 0.9rem;
           }
      }
-     .cart {
+     .addtocart {
           margin-top: 2rem;
           padding: 0.5rem;
           border: none;
           border-radius: 5px;
-          border: 1px solid white;
           background-color: white;
           font-weight: bold;
+          border: 1px solid black;
           cursor: pointer;
-
           &:hover {
-               border: 1px solid black;
+               background-color: black;
+               color: white;
           }
      }
 `;

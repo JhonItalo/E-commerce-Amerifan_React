@@ -8,7 +8,6 @@ export const Search = styled.div`
      border-radius: 5px;
      background-color: white;
      position: relative;
-
      input {
           width: 90%;
           height: 100%;
@@ -27,7 +26,6 @@ export const Search = styled.div`
           border: none;
           background-color: inherit;
           cursor: pointer;
-
           svg {
                font-size: 1.5rem;
                color: grey;
@@ -48,7 +46,6 @@ export const ModalSearch = styled.ul`
                background-color: white;
                border-top: 1px solid grey;
                text-transform: capitalize;
-
                &:hover {
                     background-color: #58738b;
                     color: white;
@@ -56,4 +53,15 @@ export const ModalSearch = styled.ul`
                }
           }
      }
+`;
+export const Atendimento = styled.div`
+     position: absolute;
+     top: -50%;
+     font-size: 0.8rem;
+     display: flex;
+     justify-content: start;
+     align-items: center;
+     gap: 2rem;
+     color: white;
+     //background-color: red;
 `;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Conteiner = styled.div`
      width: 100%;
-     height: 20vh;
+     height: 130px;
      position: relative;
 `;
 export const ConteinerSlide = styled.div`
@@ -10,7 +10,6 @@ export const ConteinerSlide = styled.div`
      height: 100%;
      margin: 0 auto;
      position: relative;
-
      .btn_slide {
           border: none;
           background-color: transparent;
@@ -34,7 +33,6 @@ export const Slide = styled.div`
      margin: 0 auto;
      display: flex;
      overflow-x: auto;
-
      &::-webkit-scrollbar {
           display: none;
      }
