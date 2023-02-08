@@ -7,7 +7,7 @@ export type storageType = {
      count: number;
 };
 
-type contextType = {
+export type contextType = {
      storage: storageType[];
      setStorage: React.Dispatch<React.SetStateAction<storageType[]>>;
      addToCart: (name: string, image: string) => void;
