@@ -25,12 +25,20 @@ const Search = () => {
 
      const handleFoundResult = (e: React.KeyboardEvent<HTMLElement>) => {
           if (e.key === "Enter") {
-               setSearch("");
-               inputRef.current?.blur();
-               navigate(`/results/${search}`);
+               if (search.length > 0) {
+                    setSearch("");
+                    inputRef.current?.blur();
+                    navigate(`/results/${search}`);
+               }
           }
      };
 
+     const handleIconResult = () => {
+          if (search.length > 0) {
+               setSearch("");
+               navigate(`/results/${search}`);
+          }
+     };
      return (
           <S.Search>
                <input
@@ -47,12 +55,7 @@ const Search = () => {
                     placeholder="O que você está procurando?"
                />
                <button className="iconSearch">
-                    <FiSearch
-                         onClick={() => {
-                              setSearch("");
-                              navigate(`/results/${search}`);
-                         }}
-                    />
+                    <FiSearch onClick={() => {}} />
                     <AccessibleButtonName name="buscar" />
                </button>
                <S.Atendimento>

@@ -44,15 +44,15 @@ const SlideCategorys = () => {
                                    <img src="/assets/poke/bulba.png" alt="pokemon bulbassaur" width="100px" height="100px" />
                                    <AccessibleName name=" imgm do pokemon bulbassaur" />
                               </Link>
-                              <Link to="/telefonia">
+                              <Link to="/smartphones">
                                    <img src="/assets/poke/snorlax.png" alt="pokemon snorlax" width="100px" height="100px" />
                                    <AccessibleName name=" imgm do pokemon snorlax" />
                               </Link>
-                              <Link to="/telefonia">
+                              <Link to="/eletrodomesticos">
                                    <img src="/assets/poke/eevee.png" alt=" pokemon eevee" width="100px" height="100px" />
                                    <AccessibleName name=" imgm do pokemon eevee" />
                               </Link>
-                              <Link to="/telefonia">
+                              <Link to="/moveis">
                                    <img src="/assets/poke/psyduck.png" alt="pokemon psyduck" width="100px" height="100px" />
                                    <AccessibleName name=" imgm do pokemon psyduck" />
                               </Link>
@@ -88,7 +88,7 @@ const SlideCategorys = () => {
                                    />
                                    <AccessibleName name="pokeball" />
                               </Link>
-                              <Link to="/telefonia">
+                              <Link to="/smartphones">
                                    <img
                                         className="ball"
                                         src="/assets/balls/ball7.png"
@@ -98,7 +98,7 @@ const SlideCategorys = () => {
                                    />
                                    <AccessibleName name="pokeball" />
                               </Link>
-                              <Link to="/telefonia">
+                              <Link to="/eletrodomesticos">
                                    <img
                                         className="ball"
                                         src="/assets/balls/ball8.png"
@@ -108,7 +108,7 @@ const SlideCategorys = () => {
                                    />
                                    <AccessibleName name="pokeball" />
                               </Link>
-                              <Link to="/telefonia">
+                              <Link to="/moveis">
                                    <img
                                         className="ball"
                                         src="/assets/balls/ball4.png"

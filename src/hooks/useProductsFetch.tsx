@@ -2,7 +2,7 @@ import { URL } from "../utils/Constains";
 import { useQuery } from "react-query";
 
 type props = {
-     params?: string;
+     params: string;
 };
 
 const useProductsFetch = ({ params }: props) => {

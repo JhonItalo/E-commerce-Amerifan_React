@@ -9,8 +9,7 @@ const GlobalStyle = createGlobalStyle`
  }
 
  body{
-  background-color: black;
- background-image: url("/assets/background/Background.webp");
+  background-image: url("/assets/background/Background.webp");
   background-repeat: repeat;
   background-size: cover;
   overflow-x: hidden;
@@ -25,6 +24,12 @@ const GlobalStyle = createGlobalStyle`
    &:hover{color:inherit;}
    &:active{color:inherit;}
  }
+ @media (max-width: 1920px) and (min-width: 1441px) {
+          html{
+            font-size: 20px;
+          }
+     }
+   
 
 
 `;

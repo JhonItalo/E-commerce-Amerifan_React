@@ -1,19 +1,19 @@
 import { useContext, useRef } from "react";
 import * as S from "./styles";
-import Card from "../Card";
+import Card from "../card";
 import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import Loading from "../loading";
-import { DataProviderContext } from "../../contexts/DataProviderContext";
-import { DataProviderType } from "../../types/types";
+import { pokemonInfo } from "../../types/types";
+import { DataHomeContext, DataHomeType } from "../../contexts/DataHomeProvider";
 
 type props = {
      title: string;
-     data: any | undefined;
+     data: pokemonInfo[] | undefined;
 };
 
 const ShowProducts = ({ title, data }: props) => {
      console.log("show products", title);
-     const { isloading, error } = useContext<DataProviderType>(DataProviderContext);
+     const { isloading, error } = useContext<DataHomeType>(DataHomeContext);
      const Carrosel = useRef<HTMLDivElement | null>(null);
 
      const handleScrollright = () => {
@@ -35,7 +35,7 @@ const ShowProducts = ({ title, data }: props) => {
                          {data && (
                               <>
                                    <S.Slide ref={Carrosel}>
-                                        {data.map((item: any) => (
+                                        {data.map((item: pokemonInfo) => (
                                              <Card key={item.id} pokemon={item} />
                                         ))}
                                    </S.Slide>
@@ -49,8 +49,8 @@ const ShowProducts = ({ title, data }: props) => {
                                    </button>
                               </>
                          )}
-                         {error && <p>Ocorreu algum imprevisto! Tente novamente</p>}
                     </S.ConteinerSlide>
+                    {error && <p>Ocorreu algum imprevisto! Tente novamente</p>}
                     {isloading && <Loading width="100px" height="100px" />}
                </>
           </S.Conteiner>

@@ -1,11 +1,11 @@
 import { useQuery } from "react-query";
-import { resolveListPromises } from "../request/HomeRequest";
+import { resolveListRequests } from "../request/HomeRequest";
 
 const useHomeFetch = () => {
-     return useQuery("HomeFetch", resolveListPromises, {
+     return useQuery("HomeFetch", resolveListRequests, {
           staleTime: 1000 * 60 * 60,
-          refetchOnWindowFocus: false, //foco,
-          retry: 5, // tentar novamente
+          refetchOnWindowFocus: false,
+          retry: 5,
      });
 };
 

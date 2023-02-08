@@ -37,6 +37,11 @@ const Header = () => {
                                         <span>Entre ou Cadastre-se</span> <br /> para ver seus pedidos
                                    </p>
                               </Link>
+                              <div className="modalLogin">
+                                   <button>Faça seu login</button>
+                                   <span>Ainda não possui cadastro?</span>
+                                   <Link to="/">Cadastre-se aqui</Link>
+                              </div>
                          </S.Account>
                          <Cart />
                     </S.MainContent>

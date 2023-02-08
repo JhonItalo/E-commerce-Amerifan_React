@@ -6,10 +6,16 @@ type props = {
      pokemon: any;
 };
 
-const InfoProducts = ({ pokemon }: props) => {
+const ProductsContent = ({ pokemon }: props) => {
      console.log(pokemon);
      return (
-          <>
+          <div
+               style={{
+                    background: "white",
+                    width: "100%",
+                    padding: "1rem 1rem 1rem 2rem ",
+               }}
+          >
                <S.Conteiner>
                     <ImageSelect pokemon={pokemon} />
                     <ProductsInfo pokemon={pokemon} />
@@ -39,22 +45,21 @@ const InfoProducts = ({ pokemon }: props) => {
                <S.TechnicalInformation>
                     <h3>Technical information:</h3>
 
-                    <table className="demo">
-                         <caption>Technical Info</caption>
+                    <table className="customTable">
                          <thead>
                               <tr>
-                                   <th>epsum</th>
-                                   <th>em lorem lor</th>
-                                   <th>eu lorem spspum loem</th>
-                                   <th>espp</th>
+                                   <th>Header 1</th>
+                                   <th>Header 2</th>
+                                   <th>Header 3</th>
+                                   <th>Header 4</th>
                               </tr>
                          </thead>
                          <tbody>
                               <tr>
-                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
-                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
-                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elit</td>
-                                   <td>Lorem ipsum dolor sit amet, consectetur adipiscing elitS</td>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
+                                   <td>Epsum</td>
                               </tr>
                               <tr>
                                    <td>Epsum</td>
@@ -77,8 +82,8 @@ const InfoProducts = ({ pokemon }: props) => {
                          </tbody>
                     </table>
                </S.TechnicalInformation>
-          </>
+          </div>
      );
 };
 
-export default InfoProducts;
+export default ProductsContent;

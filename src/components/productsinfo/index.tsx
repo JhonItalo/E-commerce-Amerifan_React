@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import * as S from "./styles";
-
-import AccessibleLinkName from "../AcessibleName";
 import AccessibleButtonName from "../AcessibleButtonName";
 
 type props = {

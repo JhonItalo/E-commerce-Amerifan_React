@@ -6,11 +6,11 @@ export const ConteinerPokemons = styled.div`
      padding: 1rem;
      position: relative;
      border-top: 1px solid rgb(230, 230, 230);
-
      .titleOrder {
           display: flex;
           margin-bottom: 2rem;
           justify-content: space-between;
+          align-items: center;
           select {
                padding: 0.2rem 0.5rem;
                display: flex;
@@ -24,4 +24,16 @@ export const ListPokemons = styled.div`
      display: flex;
      flex-wrap: wrap;
      gap: 3rem;
+     .controlParentStyle {
+          border: 1px solid rgb(200, 200, 200);
+          &:hover {
+               border: 1px solid grey;
+          }
+     }
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          gap: 2rem;
+     }
+     @media (max-width: 1440px) and (min-width: 1367px) {
+          justify-content: space-between;
+     }
 `;

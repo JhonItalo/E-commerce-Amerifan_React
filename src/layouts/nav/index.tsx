@@ -33,17 +33,18 @@ const Nav = () => {
                               <p>Eletrodomésticos</p>
                          </Link>
                     </S.Li>
+                    <S.Li active={pathname === "/moveis"}>
+                         <Link to="/moveis">
+                              <p>Movéis</p>
+                         </Link>
+                    </S.Li>
 
-                    <S.Li active={pathname === "/videotv"}>
+                    <S.Li active={pathname === "/tvevideo"}>
                          <Link to="/">
                               <p>Tv e vídeo</p>
                          </Link>
                     </S.Li>
-                    <S.Li active={pathname === "/moveis"}>
-                         <Link to="/">
-                              <p>Movéis</p>
-                         </Link>
-                    </S.Li>
+
                     <S.Li active={pathname === "/eletroportateis"}>
                          <Link to="/">
                               <p>EletroPortáteis</p>

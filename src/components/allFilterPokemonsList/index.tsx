@@ -1,27 +1,28 @@
 import { useContext } from "react";
 import * as S from "./styles";
-import Card from "../Card";
+import Card from "../card";
 import Loading from "../loading";
-import { DataProviderContext } from "../../contexts/DataProviderContext";
 import { FilterProviderContext, FiltercontextType } from "../../contexts/FilterContext";
+import { pokemonInfo } from "../../types/types";
+import { DataCategoryContext, DataCategoryType } from "../../contexts/DataCategoryProvider";
 
 const AllFilterPokemonsList = () => {
      console.log("list filter render");
-     const { data, isloading, error } = useContext(DataProviderContext);
+     const { data, isloading, error } = useContext<DataCategoryType>(DataCategoryContext);
      const { filterAtual } = useContext<FiltercontextType>(FilterProviderContext);
 
-     const type = data
-          ? data.filter((item: any) => {
+     const type: pokemonInfo[] = data
+          ? data.filter((item: pokemonInfo) => {
                  for (let i = 0; i < item.types.length; i++) {
-                      if (filterAtual.type.includes(item.types[i].type.name)) {
+                      if (filterAtual.type.includes(item.types[i])) {
                            return item.name;
                       }
                  }
             })
           : [];
 
-     const color = data
-          ? data.filter((item: any) => {
+     const color: pokemonInfo[] = data
+          ? data.filter((item: pokemonInfo) => {
                  if (filterAtual.color.includes(item.name)) {
                       return item.name;
                  }
@@ -30,21 +31,22 @@ const AllFilterPokemonsList = () => {
 
      const processingArrayFilter = () => {
           const filterConcats = type.concat(color);
-          const removeDuplicate: any[] = [];
+          const removeDuplicate: pokemonInfo[] = [];
 
-          filterConcats.forEach((element: any[]) => {
+          filterConcats.forEach((element) => {
                if (!removeDuplicate.includes(element)) {
                     removeDuplicate.push(element);
                }
           });
           return removeDuplicate;
      };
+
      const filtrados = processingArrayFilter();
 
      return (
           <S.ConteinerPokemons>
                <>
-                    {data && type.length === 0 && color.length === 0 && (
+                    {data && filterAtual.type === "" && filterAtual.color === "" && (
                          <>
                               <div className="titleOrder">
                                    <p style={{ color: "black" }}>{data.length} resultados encontrados</p>
@@ -57,14 +59,14 @@ const AllFilterPokemonsList = () => {
                               </div>
 
                               <S.ListPokemons>
-                                   {data.map((item: any) => (
+                                   {data.map((item: pokemonInfo) => (
                                         <Card key={item.id} pokemon={item} />
                                    ))}
                               </S.ListPokemons>
                          </>
                     )}
 
-                    {(type.length > 0 || color.length > 0) && (
+                    {(filterAtual.type != "" || filterAtual.color != "") && (
                          <>
                               <div className="titleOrder">
                                    <p style={{ color: "black" }}>{filtrados.length} resultados encontrados</p>
@@ -77,7 +79,7 @@ const AllFilterPokemonsList = () => {
                               </div>
 
                               <S.ListPokemons>
-                                   {filtrados.map((item: any) => (
+                                   {filtrados.map((item: pokemonInfo) => (
                                         <Card key={item.id} pokemon={item} />
                                    ))}
                               </S.ListPokemons>

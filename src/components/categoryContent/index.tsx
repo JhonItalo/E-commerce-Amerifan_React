@@ -10,7 +10,7 @@ type propsFilterAtual = {
      color: string;
 };
 
-const ProductsByCategory = () => {
+const CategoryContent = () => {
      const { pathname } = useLocation();
      const title = pathname.slice(1);
 
@@ -31,4 +31,4 @@ const ProductsByCategory = () => {
      );
 };
 
-export default ProductsByCategory;
+export default CategoryContent;

@@ -17,6 +17,14 @@ export const Conteiner = styled.section`
           font-size: 2rem;
           color: white;
      }
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          max-width: 1500px;
+          height: 500px;
+          padding: 1rem 2rem;
+     }
+     @media (max-width: 1440px) and (min-width: 1367px) {
+          padding: 1rem 2rem;
+     }
 `;
 export const ConteinerSlide = styled.div`
      width: 100%;
@@ -50,6 +58,9 @@ export const ConteinerSlide = styled.div`
      .previous {
           left: 2%;
      }
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          height: 430px;
+     }
 `;
 
 export const Slide = styled.div`
@@ -59,4 +70,10 @@ export const Slide = styled.div`
      gap: 3%;
      overflow-x: hidden;
      scroll-behavior: smooth;
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          gap: 60px;
+     }
+     @media (max-width: 1440px) and (min-width: 1367px) {
+          gap: 50px;
+     }
 `;

@@ -1,9 +1,13 @@
 import React from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 const MyCart = React.lazy(() => import("../pages/MyCart"));
 const Home = React.lazy(() => import("../pages/Home"));
 const Products = React.lazy(() => import("../pages/Products"));
-const Category = React.lazy(() => import("../pages/Category"));
+const Telefonia = React.lazy(() => import("../pages/Telefonia"));
+const Smartphones = React.lazy(() => import("../pages/Smartphones"));
+const Eletrodomesticos = React.lazy(() => import("../pages/Eletrodomesticos"));
+const Moveis = React.lazy(() => import("../pages/Moveis"));
+const Results = React.lazy(() => import("../pages/Results"));
 import CarrinhoContext from "../contexts/CartContext";
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
@@ -44,7 +48,7 @@ const Rotas = () => {
                                    path="/telefonia"
                                    element={
                                         <React.Suspense>
-                                             <Category />
+                                             <Telefonia />
                                         </React.Suspense>
                                    }
                               />
@@ -52,7 +56,7 @@ const Rotas = () => {
                                    path="/smartphones"
                                    element={
                                         <React.Suspense>
-                                             <Category />
+                                             <Smartphones />
                                         </React.Suspense>
                                    }
                               />
@@ -60,11 +64,26 @@ const Rotas = () => {
                                    path="/eletrodomesticos"
                                    element={
                                         <React.Suspense>
-                                             <Category />
+                                             <Eletrodomesticos />
                                         </React.Suspense>
                                    }
                               />
-                              <Route path="/teste" element={<p>sobre</p>} />
+                              <Route
+                                   path="/moveis"
+                                   element={
+                                        <React.Suspense>
+                                             <Moveis />
+                                        </React.Suspense>
+                                   }
+                              />
+                              <Route
+                                   path="/results/:params"
+                                   element={
+                                        <React.Suspense>
+                                             <Results />
+                                        </React.Suspense>
+                                   }
+                              />
                          </Routes>
                     </main>
                     <Footer />
