@@ -4,7 +4,7 @@ import * as S from "./styles";
 import { useContext } from "react";
 import { CartContext, contextType } from "../../contexts/CartContext";
 import { pokemonInfo } from "../../types/types";
-import { toast } from "react-toastify";
+//import { toast } from "react-toastify";
 
 type props = {
      pokemon: pokemonInfo | undefined;
@@ -35,7 +35,7 @@ const Card = ({ pokemon }: props) => {
                               className="addtocart"
                               onClick={() => {
                                    addToCart(pokemon.name, pokemon.image);
-                                   toast.success("Adicionado ao carrinho");
+                                  // toast.success("Adicionado ao carrinho");
                               }}
                          >
                               Add to Cart
