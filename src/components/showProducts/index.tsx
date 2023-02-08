@@ -1,10 +1,10 @@
 import { useContext, useRef } from "react";
 import * as S from "./styles";
-import Card from "../card";
 import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import Loading from "../loading";
 import { pokemonInfo } from "../../types/types";
 import { DataHomeContext, DataHomeType } from "../../contexts/DataHomeProvider";
+import Card from "../card";
 
 type props = {
      title: string;
