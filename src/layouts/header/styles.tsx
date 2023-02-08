@@ -49,7 +49,6 @@ export const MainContent = styled.div`
 `;
 export const Account = styled.div`
      position: relative;
-     background-color: red;
 
      a {
           display: flex;
