@@ -21,12 +21,13 @@ const CategoryContent = () => {
      return (
           <S.ProductsByCategory>
                <h2>{title}</h2>
-               <FilterProvider filterAtual={filterAtual} setFilterAtual={setFilterAtual}>
+
+               {/* <FilterProvider filterAtual={filterAtual} setFilterAtual={setFilterAtual}>
                     <S.Content>
                          <FilterSelect />
                          <AllFilterPokemonsList />
                     </S.Content>
-               </FilterProvider>
+     </FilterProvider>*/}
           </S.ProductsByCategory>
      );
 };

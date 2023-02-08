@@ -36,6 +36,7 @@ const ShowProducts = ({ title, data }: props) => {
                               <>
                                    <S.Slide ref={Carrosel}>
                                         {data.map((item: pokemonInfo, index) => (
+                                             // <Card key={item.id} pokemon={item} />
                                              <p key={index}>teste</p>
                                         ))}
                                    </S.Slide>
