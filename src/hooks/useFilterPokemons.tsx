@@ -1,10 +1,6 @@
 import { useState } from "react";
 import { pokemonSmall } from "../types/types";
 
-interface props {
-     dataPokemons: pokemonSmall[];
-}
-
 const UseFilterPokemons = () => {
      const [dataPokemons, setDataPokemons] = useState<pokemonSmall[]>([]);
      const [search, setSearch] = useState<string>("");
