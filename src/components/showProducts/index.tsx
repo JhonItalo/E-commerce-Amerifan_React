@@ -4,7 +4,7 @@ import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
 import Loading from "../loading";
 import { pokemonInfo } from "../../types/types";
 import { DataHomeContext, DataHomeType } from "../../contexts/DataHomeProvider";
-import Card from "../card";
+//import Card from "../card";
 
 type props = {
      title: string;
@@ -35,8 +35,8 @@ const ShowProducts = ({ title, data }: props) => {
                          {data && (
                               <>
                                    <S.Slide ref={Carrosel}>
-                                        {data.map((item: pokemonInfo) => (
-                                             <Card key={item.id} pokemon={item} />
+                                        {data.map((item: pokemonInfo, index) => (
+                                             <p key={index}>teste</p>
                                         ))}
                                    </S.Slide>
                                    <button className="next btn_slide" onClick={handleScrollright}>
