@@ -7,7 +7,8 @@ import Logo from "../../components/logo";
 import { HiOutlineUser } from "react-icons/hi";
 
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-import AccessibleName from "../../components/AcessibleName";
+
+import AccessibleButtonName from "../../components/AcessibleButtonName";
 
 const Header = () => {
      console.log("header render");
@@ -18,11 +19,11 @@ const Header = () => {
                     <div>
                          <Link to="https://www.linkedin.com/in/johnitalodev/" target="_blank">
                               <AiFillLinkedin />
-                              <AccessibleName name="linkedin" />
+                              <AccessibleButtonName name="linkedin" />
                          </Link>
                          <Link to="https://github.com/JhonItalo" target="_blank">
                               <AiFillGithub />
-                              <AccessibleName name="github" />
+                              <AccessibleButtonName name="github" />
                          </Link>
                     </div>
                </S.InitialPromotionSpan>
@@ -31,12 +32,12 @@ const Header = () => {
                          <Logo />
                          <Search />
                          <S.Account>
-                              <Link to="/telefonia">
+                              <div className="account">
                                    <HiOutlineUser />
                                    <p>
                                         <span>Entre ou Cadastre-se</span> <br /> para ver seus pedidos
                                    </p>
-                              </Link>
+                              </div>
                               <div className="modalLogin">
                                    <button>Faça seu login</button>
                                    <span>Ainda não possui cadastro?</span>

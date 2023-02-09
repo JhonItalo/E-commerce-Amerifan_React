@@ -7,6 +7,7 @@ export const Header = styled.header`
      flex-direction: column;
      @media (max-width: 1920px) and (min-width: 1441px) {
           height: 300px;
+          max-width: 1920px;
      }
 `;
 export const InitialPromotionSpan = styled.div`
@@ -50,7 +51,7 @@ export const MainContent = styled.div`
 export const Account = styled.div`
      position: relative;
 
-     a {
+     .account {
           display: flex;
           align-items: center;
           gap: 0.5rem;

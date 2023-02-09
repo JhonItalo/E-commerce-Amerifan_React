@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import useFirstRender from "../hooks/useFirstRender";
-import Loading from "../components/loading";
 import useResultsFetch from "../hooks/useResultsFetch";
 import ResultsContent from "../components/resultsContent";
 
@@ -26,18 +25,10 @@ const Results = () => {
      }, [params]);
 
      return (
-          <div
-               style={{
-                    minHeight: "150vh",
-                    background: "white",
-                    width: "100%",
-                    padding: "1rem 1rem 1rem 2rem ",
-               }}
-          >
-               {data && <ResultsContent data={data} input={params} />}
-               {isLoading && <Loading width="200px" height="200px" />}
+          <>
+               <ResultsContent data={data} isloading={isLoading} input={params} />
                {error && <p>Produto não existe</p>}
-          </div>
+          </>
      );
 };
 

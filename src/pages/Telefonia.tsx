@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import CategoryContent from "../components/categoryContent";
 import DataCategoryProvider from "../contexts/DataCategoryProvider";
-
 import useTelefoniaFetch from "../hooks/useTelefoniaFetch";
 
 const Telefonia = () => {

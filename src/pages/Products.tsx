@@ -27,8 +27,7 @@ const Products = () => {
 
      return (
           <>
-               {data && <ProductsContent pokemon={data} />}
-               {isLoading && <Loading width="200px" height="200px" />}
+               <ProductsContent data={data} isloading={isLoading} />
                {error && <p>Produto não existe</p>}
           </>
      );

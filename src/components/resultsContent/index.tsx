@@ -5,13 +5,15 @@ import { pokemonSmall } from "../../types/types";
 import { FiSearch } from "react-icons/fi";
 import { Link } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
+import Loading from "../loading";
 
 type props = {
      data: pokemonSmall[];
+     isloading: boolean;
      input: string;
 };
 
-const ResultsContent = ({ data, input }: props) => {
+const ResultsContent = ({ data, input, isloading }: props) => {
      const navigate = useNavigate();
      const [search, setSearch] = useState<string>(input);
      console.log(data, "conetnt");
@@ -49,19 +51,21 @@ const ResultsContent = ({ data, input }: props) => {
                               />
                          </button>
                     </div>
-
-                    {data && (
-                         <>
-                              <span className="foundresults"> Resultados encontrados: {data.length} </span>
-                              <div className="results">
-                                   {data.map((item: pokemonSmall) => (
-                                        <Link key={item.name} to={`/products/${item.name}`}>
-                                             <p key={item.name}>{item.name}</p>
-                                        </Link>
-                                   ))}
-                              </div>
-                         </>
-                    )}
+                    <div className="conteinerResults">
+                         {data && (
+                              <>
+                                   <span className="foundresults"> Resultados encontrados: {data.length} </span>
+                                   <div className="results">
+                                        {data.map((item: pokemonSmall) => (
+                                             <Link key={item.name} to={`/products/${item.name}`}>
+                                                  <p key={item.name}>{item.name}</p>
+                                             </Link>
+                                        ))}
+                                   </div>
+                              </>
+                         )}
+                         {isloading && <Loading width="150px" height="150px" />}
+                    </div>
                </S.inputResults>
           </S.Conteiner>
      );
