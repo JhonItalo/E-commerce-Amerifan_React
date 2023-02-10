@@ -15,7 +15,7 @@ const Eletrodomesticos = () => {
 
      return (
           <DataCategoryProvider data={data} isloading={isLoading} error={error}>
-               <CategoryContent />
+               <CategoryContent name="eletrodomesticos" />
           </DataCategoryProvider>
      );
 };

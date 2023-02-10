@@ -11,12 +11,13 @@ export const Conteiner = styled.div`
      height: 500px;
      display: flex;
      align-items: center;
-     gap: 5rem;
+     gap: 4rem;
 `;
 export const ButtonsSelect = styled.div`
      display: flex;
      flex-direction: column;
      gap: 1rem;
+
      button {
           position: relative;
      }
@@ -30,6 +31,7 @@ export const Button = styled.div<activeButton>`
 export const ConteinerImage = styled.div<activeImage>`
      height: 100%;
      padding: 2rem;
+
      background-color: ${({ active }) => {
           if (active === "2") {
                return "#ffe4c4";

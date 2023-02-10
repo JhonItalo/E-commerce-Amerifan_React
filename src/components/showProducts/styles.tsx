@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const Conteiner = styled.section`
-     background-image: url("/assets/background/SPbackground.webp");
      width: 90%;
      height: 435px;
      margin: 0 auto;
@@ -10,9 +9,10 @@ export const Conteiner = styled.section`
      flex-direction: column;
      gap: 1rem;
      border-radius: 10px;
-     background-color: white;
      margin-bottom: 3rem;
      position: relative;
+     background-color: white;
+     background-image: url("/assets/background/SPbackground.webp");
      h2 {
           font-size: 2rem;
           color: white;

@@ -14,7 +14,7 @@ const Telefonia = () => {
 
      return (
           <DataCategoryProvider data={data} isloading={isLoading} error={error}>
-               <CategoryContent />
+               <CategoryContent name="telefonia" />
           </DataCategoryProvider>
      );
 };

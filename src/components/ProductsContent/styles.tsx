@@ -2,22 +2,19 @@ import styled from "styled-components";
 
 export const Conteiner = styled.div`
      background: white;
-     width: "100%";
-     padding: "1rem 1rem 1rem 2rem ";
+     width: 100%;
+     padding: 1rem 1rem 1rem 2rem;
 
      @media (max-width: 1920px) and (min-width: 1441px) {
           padding: 4rem;
-          // background-color: red;
      }
 `;
 
 export const MainConteiner = styled.div`
      width: 100%;
      padding: 1rem;
-     border-radius: 5px;
      display: flex;
      gap: 2rem;
-
      background-color: white;
 `;
 export const Describe = styled.section`
