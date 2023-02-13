@@ -4,24 +4,21 @@ import FilterSelect from "../filterSelect";
 import AllFilterPokemonsList from "../allFilterPokemonsList";
 import FilterProvider from "../../contexts/FilterContext";
 
-type propsFilterAtual = {
-     type: string;
-     color: string;
-};
-
 type props = {
      name: string;
 };
 
 const CategoryContent = ({ name }: props) => {
-     const [filterAtual, setFilterAtual] = useState<propsFilterAtual>({ type: "", color: "" });
+     const [order, setOrder] = useState<string>("default");
+     const [type, setType] = useState<string>("");
+     const [color, setColor] = useState<string>("");
 
      console.log("Produtos by category render");
 
      return (
           <S.ProductsByCategory>
                <h2>{name}</h2>
-               <FilterProvider filterAtual={filterAtual} setFilterAtual={setFilterAtual}>
+               <FilterProvider order={order} type={type} color={color} setOrder={setOrder} setType={setType} setColor={setColor}>
                     <S.Content>
                          <FilterSelect />
                          <AllFilterPokemonsList />
