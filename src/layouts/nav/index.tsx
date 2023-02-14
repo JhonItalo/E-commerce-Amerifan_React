@@ -40,7 +40,7 @@ const Nav = () => {
                     </S.Li>
 
                     <S.Li active={pathname === "/tvevideo"}>
-                         <Link to="/">
+                         <Link to="/tvevideo">
                               <p>Tv e vídeo</p>
                          </Link>
                     </S.Li>

@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import * as S from "./styles";
 import Card from "../card2";
 import Loading from "../loading";
@@ -9,55 +9,57 @@ import { DataCategoryContext, DataCategoryType } from "../../contexts/DataCatego
 const AllFilterPokemonsList = () => {
      console.log("list filter render");
      const { data, isloading, error } = useContext<DataCategoryType>(DataCategoryContext);
-     const { type, color, order, setOrder } = useContext<FiltercontextType>(FilterProviderContext);
-     console.log("order", order);
-     let ListOrder: pokemonInfo[] | undefined = data;
+     const { type, color } = useContext<FiltercontextType>(FilterProviderContext);
+     const [select, setSelect] = useState<string>("default");
 
-     const verifyOrderList = () => {
+     const selectOrder = (select: string) => {
           if (data) {
-               if (order === "default") {
+               if (select === "default") {
                     return data;
-               } else if (order === "name") {
-                    return data.sort((a, b) => {
+               } else if (select === "name") {
+                    const nameOrder = data.slice().sort((a, b) => {
                          if (a.name < b.name) {
                               return -1;
                          } else {
                               return 0;
                          }
                     });
-               } else if (order === "type") {
-                    return data.sort((a, b) => {
+                    return nameOrder;
+               } else if (select === "type") {
+                    const typeOrder = data.slice().sort((a, b) => {
                          if (a.types[0] < b.types[0]) {
                               return -1;
                          } else {
                               return 0;
                          }
                     });
+                    return typeOrder;
                }
           } else {
                return undefined;
           }
      };
+     const order: pokemonInfo[] | undefined = selectOrder(select);
 
-     ListOrder = verifyOrderList();
+     const filterType: pokemonInfo[] =
+          order && type != ""
+               ? order.filter((item: pokemonInfo) => {
+                      for (let i = 0; i < item.types.length; i++) {
+                           if (type.includes(item.types[i])) {
+                                return item.name;
+                           }
+                      }
+                 })
+               : [];
 
-     const filterType: pokemonInfo[] = ListOrder
-          ? ListOrder.filter((item: pokemonInfo) => {
-                 for (let i = 0; i < item.types.length; i++) {
-                      if (type.includes(item.types[i])) {
+     const filterColor: pokemonInfo[] =
+          order && color != ""
+               ? order.filter((item: pokemonInfo) => {
+                      if (color.includes(item.name)) {
                            return item.name;
                       }
-                 }
-            })
-          : [];
-
-     const filterColor: pokemonInfo[] = ListOrder
-          ? ListOrder.filter((item: pokemonInfo) => {
-                 if (color.includes(item.name)) {
-                      return item.name;
-                 }
-            })
-          : [];
+                 })
+               : [];
 
      const processingArrayFilter = () => {
           const filterConcats = filterType.concat(filterColor);
@@ -76,11 +78,14 @@ const AllFilterPokemonsList = () => {
      return (
           <S.ConteinerPokemons>
                <>
-                    {ListOrder && type === "" && color === "" && (
+                    {order && type === "" && color === "" && (
                          <>
                               <div className="titleOrder">
-                                   <p style={{ color: "black" }}>{ListOrder.length} resultados encontrados</p>
-                                   <select defaultValue="default" onChange={(e) => setOrder(e.currentTarget.value)}>
+                                   <p style={{ color: "black" }}>{order.length} resultados encontrados</p>
+                                   <select
+                                        value={select}
+                                        onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setSelect(e.currentTarget.value)}
+                                   >
                                         <option value="default">Creation date</option>
                                         <option value="name">Name</option>
                                         <option value="type">Type</option>
@@ -88,7 +93,7 @@ const AllFilterPokemonsList = () => {
                               </div>
 
                               <S.ListPokemons>
-                                   {ListOrder.map((item: pokemonInfo) => (
+                                   {order.map((item: pokemonInfo) => (
                                         <Card key={item.id} pokemon={item} />
                                    ))}
                               </S.ListPokemons>
@@ -99,11 +104,13 @@ const AllFilterPokemonsList = () => {
                          <>
                               <div className="titleOrder">
                                    <p style={{ color: "black" }}>{filtrados.length} resultados encontrados</p>
-                                   <select defaultValue="relevãncia">
-                                        <option value="relevância">relevância</option>
-                                        <option value="mais vendidos">mais vendidos</option>
-                                        <option value="maior preço">maior preço</option>
-                                        <option value="menor preço">menor preço</option>
+                                   <select
+                                        value={select}
+                                        onChange={(e: React.ChangeEvent<HTMLSelectElement>) => setSelect(e.currentTarget.value)}
+                                   >
+                                        <option value="default">Creation date</option>
+                                        <option value="name">Name</option>
+                                        <option value="type">Type</option>
                                    </select>
                               </div>
 

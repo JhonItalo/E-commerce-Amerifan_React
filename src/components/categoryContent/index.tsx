@@ -1,15 +1,16 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import * as S from "./styles";
 import FilterSelect from "../filterSelect";
 import AllFilterPokemonsList from "../allFilterPokemonsList";
 import FilterProvider from "../../contexts/FilterContext";
+import { pokemonInfo } from "../../types/types";
+import { DataCategoryContext, DataCategoryType } from "../../contexts/DataCategoryProvider";
 
 type props = {
      name: string;
 };
 
 const CategoryContent = ({ name }: props) => {
-     const [order, setOrder] = useState<string>("default");
      const [type, setType] = useState<string>("");
      const [color, setColor] = useState<string>("");
 
@@ -18,7 +19,7 @@ const CategoryContent = ({ name }: props) => {
      return (
           <S.ProductsByCategory>
                <h2>{name}</h2>
-               <FilterProvider order={order} type={type} color={color} setOrder={setOrder} setType={setType} setColor={setColor}>
+               <FilterProvider type={type} color={color} setType={setType} setColor={setColor}>
                     <S.Content>
                          <FilterSelect />
                          <AllFilterPokemonsList />

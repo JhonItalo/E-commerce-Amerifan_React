@@ -7,6 +7,7 @@ const Telefonia = React.lazy(() => import("../pages/Telefonia"));
 const Smartphones = React.lazy(() => import("../pages/Smartphones"));
 const Eletrodomesticos = React.lazy(() => import("../pages/Eletrodomesticos"));
 const Moveis = React.lazy(() => import("../pages/Moveis"));
+const TveVideo = React.lazy(() => import("../pages/Tvevideo"));
 const Results = React.lazy(() => import("../pages/Results"));
 import CarrinhoContext from "../contexts/CartContext";
 import Footer from "../layouts/footer";
@@ -73,6 +74,14 @@ const Rotas = () => {
                                    element={
                                         <React.Suspense>
                                              <Moveis />
+                                        </React.Suspense>
+                                   }
+                              />
+                              <Route
+                                   path="/tvevideo"
+                                   element={
+                                        <React.Suspense>
+                                             <TveVideo />
                                         </React.Suspense>
                                    }
                               />
