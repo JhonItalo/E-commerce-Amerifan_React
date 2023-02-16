@@ -1,25 +1,14 @@
 import React, { createContext, useState, useEffect } from "react";
 import useFirstRender from "../hooks/useFirstRender";
+import { storageType } from "../types/types";
 
-export type storageType = {
-     name: string;
-     image: string;
-     count: number;
-};
-
-export type contextType = {
+export type contextCartType = {
      storage: storageType[];
      setStorage: React.Dispatch<React.SetStateAction<storageType[]>>;
      addToCart: (name: string, image: string) => void;
      removeToCart: (name: string) => void;
 };
-const defaultValue = {
-     storage: [],
-     setStorage: () => {},
-     addToCart: () => {},
-     removeToCart: () => {},
-};
-export const CartContext = createContext<contextType>(defaultValue);
+export const CartContext = createContext<contextCartType>({} as contextCartType);
 
 interface props {
      children: React.ReactNode;
@@ -28,31 +17,35 @@ const CarrinhoContext = ({ children }: props) => {
      console.log("coxtent render");
      const [storage, setStorage] = useState<storageType[]>([]);
      console.log(storage, "storage");
+
      const copyStorage: storageType[] = storage.concat();
      const firstRender = useFirstRender();
 
-     const writingNewValueLocalStorage = () => {
-          localStorage.setItem("carrinho", JSON.stringify(storage));
-     };
-
      useEffect(() => {
           if (firstRender === true) {
-               const InicitializeLocalStorage = () => {
-                    const localStorageString = localStorage.getItem("carrinho");
-                    if (typeof localStorageString != typeof "string") {
-                         localStorage.setItem("carrinho", "[]");
-                         return [];
-                    } else {
-                         const localStorageArray = JSON.parse(localStorageString!);
-                         return localStorageArray;
-                    }
-               };
-               setStorage(InicitializeLocalStorage);
+               const carrinho = getCartLocalStorage();
+               if (!carrinho) {
+                    setCartLocalStorage([]);
+                    setStorage([]);
+               } else {
+                    setStorage(carrinho);
+               }
           } else {
-               writingNewValueLocalStorage();
+               setCartLocalStorage(storage);
           }
      }, [storage]);
 
+     const setCartLocalStorage = (storage: storageType[]) => {
+          localStorage.setItem("carrinho", JSON.stringify(storage));
+     };
+     const getCartLocalStorage = () => {
+          const storage = localStorage.getItem("carrinho");
+          if (storage) {
+               return JSON.parse(storage);
+          } else {
+               return null;
+          }
+     };
      const AddNewItem = (name: string, image: string) => {
           copyStorage.push({ name: name, image: image, count: 1 });
           setStorage(copyStorage);

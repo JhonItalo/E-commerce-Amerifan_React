@@ -1,17 +1,10 @@
 import styled from "styled-components";
 
 export const Header = styled.header`
-     height: 225px;
      background-color: #000336;
-     display: flex;
-     flex-direction: column;
-     @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 300px;
-          max-width: 1920px;
-     }
 `;
 export const InitialPromotionSpan = styled.div`
-     height: 20%;
+     height: 45px;
      background-color: black;
      color: white;
      display: flex;
@@ -32,21 +25,20 @@ export const InitialPromotionSpan = styled.div`
 `;
 export const Content = styled.div`
      width: 100%;
-     height: 55%;
-     padding: 0 5rem;
+     height: 124px;
+     padding-top: 1rem;
      display: flex;
+     justify-content: center;
      align-items: center;
+     background-color: #000336;
 `;
 export const MainContent = styled.div`
      flex: none;
-     width: 100%;
-     height: 55%;
-     margin-top: 2rem;
-     padding-bottom: 1rem;
+     width: 88%;
+     height: 50%;
      display: flex;
      justify-content: space-between;
      align-items: center;
-     background-color: #000336;
 `;
 export const Account = styled.div`
      position: relative;
@@ -111,11 +103,15 @@ export const Account = styled.div`
                text-decoration: underline;
                color: red;
           }
-          @media (max-width: 1920px) and (min-width: 1441px) {
+     }
+`;
+/*
+@media (max-width: 1920px) and (min-width: 1441px) {
                height: 200px;
           }
           @media (max-width: 1440px) and (min-width: 1367px) {
                height: 160px;
           }
-     }
-`;
+
+
+*/

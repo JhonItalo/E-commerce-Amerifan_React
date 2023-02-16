@@ -20,3 +20,8 @@ export type DataProviderType = {
      isloading: boolean | undefined;
      error: boolean | unknown | undefined;
 };
+
+export interface user {
+     email?: string;
+     token?: string;
+}

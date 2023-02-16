@@ -1,18 +1,13 @@
 import React, { createContext } from "react";
 import { pokemonInfo } from "../types/types";
 
-
 export type DataCategoryType = {
      data: pokemonInfo[] | undefined;
      isloading: boolean | undefined;
      error: boolean | undefined | unknown;
 };
-const defaultValue = {
-     data: undefined,
-     isloading: undefined,
-     error: undefined,
-};
-export const DataCategoryContext = createContext<DataCategoryType>(defaultValue);
+
+export const DataCategoryContext = createContext<DataCategoryType>({} as DataCategoryType);
 
 interface props {
      data: pokemonInfo[] | undefined;

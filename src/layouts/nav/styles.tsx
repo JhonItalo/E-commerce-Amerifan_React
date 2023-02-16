@@ -4,8 +4,9 @@ interface propsLi {
 }
 
 export const Nav = styled.nav`
-     height: 25%;
-     padding: 0 5rem;
+     width: 100%;
+     height: 55px;
+     padding: 0 6%;
      position: relative;
      background-color: #01022a;
      ul {

@@ -11,12 +11,8 @@ export type DataHomeType = {
      isloading: boolean | undefined;
      error: boolean | undefined | unknown;
 };
-const defaultValue = {
-     data: undefined,
-     isloading: undefined,
-     error: undefined,
-};
-export const DataHomeContext = createContext<DataHomeType>(defaultValue);
+
+export const DataHomeContext = createContext<DataHomeType>({} as DataHomeType);
 
 interface props {
      data: dataType | undefined;

@@ -9,9 +9,7 @@ const GlobalStyle = createGlobalStyle`
  }
 
  body{
-  background-image: url("/assets/background/Background.webp");
-  background-repeat: repeat;
-  background-size: cover;
+  background-color: white;
   overflow-x: hidden;
  }
  ul{

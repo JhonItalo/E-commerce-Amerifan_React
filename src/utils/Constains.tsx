@@ -1,4 +1,5 @@
 export const URL = "https://pokeapi.co/api/v2/pokemon/";
+export const URLAuth = "https://reqres.in/api/";
 
 export const colorTypes: { [index: string]: string } = {
      grass: "green",

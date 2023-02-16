@@ -1,10 +1,11 @@
 import React, { useContext } from "react";
-import { CartContext, storageType } from "../../contexts/CartContext";
+import { CartContext, contextCartType } from "../../contexts/CartContext";
 import * as S from "./styles";
 import { CgMathMinus, CgMathPlus } from "react-icons/cg";
+import { storageType } from "../../types/types";
 
 const ItemCart = ({ name, image, count }: storageType) => {
-     const { storage, setStorage, removeToCart } = useContext(CartContext);
+     const { storage, setStorage, removeToCart } = useContext<contextCartType>(CartContext);
      const copyStorage = storage.concat();
 
      const removeQuantityItem = () => {

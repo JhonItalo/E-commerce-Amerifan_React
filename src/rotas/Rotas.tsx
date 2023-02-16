@@ -9,99 +9,129 @@ const Eletrodomesticos = React.lazy(() => import("../pages/Eletrodomesticos"));
 const Moveis = React.lazy(() => import("../pages/Moveis"));
 const TveVideo = React.lazy(() => import("../pages/Tvevideo"));
 const Results = React.lazy(() => import("../pages/Results"));
-import CarrinhoContext from "../contexts/CartContext";
+const Login = React.lazy(() => import("../pages/Login"));
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
+import Nav from "../layouts/nav";
 
 const Rotas = () => {
      return (
           <BrowserRouter>
-               <CarrinhoContext>
-                    <Header />
-                    <main style={{ minHeight: "70vh" }}>
-                         <Routes>
-                              <Route
-                                   path="/"
-                                   index
-                                   element={
+               <Header />
+               <Nav />
+               <main>
+                    <Routes>
+                         <Route
+                              path="/"
+                              index
+                              element={
+                                   <main
+                                        style={{
+                                             minHeight: "70vh",
+                                             backgroundImage: "url('/assets/background/Background.webp')",
+                                             backgroundRepeat: "repeat",
+                                             backgroundSize: "cover",
+                                        }}
+                                   >
                                         <React.Suspense>
                                              <Home />
                                         </React.Suspense>
-                                   }
-                              />
-                              <Route
-                                   path="/products/:params"
-                                   element={
+                                   </main>
+                              }
+                         />
+                         <Route
+                              path="/login"
+                              element={
+                                   <React.Suspense>
+                                        <Login />
+                                   </React.Suspense>
+                              }
+                         />
+                         <Route
+                              path="/products/:params"
+                              element={
+                                   <main style={{ minHeight: "70vh" }}>
                                         <React.Suspense>
                                              <Products />
                                         </React.Suspense>
-                                   }
-                              />
-                              <Route
-                                   path="/cart"
-                                   element={
+                                   </main>
+                              }
+                         />
+                         <Route
+                              path="/cart"
+                              element={
+                                   <main style={{ minHeight: "70vh" }}>
                                         <React.Suspense>
                                              <MyCart />
                                         </React.Suspense>
-                                   }
-                              />
-                              <Route
-                                   path="/telefonia"
-                                   element={
+                                   </main>
+                              }
+                         />
+                         <Route
+                              path="/telefonia"
+                              element={
+                                   <main style={{ minHeight: "70vh" }}>
                                         <React.Suspense>
                                              <Telefonia />
                                         </React.Suspense>
-                                   }
-                              />
-                              <Route
-                                   path="/smartphones"
-                                   element={
+                                   </main>
+                              }
+                         />
+                         <Route
+                              path="/smartphones"
+                              element={
+                                   <main style={{ minHeight: "70vh" }}>
                                         <React.Suspense>
                                              <Smartphones />
                                         </React.Suspense>
-                                   }
-                              />
-                              <Route
-                                   path="/eletrodomesticos"
-                                   element={
+                                   </main>
+                              }
+                         />
+                         <Route
+                              path="/eletrodomesticos"
+                              element={
+                                   <main style={{ minHeight: "70vh" }}>
                                         <React.Suspense>
                                              <Eletrodomesticos />
                                         </React.Suspense>
-                                   }
-                              />
-                              <Route
-                                   path="/moveis"
-                                   element={
+                                   </main>
+                              }
+                         />
+                         <Route
+                              path="/moveis"
+                              element={
+                                   <main style={{ minHeight: "70vh" }}>
                                         <React.Suspense>
                                              <Moveis />
                                         </React.Suspense>
-                                   }
-                              />
-                              <Route
-                                   path="/tvevideo"
-                                   element={
+                                   </main>
+                              }
+                         />
+                         <Route
+                              path="/tvevideo"
+                              element={
+                                   <main style={{ minHeight: "70vh" }}>
                                         <React.Suspense>
                                              <TveVideo />
                                         </React.Suspense>
-                                   }
-                              />
-                              <Route
-                                   path="/results/:params"
-                                   element={
+                                   </main>
+                              }
+                         />
+                         <Route
+                              path="/results/:params"
+                              element={
+                                   <main style={{ minHeight: "70vh" }}>
                                         <React.Suspense>
                                              <Results />
                                         </React.Suspense>
-                                   }
-                              />
-                         </Routes>
-                    </main>
-                    <Footer />
-               </CarrinhoContext>
+                                   </main>
+                              }
+                         />
+                    </Routes>
+               </main>
+               <Footer />
           </BrowserRouter>
      );
 };
 
 export default Rotas;
-/*   
-
-*/

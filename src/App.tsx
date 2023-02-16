@@ -4,6 +4,8 @@ import Theme from "./styles/Themes";
 import { QueryClient, QueryClientProvider } from "react-query";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { AuthUserProvider } from "./contexts/AuthUser";
+import CarrinhoContext from "./contexts/CartContext";
 
 const queryClient = new QueryClient();
 
@@ -14,7 +16,11 @@ function App() {
                     <GlobalStyle />
                     <ToastContainer />
                     <QueryClientProvider client={queryClient}>
-                         <Rotas />
+                         <AuthUserProvider>
+                              <CarrinhoContext>
+                                   <Rotas />
+                              </CarrinhoContext>
+                         </AuthUserProvider>
                     </QueryClientProvider>
                </Theme>
           </>

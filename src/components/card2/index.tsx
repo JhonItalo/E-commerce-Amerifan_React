@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import AccessibleName from "../AcessibleName";
 import * as S from "./styles";
 import { useContext } from "react";
-import { CartContext, contextType } from "../../contexts/CartContext";
+import { CartContext, contextCartType } from "../../contexts/CartContext";
 import { pokemonInfo } from "../../types/types";
 import { toast } from "react-toastify";
 
@@ -11,7 +11,7 @@ type props = {
 };
 
 const Card = ({ pokemon }: props) => {
-     const { addToCart } = useContext<contextType>(CartContext);
+     const { addToCart } = useContext<contextCartType>(CartContext);
      return (
           <S.Conteiner style={{ flex: "none" }} className="controlParentStyle">
                {pokemon && (
