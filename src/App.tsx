@@ -6,6 +6,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AuthUserProvider } from "./contexts/AuthUser";
 import CarrinhoContext from "./contexts/CartContext";
+import RedirectLogin from "./contexts/RedirectLogin";
 
 const queryClient = new QueryClient();
 
@@ -18,7 +19,9 @@ function App() {
                     <QueryClientProvider client={queryClient}>
                          <AuthUserProvider>
                               <CarrinhoContext>
-                                   <Rotas />
+                                   <RedirectLogin>
+                                        <Rotas />
+                                   </RedirectLogin>
                               </CarrinhoContext>
                          </AuthUserProvider>
                     </QueryClientProvider>

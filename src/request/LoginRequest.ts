@@ -23,10 +23,10 @@ export const LoginRequest = async (email: string, password: string)=>{
         headers: {
         'Content-Type': 'application/json',
         },
-        body: JSON.stringify({email, password}),
+        body: JSON.stringify({email: email, password: password}),
         };
 
-    const request = await fetch(`${URLAuth}/login`, options).then(response=> response.json()).then(data=> data).catch(()=> null)
+    const request = await fetch(`${URLAuth}login`, options).then(response=> response.json()).then(data=> data).catch(()=> null)
     return request
        
 }

@@ -3,7 +3,7 @@ import { LoginRequest, setUserLocalStorage, getUserLocalStorage } from "../reque
 import { user } from "../types/types";
 
 export interface contextAuthUser extends user {
-     authentication: (email: string, password: string) => Promise<void>;
+     authentication: (email: string, password: string) => Promise<boolean>;
      logout: () => void;
 }
 export const AuthUserContext = createContext<contextAuthUser>({} as contextAuthUser);
@@ -13,6 +13,8 @@ type props = {
 };
 export const AuthUserProvider = ({ children }: props) => {
      const [user, setUser] = useState<user | null>(null);
+     console.log("auth context");
+     console.log(user, "user");
 
      useEffect(() => {
           const user = getUserLocalStorage();
@@ -22,10 +24,15 @@ export const AuthUserProvider = ({ children }: props) => {
      }, []);
 
      const authentication = async (email: string, password: string) => {
-          const response = await LoginRequest(email, password);
-          const payload = { token: response, email };
-          setUserLocalStorage(payload);
-          setUser(payload);
+          const { token } = await LoginRequest(email, password);
+          if (token) {
+               const payload = { token: token, email };
+               setUserLocalStorage(payload);
+               setUser(payload);
+               return true
+          }
+          return false
+
      };
 
      const logout = async () => {

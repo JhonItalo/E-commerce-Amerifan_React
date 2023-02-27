@@ -11,7 +11,7 @@ const Footer = () => {
      const { pathname } = useLocation();
      return (
           <>
-               {pathname != "/login" && (
+               {pathname != "/login" && pathname != "/register" && (
                     <S.Footer>
                          <S.ItemComposto>
                               <div>

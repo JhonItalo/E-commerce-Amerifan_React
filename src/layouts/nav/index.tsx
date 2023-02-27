@@ -10,7 +10,7 @@ const Nav = () => {
      const { pathname } = useLocation();
      return (
           <>
-               {pathname != "/login" && (
+               {pathname != "/login" && pathname != "/register" && (
                     <S.Nav>
                          <ul>
                               <S.Departments>

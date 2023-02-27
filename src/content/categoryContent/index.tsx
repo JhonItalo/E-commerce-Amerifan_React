@@ -1,10 +1,8 @@
-import React, { useContext, useState } from "react";
+import React, { useState } from "react";
 import * as S from "./styles";
-import FilterSelect from "../filterSelect";
-import AllFilterPokemonsList from "../allFilterPokemonsList";
+import FilterSelect from "../../components/filterSelect";
+import AllFilterPokemonsList from "../../components/allFilterPokemonsList";
 import FilterProvider from "../../contexts/FilterContext";
-import { pokemonInfo } from "../../types/types";
-import { DataCategoryContext, DataCategoryType } from "../../contexts/DataCategoryProvider";
 
 type props = {
      name: string;

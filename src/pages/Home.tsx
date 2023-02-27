@@ -20,7 +20,6 @@ const Home = () => {
           <>
                <SlideCategorys />
                <PromotionSpan />
-               <BannerMain />
                <DataHomeProvider data={data} isloading={isLoading} error={error}>
                     <div className="sections">
                          <ShowProducts title="Best Seller" data={data && data.bestSeller} />
@@ -33,3 +32,4 @@ const Home = () => {
 };
 
 export default Home;
+/*  <BannerMain />*/

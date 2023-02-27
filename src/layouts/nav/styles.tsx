@@ -5,7 +5,7 @@ interface propsLi {
 
 export const Nav = styled.nav`
      width: 100%;
-     height: 55px;
+     height: 45px;
      padding: 0 6%;
      position: relative;
      background-color: #01022a;
@@ -39,7 +39,7 @@ export const Departments = styled.li`
      gap: 0.7rem;
      cursor: default;
      p {
-          font-size: 1rem;
+          font-size: 0.8rem;
      }
      .icone_menu {
           font-size: 1.5rem;

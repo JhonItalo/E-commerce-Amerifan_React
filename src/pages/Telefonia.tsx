@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import CategoryContent from "../components/categoryContent";
+import CategoryContent from "../content/categoryContent";
 import DataCategoryProvider from "../contexts/DataCategoryProvider";
 import useTelefoniaFetch from "../hooks/useTelefoniaFetch";
 

@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import PrivateRoute from "../components/privateRoute";
 const MyCart = React.lazy(() => import("../pages/MyCart"));
 const Home = React.lazy(() => import("../pages/Home"));
 const Products = React.lazy(() => import("../pages/Products"));
@@ -10,6 +11,8 @@ const Moveis = React.lazy(() => import("../pages/Moveis"));
 const TveVideo = React.lazy(() => import("../pages/Tvevideo"));
 const Results = React.lazy(() => import("../pages/Results"));
 const Login = React.lazy(() => import("../pages/Login"));
+const Register = React.lazy(() => import("../pages/Register"));
+
 import Footer from "../layouts/footer";
 import Header from "../layouts/header";
 import Nav from "../layouts/nav";
@@ -48,6 +51,14 @@ const Rotas = () => {
                               }
                          />
                          <Route
+                              path="/register"
+                              element={
+                                   <React.Suspense>
+                                        <Register />
+                                   </React.Suspense>
+                              }
+                         />
+                         <Route
                               path="/products/:params"
                               element={
                                    <main style={{ minHeight: "70vh" }}>
@@ -60,11 +71,13 @@ const Rotas = () => {
                          <Route
                               path="/cart"
                               element={
-                                   <main style={{ minHeight: "70vh" }}>
-                                        <React.Suspense>
-                                             <MyCart />
-                                        </React.Suspense>
-                                   </main>
+                                   <PrivateRoute redirect="/cart">
+                                        <main style={{ minHeight: "70vh" }}>
+                                             <React.Suspense>
+                                                  <MyCart />
+                                             </React.Suspense>
+                                        </main>
+                                   </PrivateRoute>
                               }
                          />
                          <Route
