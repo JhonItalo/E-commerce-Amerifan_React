@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import useSmartphonesFetch from "../hooks/useSmartphonesFetch";
-import CategoryContent from "../content/categoryContent";
+import CategoryContent from "../components/categoryContent";
 import DataCategoryProvider from "../contexts/DataCategoryProvider";
 
 const Smartphones = () => {

@@ -1,7 +1,7 @@
-import ImageSelect from "../../components/imageSelect";
-import ProductsInfo from "../../components/productsinfo";
+import ImageSelect from "../imageSelect";
+import ProductsInfo from "../productsinfo";
 import * as S from "./styles";
-import Loading from "../../components/loading";
+import Loading from "../loading";
 
 type props = {
      data: any | undefined;

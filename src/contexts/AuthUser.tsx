@@ -5,6 +5,7 @@ import { user } from "../types/types";
 export interface contextAuthUser extends user {
      authentication: (email: string, password: string) => Promise<boolean>;
      logout: () => void;
+     simulateRegister: (email: string, token: string) => void;
 }
 export const AuthUserContext = createContext<contextAuthUser>({} as contextAuthUser);
 
@@ -29,10 +30,9 @@ export const AuthUserProvider = ({ children }: props) => {
                const payload = { token: token, email };
                setUserLocalStorage(payload);
                setUser(payload);
-               return true
+               return true;
           }
-          return false
-
+          return false;
      };
 
      const logout = async () => {
@@ -40,5 +40,15 @@ export const AuthUserProvider = ({ children }: props) => {
           setUser(null);
      };
 
-     return <AuthUserContext.Provider value={{ ...user, authentication, logout }}>{children}</AuthUserContext.Provider>;
+     const simulateRegister = async (email: string, token: string) => {
+          const payload = { token: token, email: email };
+          setUserLocalStorage(payload);
+          setUser(payload);
+     };
+
+     return (
+          <AuthUserContext.Provider value={{ ...user, authentication, logout, simulateRegister }}>
+               {children}
+          </AuthUserContext.Provider>
+     );
 };

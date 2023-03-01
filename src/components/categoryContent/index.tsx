@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./styles";
-import FilterSelect from "../../components/filterSelect";
-import AllFilterPokemonsList from "../../components/allFilterPokemonsList";
+import FilterSelect from "../filterSelect";
+import AllFilterPokemonsList from "../allFilterPokemonsList";
 import FilterProvider from "../../contexts/FilterContext";
 
 type props = {

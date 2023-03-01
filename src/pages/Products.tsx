@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import useProductsFetch from "../hooks/useProductsFetch";
 import useFirstRender from "../hooks/useFirstRender";
 import Loading from "../components/loading";
-import ProductsContent from "../content/ProductsContent";
+import ProductsContent from "../components/ProductsContent";
 
 type Params = {
      params: string;

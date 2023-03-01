@@ -1,4 +1,4 @@
-import CartContent from "../content/cartContent";
+import CartContent from "../components/cartContent";
 
 const MyCart = () => {
      return <CartContent />;

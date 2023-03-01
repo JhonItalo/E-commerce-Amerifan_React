@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import CategoryContent from "../content/categoryContent";
+import CategoryContent from "../components/categoryContent";
 import DataCategoryProvider from "../contexts/DataCategoryProvider";
 import useTveVideoFetch from "../hooks/useTveVideoFetch";
 
