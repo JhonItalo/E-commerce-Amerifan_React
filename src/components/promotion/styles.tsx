@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Conteiner = styled.div`
      width: 100%;
-     height: 40px;
+     height: 35px;
      background-color: #162258;
      position: relative;
      overflow: hidden;
-     font-size: 1.5rem;
+     font-size: 1.3rem;
      color: white;
      display: flex;
      a {

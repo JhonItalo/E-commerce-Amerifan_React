@@ -31,8 +31,8 @@ export const ConteinerSlide = styled.div`
      height: 350px;
      position: relative;
      .btn_slide {
-          background-color: white;
-          padding: 0.2rem;
+          background-color: rgba(255, 255, 255, 0.8);
+          padding: 1rem;
           border-radius: 50%;
           font-size: 1.5rem;
           display: flex;
@@ -53,10 +53,10 @@ export const ConteinerSlide = styled.div`
           }
      }
      .next {
-          right: 2%;
+          right: -3%;
      }
      .previous {
-          left: 2%;
+          left: -3%;
      }
      @media (max-width: 1920px) and (min-width: 1441px) {
           height: 430px;

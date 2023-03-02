@@ -1,6 +1,6 @@
 import { useContext, useRef } from "react";
 import * as S from "./styles";
-import { BiRightArrow, BiLeftArrow } from "react-icons/bi";
+import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
 import Loading from "../loading";
 import { pokemonInfo } from "../../types/types";
 import { DataHomeContext, DataHomeType } from "../../contexts/DataHomeProvider";
@@ -42,11 +42,12 @@ const ShowProducts = ({ title, data }: props) => {
                                    </S.Slide>
                                    <button className="next btn_slide" onClick={handleScrollright}>
                                         <p>scrol to right</p>
-                                        <BiRightArrow />
+                                        <IoIosArrowForward />
                                    </button>
                                    <button className="previous btn_slide" onClick={handleScrollleft}>
                                         <p>scrol to left</p>
-                                        <BiLeftArrow />
+
+                                        <IoIosArrowBack />
                                    </button>
                               </>
                          )}

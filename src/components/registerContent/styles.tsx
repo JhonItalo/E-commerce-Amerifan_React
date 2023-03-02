@@ -156,7 +156,7 @@ export const InputSenha = styled.input<propsInput>`
      border-radius: 8px;
      border: ${({ active }) => {
           if (active === null) {
-               return "1px solid orange";
+               return "1px solid gray";
           } else if (active) {
                return "1px solid green";
           } else if (active === false) {

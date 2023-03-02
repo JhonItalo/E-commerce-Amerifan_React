@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const MyCart = styled.main`
      width: 100%;
-     padding-top: 1rem;
+     padding-top: 2rem;
      padding-bottom: 2rem;
      background-color: #e2dada;
 `;
@@ -12,6 +12,7 @@ export const Content = styled.div`
      margin: 0 auto 4rem;
      display: flex;
      overflow: hidden;
+     border-radius: 8px;
      background-color: white;
 `;
 export const ConteinerShopCart = styled.div`

@@ -21,3 +21,11 @@ export const colorTypes: { [index: string]: string } = {
      rock: "#885523",
      steel: "#2ba67f",
 };
+export const user = {
+     name: "John Ítalo Lucas Lima",
+     email: "john@gmail.com",
+     senha: "**********",
+     date: "29/00/0000",
+     cpf: "000.000.000-00",
+     phone: "(88) 00000-0000",
+};

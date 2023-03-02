@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import * as S from "./styles";
 import AccessibleButtonName from "../AcessibleButtonName";
+import { CartContext, contextCartType } from "../../contexts/CartContext";
 
 type props = {
      pokemon: any;
@@ -8,6 +9,7 @@ type props = {
 
 const ProductsInfo = ({ pokemon }: props) => {
      console.log("products info render");
+     const { addToCart } = useContext<contextCartType>(CartContext);
      const [color, setColor] = useState<string>("white");
      const [size, setSize] = useState<string>("s");
 
@@ -117,7 +119,14 @@ const ProductsInfo = ({ pokemon }: props) => {
                          </button>
                     </div>
                </S.SizeSelect>
-               <S.Addtocart></S.Addtocart>
+               <S.Addtocart>
+                    <button
+                         className="addtocart"
+                         onClick={() => addToCart(pokemon.name, pokemon.sprites.other.dream_world.front_default)}
+                    >
+                         Add to Cart
+                    </button>
+               </S.Addtocart>
                <S.Frete>
                     <span>Calcule o frete e prazo de entrega</span>
                     <div>

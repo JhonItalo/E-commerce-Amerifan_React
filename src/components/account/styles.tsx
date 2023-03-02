@@ -3,6 +3,24 @@ import styled from "styled-components";
 export const Account = styled.div`
      position: relative;
 
+     .user {
+          display: flex;
+          align-items: center;
+          gap: 1rem;
+          font-size: 1rem;
+          color: white;
+          cursor: pointer;
+
+          svg {
+               font-size: 2.2rem;
+          }
+          .title {
+               font-weight: 700;
+               font-size: 1rem;
+               text-align: right;
+          }
+     }
+
      .account {
           display: flex;
           align-items: center;
