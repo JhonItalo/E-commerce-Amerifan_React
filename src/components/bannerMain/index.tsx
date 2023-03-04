@@ -108,23 +108,3 @@ const BannerMain = () => {
 };
 
 export default BannerMain;
-/*
-   <button onClick={handleRadio1}>
-                              <AccessibleButtonName name="imgm 4" />
-                         </button>
-                         <button onClick={handleRadio2}>
-                              <AccessibleButtonName name="imgm 5" />
-                         </button>
-                         <button onClick={handleRadio3}>
-                              <AccessibleButtonName name="imgm 6" />
-                         </button>
-                         <button onClick={handleRadio1}>
-                              <AccessibleButtonName name="imgm 7" />
-                         </button>
-                         <button onClick={handleRadio2}>
-                              <AccessibleButtonName name="imgm 8" />
-                         </button>
-                         <button onClick={handleRadio3}>
-                              <AccessibleButtonName name="imgm 9" />
-                         </button>
-*/

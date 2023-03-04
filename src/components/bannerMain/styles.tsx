@@ -8,9 +8,8 @@ export const Banner = styled.div`
 `;
 export const ConteinerSlide = styled.div`
      width: 100%;
-     height: 430px;
      position: relative;
-     padding-bottom: 2rem;
+     padding-bottom: 2.5rem;
 
      .btn_slide {
           width: 2rem;
@@ -18,7 +17,7 @@ export const ConteinerSlide = styled.div`
           font-size: 3rem;
           color: white;
           position: absolute;
-          top: calc(50% - 2rem);
+          top: calc(50% - 2.5rem);
           border: none;
           transform: translate(0, -50%);
           background-color: transparent;
@@ -30,22 +29,11 @@ export const ConteinerSlide = styled.div`
      .next {
           right: 7%;
      }
-     /*
-     @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 700px;
-     }
-     @media (max-width: 1440px) and (min-width: 1367px) {
-          height: 600px;
-     }
-     @media (max-width: 1280px) and (min-width: 1100px) {
-          height: 500px;
-     }*/
 `;
 
 export const Slide = styled.div`
      width: 100%;
-     height: 100%;
-     margin: 0 auto;
+     height: 400px;
      display: flex;
      overflow-y: hidden;
      overflow-x: auto;
@@ -65,18 +53,23 @@ export const Slide = styled.div`
      &::-webkit-scrollbar {
           display: none;
      }
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          height: 450px;
+     }
+     @media (max-width: 1440px) and (min-width: 1367px) {
+          height: 420px;
+     }
 `;
 export const Radios = styled.div`
      height: 1.5rem;
-     position: absolute;
-     left: 50%;
-     bottom: 0%;
-     transform: translate(-50%, 0);
      padding: 0 1rem;
      display: flex;
      justify-content: center;
      align-items: center;
      gap: 0.5rem;
+     position: absolute;
+     left: 50%;
+     bottom: 0;
      border-radius: 20px;
      background-color: #e6e1e1;
      button {
