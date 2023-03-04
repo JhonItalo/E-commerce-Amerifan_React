@@ -46,8 +46,4 @@ export const MainContent = styled.div`
      display: flex;
      justify-content: space-between;
      align-items: center;
-
-     @media (max-width: 1440px) and (min-width: 1367px) {
-          height: 160px;
-     }
 `;
