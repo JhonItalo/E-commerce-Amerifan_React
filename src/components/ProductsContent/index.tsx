@@ -10,6 +10,7 @@ type props = {
 
 const ProductsContent = ({ data, isloading }: props) => {
      console.log("product render");
+
      return (
           <S.Conteiner>
                {isloading && <Loading width="300px" height="300px" />}
@@ -41,47 +42,6 @@ const ProductsContent = ({ data, isloading }: props) => {
                                    consectetur. Praesent neque lorem, volutpat vitae lectus id, gravida ornare nisl.
                               </p>
                          </S.Describe>
-
-                         <S.TechnicalInformation>
-                              <h3>Technical information:</h3>
-
-                              <table className="customTable">
-                                   <thead>
-                                        <tr>
-                                             <th>Header 1</th>
-                                             <th>Header 2</th>
-                                             <th>Header 3</th>
-                                             <th>Header 4</th>
-                                        </tr>
-                                   </thead>
-                                   <tbody>
-                                        <tr>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                        </tr>
-                                        <tr>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                        </tr>
-                                        <tr>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                        </tr>
-                                        <tr>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                             <td>Epsum</td>
-                                        </tr>
-                                   </tbody>
-                              </table>
-                         </S.TechnicalInformation>
                     </>
                )}
           </S.Conteiner>

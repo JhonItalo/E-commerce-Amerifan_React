@@ -18,6 +18,7 @@ export const MainConteiner = styled.div`
      background-color: white;
 `;
 export const Describe = styled.section`
+     margin: 2rem 0 4rem;
      h3 {
           margin-bottom: 1rem;
      }

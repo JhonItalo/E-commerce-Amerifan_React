@@ -8,16 +8,17 @@ import { toast } from "react-toastify";
 
 type props = {
      pokemon: pokemonInfo | undefined;
+     width: string;
 };
 
-const Card = ({ pokemon }: props) => {
+const Card = ({ pokemon, width }: props) => {
      const { addToCart } = useContext<contextCartType>(CartContext);
      return (
-          <S.Conteiner style={{ flex: "none" }} className="controlParentStyle">
+          <S.Conteiner width={width} style={{ flex: "none" }} className="controlParentStyle">
                {pokemon && (
                     <>
                          <Link to={`/products/${pokemon.name}`}>
-                              <img src={pokemon.image} alt={pokemon.name} width="140px" height="158px" />
+                              <img src={pokemon.image} alt={pokemon.name} width="130px" height="158px" />
                               <AccessibleName name={pokemon.name} />
                          </Link>
                          <div className="info">

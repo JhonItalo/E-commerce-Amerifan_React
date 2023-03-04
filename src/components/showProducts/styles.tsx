@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Conteiner = styled.section`
      width: 90%;
      height: 435px;
-     margin: 0 auto;
+     margin: 3rem auto 0;
      padding: 1rem;
      display: flex;
      flex-direction: column;
@@ -30,6 +30,7 @@ export const ConteinerSlide = styled.div`
      width: 100%;
      height: 350px;
      position: relative;
+
      .btn_slide {
           background-color: rgba(255, 255, 255, 0.8);
           padding: 1rem;
@@ -64,10 +65,9 @@ export const ConteinerSlide = styled.div`
 `;
 
 export const Slide = styled.div`
-     width: 100%;
      height: 100%;
      display: flex;
-     gap: 3%;
+     gap: 2.5%;
      overflow-x: hidden;
      scroll-behavior: smooth;
      @media (max-width: 1920px) and (min-width: 1441px) {

@@ -7,7 +7,7 @@ import AccessibleName from "../AcessibleName";
 
 const BannerMain = () => {
      const Carrosel = useRef<HTMLDivElement | null>(null);
-
+     /*
      useEffect(() => {
           const automaticSlideTimer = setInterval(() => {
                if (Carrosel.current && Carrosel.current.scrollLeft === 0) {
@@ -23,25 +23,29 @@ const BannerMain = () => {
 
           return () => clearInterval(automaticSlideTimer);
      }, []);
-
+*/
      const handleNextSlide = () => {
-          if (Carrosel.current && Carrosel.current.scrollLeft === 0) {
-               Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
-          } else if (Carrosel.current && Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
-               Carrosel.current.scrollLeft = Carrosel.current.offsetWidth * 2;
-          } else {
-               return;
+          if (Carrosel.current) {
+               if (Carrosel.current.scrollLeft === 0) {
+                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
+               } else if (Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
+                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth * 2;
+               } else {
+                    return;
+               }
           }
      };
      const handlePreviousSlide = () => {
-          if (Carrosel.current && Carrosel.current.scrollLeft === 0) {
-               return;
-          } else if (Carrosel.current && Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
-               Carrosel.current.scrollLeft = 0;
-          } else if (Carrosel.current && Carrosel.current.scrollLeft === Carrosel.current.offsetWidth * 2) {
-               Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
-          } else {
-               return;
+          if (Carrosel.current) {
+               if (Carrosel.current.scrollLeft === 0) {
+                    return;
+               } else if (Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
+                    Carrosel.current.scrollLeft = 0;
+               } else if (Carrosel.current.scrollLeft === Carrosel.current.offsetWidth * 2) {
+                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
+               } else {
+                    return;
+               }
           }
      };
      const handleRadio1 = () => {
@@ -97,7 +101,15 @@ const BannerMain = () => {
                          <button onClick={handleRadio3}>
                               <AccessibleButtonName name="imgm 3" />
                          </button>
-                         <button onClick={handleRadio1}>
+                    </S.Radios>
+               </S.ConteinerSlide>
+          </S.Banner>
+     );
+};
+
+export default BannerMain;
+/*
+   <button onClick={handleRadio1}>
                               <AccessibleButtonName name="imgm 4" />
                          </button>
                          <button onClick={handleRadio2}>
@@ -115,12 +127,4 @@ const BannerMain = () => {
                          <button onClick={handleRadio3}>
                               <AccessibleButtonName name="imgm 9" />
                          </button>
-                    </S.Radios>
-               </S.ConteinerSlide>
-
-               <div className="whiteRow" />
-          </S.Banner>
-     );
-};
-
-export default BannerMain;
+*/

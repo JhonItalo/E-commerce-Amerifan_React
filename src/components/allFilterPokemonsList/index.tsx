@@ -1,4 +1,4 @@
-import { useContext, useEffect, useState } from "react";
+import { useContext, useState } from "react";
 import * as S from "./styles";
 import Card from "../card2";
 import Loading from "../loading";
@@ -94,7 +94,7 @@ const AllFilterPokemonsList = () => {
 
                               <S.ListPokemons>
                                    {order.map((item: pokemonInfo) => (
-                                        <Card key={item.id} pokemon={item} />
+                                        <Card width="30%" key={item.id} pokemon={item} />
                                    ))}
                               </S.ListPokemons>
                          </>
@@ -116,7 +116,7 @@ const AllFilterPokemonsList = () => {
 
                               <S.ListPokemons>
                                    {filtrados.map((item: pokemonInfo) => (
-                                        <Card key={item.id} pokemon={item} />
+                                        <Card width="100px" key={item.id} pokemon={item} />
                                    ))}
                               </S.ListPokemons>
                          </>

@@ -1,29 +1,24 @@
 import styled from "styled-components";
 
 export const Banner = styled.div`
-     width: 100%;
+     width: 94%;
+     margin: 2rem auto 0;
      display: flex;
      flex-direction: column;
-     .whiteRow {
-          width: 95%;
-          height: 3rem;
-          margin: 5rem auto 3rem;
-          padding: 1rem;
-          border-radius: 10px;
-          background-color: white;
-     }
 `;
 export const ConteinerSlide = styled.div`
      width: 100%;
-     height: 550px;
+     height: 430px;
      position: relative;
+     padding-bottom: 2rem;
+
      .btn_slide {
           width: 2rem;
           height: 2rem;
           font-size: 3rem;
           color: white;
           position: absolute;
-          top: 50%;
+          top: calc(50% - 2rem);
           border: none;
           transform: translate(0, -50%);
           background-color: transparent;
@@ -35,6 +30,7 @@ export const ConteinerSlide = styled.div`
      .next {
           right: 7%;
      }
+     /*
      @media (max-width: 1920px) and (min-width: 1441px) {
           height: 700px;
      }
@@ -43,7 +39,7 @@ export const ConteinerSlide = styled.div`
      }
      @media (max-width: 1280px) and (min-width: 1100px) {
           height: 500px;
-     }
+     }*/
 `;
 
 export const Slide = styled.div`
@@ -55,7 +51,7 @@ export const Slide = styled.div`
      overflow-x: auto;
      scroll-behavior: smooth;
      color: white;
-     kground-color: yellow;
+     background-color: red;
      a {
           flex: none;
           width: 100%;
@@ -71,11 +67,10 @@ export const Slide = styled.div`
      }
 `;
 export const Radios = styled.div`
-     width: 20%;
      height: 1.5rem;
      position: absolute;
      left: 50%;
-     bottom: -7%;
+     bottom: 0%;
      transform: translate(-50%, 0);
      padding: 0 1rem;
      display: flex;

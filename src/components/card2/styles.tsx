@@ -1,9 +1,13 @@
 import styled from "styled-components";
 import { colorTypes } from "../../utils/Constains";
 
-export const Conteiner = styled.div`
+type propsConteiner = {
+     width: string;
+};
+
+export const Conteiner = styled.div<propsConteiner>`
      flex: none;
-     width: 236px;
+     width: ${({ width }) => width};
      height: 350px;
      padding: 1rem 0;
      display: flex;

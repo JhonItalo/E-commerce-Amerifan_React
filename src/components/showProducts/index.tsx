@@ -19,12 +19,12 @@ const ShowProducts = ({ title, data }: props) => {
 
      const handleScrollright = () => {
           if (Carrosel.current) {
-               Carrosel.current.scrollLeft = Carrosel.current.scrollLeft + 400;
+               Carrosel.current.scrollLeft = Carrosel.current.scrollLeft + 500;
           }
      };
      const handleScrollleft = () => {
           if (Carrosel.current) {
-               Carrosel.current.scrollLeft = Carrosel.current.scrollLeft - 400;
+               Carrosel.current.scrollLeft = Carrosel.current.scrollLeft - 500;
           }
      };
 
@@ -37,7 +37,7 @@ const ShowProducts = ({ title, data }: props) => {
                               <>
                                    <S.Slide ref={Carrosel}>
                                         {data.map((item: pokemonInfo) => (
-                                             <Card key={item.id} pokemon={item} />
+                                             <Card key={item.id} pokemon={item} width="18%" />
                                         ))}
                                    </S.Slide>
                                    <button className="next btn_slide" onClick={handleScrollright}>
