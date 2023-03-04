@@ -39,7 +39,7 @@ export const Slide = styled.div`
      overflow-x: auto;
      scroll-behavior: smooth;
      color: white;
-     background-color: red;
+
      a {
           flex: none;
           width: 100%;
@@ -70,6 +70,7 @@ export const Radios = styled.div`
      position: absolute;
      left: 50%;
      bottom: 0;
+     transform: translate(-50%, 0);
      border-radius: 20px;
      background-color: #e6e1e1;
      button {

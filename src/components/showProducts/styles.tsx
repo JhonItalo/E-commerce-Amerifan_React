@@ -11,7 +11,7 @@ export const Conteiner = styled.section`
      border-radius: 10px;
      margin-bottom: 3rem;
      position: relative;
-     background-color: white;
+     //background-color: white;
      background-image: url("/assets/background/SPbackground.webp");
      h2 {
           font-size: 2rem;
@@ -20,10 +20,6 @@ export const Conteiner = styled.section`
      @media (max-width: 1920px) and (min-width: 1441px) {
           max-width: 1500px;
           height: 500px;
-          padding: 1rem 2rem;
-     }
-     @media (max-width: 1440px) and (min-width: 1367px) {
-          padding: 1rem 2rem;
      }
 `;
 export const ConteinerSlide = styled.div`
@@ -60,7 +56,7 @@ export const ConteinerSlide = styled.div`
           left: -3%;
      }
      @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 430px;
+          height: 420px;
      }
 `;
 
