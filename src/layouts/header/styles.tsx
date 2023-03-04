@@ -32,10 +32,10 @@ export const Content = styled.div`
      background-color: #000336;
 
      @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 180px;
+          height: 150px;
      }
      @media (max-width: 1440px) and (min-width: 1367px) {
-          height: 150px;
+          height: 135px;
      }
 `;
 export const MainContent = styled.div`
