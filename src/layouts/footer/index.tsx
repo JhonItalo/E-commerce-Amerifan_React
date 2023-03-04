@@ -45,7 +45,7 @@ const Footer = () => {
                          </S.ItemComposto>
                          <S.ItemComposto>
                               <div>
-                                   <p className="title">Atendimenhref</p>
+                                   <p className="title">Atendimento</p>
 
                                    <p>loja online: 0000 0000</p>
 

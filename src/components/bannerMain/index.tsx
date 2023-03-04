@@ -7,7 +7,7 @@ import AccessibleName from "../AcessibleName";
 
 const BannerMain = () => {
      const Carrosel = useRef<HTMLDivElement | null>(null);
-     /*
+
      useEffect(() => {
           const automaticSlideTimer = setInterval(() => {
                if (Carrosel.current && Carrosel.current.scrollLeft === 0) {
@@ -23,7 +23,7 @@ const BannerMain = () => {
 
           return () => clearInterval(automaticSlideTimer);
      }, []);
-*/
+
      const handleNextSlide = () => {
           if (Carrosel.current) {
                if (Carrosel.current.scrollLeft === 0) {

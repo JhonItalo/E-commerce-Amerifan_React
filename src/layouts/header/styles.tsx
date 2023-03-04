@@ -30,24 +30,24 @@ export const Content = styled.div`
      justify-content: center;
      align-items: center;
      background-color: #000336;
+
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          height: 180px;
+     }
+     @media (max-width: 1440px) and (min-width: 1367px) {
+          height: 150px;
+     }
 `;
 export const MainContent = styled.div`
      flex: none;
      width: 88%;
-     height: 50px;
+     height: 40%;
      margin-top: 1.5rem;
      display: flex;
      justify-content: space-between;
      align-items: center;
+
+     @media (max-width: 1440px) and (min-width: 1367px) {
+          height: 160px;
+     }
 `;
-
-/*
-@media (max-width: 1920px) and (min-width: 1441px) {
-               height: 200px;
-          }
-          @media (max-width: 1440px) and (min-width: 1367px) {
-               height: 160px;
-          }
-
-
-*/
