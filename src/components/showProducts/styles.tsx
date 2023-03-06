@@ -3,13 +3,12 @@ import styled from "styled-components";
 export const Conteiner = styled.section`
      width: 90%;
      height: 435px;
-     margin: 3rem auto 0;
+     margin: 3rem auto;
      padding: 1rem;
      display: flex;
      flex-direction: column;
      gap: 1rem;
      border-radius: 10px;
-     margin-bottom: 3rem;
      position: relative;
      //background-color: white;
      background-image: url("/assets/background/SPbackground.webp");
@@ -66,10 +65,4 @@ export const Slide = styled.div`
      gap: 2.5%;
      overflow-x: hidden;
      scroll-behavior: smooth;
-     @media (max-width: 1920px) and (min-width: 1441px) {
-          gap: 60px;
-     }
-     @media (max-width: 1440px) and (min-width: 1367px) {
-          gap: 50px;
-     }
 `;
