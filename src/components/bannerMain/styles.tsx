@@ -41,6 +41,7 @@ export const Slide = styled.div`
      color: white;
 
      a {
+          display: block;
           flex: none;
           width: 100%;
           height: 100%;
