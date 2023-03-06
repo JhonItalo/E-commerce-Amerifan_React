@@ -13,7 +13,7 @@ const BannerMain = () => {
                if (Carrosel.current && Carrosel.current.scrollLeft === 0) {
                     Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
                } else if (Carrosel.current && Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
-                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth * 2 + 1;
+                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth * 2 - 1;
                } else if (Carrosel.current && Carrosel.current.scrollLeft >= Carrosel.current.offsetWidth * 2) {
                     Carrosel.current.scrollLeft = 0;
                } else {
@@ -29,7 +29,7 @@ const BannerMain = () => {
                if (Carrosel.current.scrollLeft === 0) {
                     Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
                } else if (Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
-                    Carrosel.current.scrollLeft >= Carrosel.current.offsetWidth * 2;
+                    Carrosel.current.scrollLeft >= Carrosel.current.offsetWidth * 2 - 1;
                } else {
                     return;
                }
@@ -41,7 +41,7 @@ const BannerMain = () => {
                     return;
                } else if (Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
                     Carrosel.current.scrollLeft = 0;
-               } else if (Carrosel.current.scrollLeft >= Carrosel.current.offsetWidth * 2 + 1) {
+               } else if (Carrosel.current.scrollLeft >= Carrosel.current.offsetWidth * 2 - 1) {
                     Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
                } else {
                     return;
@@ -60,7 +60,7 @@ const BannerMain = () => {
      };
      const handleRadio3 = () => {
           if (Carrosel.current) {
-               Carrosel.current.scrollLeft = Carrosel.current.offsetWidth * 2;
+               Carrosel.current.scrollLeft >= Carrosel.current.offsetWidth * 2 - 1;
           }
      };
 
