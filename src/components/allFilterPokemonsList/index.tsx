@@ -116,7 +116,7 @@ const AllFilterPokemonsList = () => {
 
                               <S.ListPokemons>
                                    {filtrados.map((item: pokemonInfo) => (
-                                        <Card width="100px" key={item.id} pokemon={item} />
+                                        <Card width="30%" key={item.id} pokemon={item} />
                                    ))}
                               </S.ListPokemons>
                          </>
