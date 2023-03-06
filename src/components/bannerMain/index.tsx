@@ -11,10 +11,10 @@ const BannerMain = () => {
      useEffect(() => {
           const automaticSlideTimer = setInterval(() => {
                if (Carrosel.current && Carrosel.current.scrollLeft === 0) {
-                    Carrosel.current.scrollLeft = Carrosel.current.clientWidth;
-               } else if (Carrosel.current && Carrosel.current.scrollLeft === Carrosel.current.clientWidth) {
-                    Carrosel.current.scrollLeft = Carrosel.current.clientWidth * 2;
-               } else if (Carrosel.current && Carrosel.current.scrollLeft === Carrosel.current.clientWidth * 2) {
+                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
+               } else if (Carrosel.current && Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
+                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth * 2;
+               } else if (Carrosel.current && Carrosel.current.scrollLeft === Carrosel.current.offsetWidth * 2) {
                     Carrosel.current.scrollLeft = 0;
                } else {
                     return;
@@ -27,9 +27,9 @@ const BannerMain = () => {
      const handleNextSlide = () => {
           if (Carrosel.current) {
                if (Carrosel.current.scrollLeft === 0) {
-                    Carrosel.current.scrollLeft = Carrosel.current.clientWidth;
-               } else if (Carrosel.current.scrollLeft === Carrosel.current.clientWidth) {
-                    Carrosel.current.scrollLeft = Carrosel.current.clientWidth * 2;
+                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
+               } else if (Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
+                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth + Carrosel.current.offsetWidth;
                } else {
                     return;
                }
@@ -39,10 +39,10 @@ const BannerMain = () => {
           if (Carrosel.current) {
                if (Carrosel.current.scrollLeft === 0) {
                     return;
-               } else if (Carrosel.current.scrollLeft === Carrosel.current.clientWidth) {
+               } else if (Carrosel.current.scrollLeft === Carrosel.current.offsetWidth) {
                     Carrosel.current.scrollLeft = 0;
-               } else if (Carrosel.current.scrollLeft === Carrosel.current.clientWidth * 2) {
-                    Carrosel.current.scrollLeft = Carrosel.current.clientWidth;
+               } else if (Carrosel.current.scrollLeft === Carrosel.current.offsetWidth + Carrosel.current.offsetWidth) {
+                    Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
                } else {
                     return;
                }
@@ -55,12 +55,12 @@ const BannerMain = () => {
      };
      const handleRadio2 = () => {
           if (Carrosel.current) {
-               Carrosel.current.scrollLeft = Carrosel.current.clientWidth;
+               Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
           }
      };
      const handleRadio3 = () => {
           if (Carrosel.current) {
-               Carrosel.current.scrollLeft = Carrosel.current.clientWidth * 2;
+               Carrosel.current.scrollLeft = Carrosel.current.offsetWidth * 2;
           }
      };
 
