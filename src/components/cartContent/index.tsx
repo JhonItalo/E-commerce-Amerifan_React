@@ -7,6 +7,7 @@ import { BsArrowLeft } from "react-icons/bs";
 import { storageType } from "../../types/types";
 
 const CartContent = () => {
+     console.log("my cart render");
      const { storage } = useContext<contextCartType>(CartContext);
      return (
           <S.MyCart>

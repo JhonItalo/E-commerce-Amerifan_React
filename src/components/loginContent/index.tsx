@@ -1,4 +1,4 @@
-import React, { useContext, useRef, useState } from "react";
+import React, { useContext, useEffect, useRef, useState } from "react";
 import * as S from "./styles";
 import { Link, Navigate } from "react-router-dom";
 import { BsEyeSlash } from "react-icons/bs";
@@ -20,11 +20,15 @@ const LoginContent = () => {
      const [failure, setFailure] = useState<boolean>(false);
      const senhaRef = useRef<HTMLInputElement>(null);
 
+     useEffect(() => {
+          if (token) {
+               setUrl(null);
+          }
+     }, [token]);
+
      if (token) {
           if (url) {
-               const page = url;
-               setUrl(null);
-               return <Navigate to={page} />;
+               return <Navigate to={url} />;
           }
           return <Navigate to="/" />;
      }

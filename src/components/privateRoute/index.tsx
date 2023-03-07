@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import { AuthUserContext, contextAuthUser } from "../../contexts/AuthUser";
 import { Navigate } from "react-router-dom";
 import { RedirectLoginContext, page } from "../../contexts/RedirectLogin";
@@ -9,11 +9,15 @@ type props = {
 };
 
 const PrivateRoute = ({ children, redirect }: props) => {
+     console.log("private route render");
      const { token } = useContext<contextAuthUser>(AuthUserContext);
      const { setUrl } = useContext<page>(RedirectLoginContext);
-     if (!token) {
-          setUrl(redirect);
-     }
+
+     useEffect(() => {
+          if (!token) {
+               setUrl(redirect);
+          }
+     }, [token]);
 
      return <>{!token ? <Navigate to="/login" /> : children}</>;
 };

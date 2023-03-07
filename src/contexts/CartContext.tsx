@@ -14,9 +14,9 @@ interface props {
      children: React.ReactNode;
 }
 const CarrinhoContext = ({ children }: props) => {
-     console.log("coxtent render");
+     console.log("Cart Context render");
      const [storage, setStorage] = useState<storageType[]>([]);
-     console.log(storage, "storage");
+     console.log(storage, "storage cart");
 
      const copyStorage: storageType[] = storage.concat();
      const firstRender = useFirstRender();
