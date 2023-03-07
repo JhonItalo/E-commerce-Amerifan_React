@@ -33,4 +33,3 @@ const Home = () => {
 };
 
 export default Home;
-/*  <BannerMain />*/

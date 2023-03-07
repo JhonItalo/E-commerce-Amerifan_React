@@ -55,7 +55,7 @@ const Search = () => {
                     placeholder="O que você está procurando?"
                />
                <button className="iconSearch">
-                    <FiSearch onClick={() => {}} />
+                    <FiSearch onClick={handleIconResult} />
                     <AccessibleButtonName name="buscar" />
                </button>
                <S.Atendimento>

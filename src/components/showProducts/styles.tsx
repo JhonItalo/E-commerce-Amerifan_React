@@ -10,7 +10,6 @@ export const Conteiner = styled.section`
      gap: 1rem;
      border-radius: 10px;
      position: relative;
-     //background-color: white;
      background-image: url("/assets/background/SPbackground.webp");
      h2 {
           font-size: 2rem;
@@ -28,7 +27,7 @@ export const ConteinerSlide = styled.div`
 
      .btn_slide {
           background-color: rgba(255, 255, 255, 0.8);
-          padding: 1rem;
+          padding: 0.5rem;
           border-radius: 50%;
           font-size: 1.5rem;
           display: flex;

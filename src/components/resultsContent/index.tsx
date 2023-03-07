@@ -16,7 +16,6 @@ type props = {
 const ResultsContent = ({ data, input, isloading }: props) => {
      const navigate = useNavigate();
      const [search, setSearch] = useState<string>(input);
-     console.log(data, "conetnt");
 
      useEffect(() => {
           setSearch(input);

@@ -1,4 +1,3 @@
-
 import { useQuery } from "react-query";
 import {ResultsRequest} from "../request/ResultsRequest"
 
