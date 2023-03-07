@@ -33,11 +33,4 @@ export const ListPokemons = styled.div`
                border: 1px solid grey;
           }
      }
-     /*
-     @media (max-width: 1920px) and (min-width: 1441px) {
-          gap: 2rem;
-     }
-     @media (max-width: 1440px) and (min-width: 1367px) {
-          justify-content: space-between;
-     }*/
 `;

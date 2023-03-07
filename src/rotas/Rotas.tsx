@@ -63,7 +63,7 @@ const Rotas = () => {
                          path="/user"
                          element={
                               <PrivateRoute redirect="/user">
-                                   <main style={{ minHeight: "70vh", background: "#F1F1F1", padding: "2rem" }}>
+                                   <main style={{ minHeight: "70vh", background: "#e2dada", padding: "2rem" }}>
                                         <React.Suspense>
                                              <User />
                                         </React.Suspense>

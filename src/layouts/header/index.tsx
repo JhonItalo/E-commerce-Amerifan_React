@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import * as S from "./styles";
 import Search from "../../components/search";
 import Cart from "../../components/cart";
@@ -21,14 +20,14 @@ const Header = () => {
                          <S.InitialPromotionSpan>
                               <p className="developer">Developer by John Ítalo Lima Lima</p>
                               <div>
-                                   <Link to="https://www.linkedin.com/in/johnitalodev/" target="_blank">
+                                   <a href="https://www.linkedin.com/in/johnitalodev/" target="_blank" rel="noreferrer">
                                         <AiFillLinkedin />
                                         <AccessibleButtonName name="linkedin" />
-                                   </Link>
-                                   <Link to="https://github.com/JhonItalo" target="_blank">
+                                   </a>
+                                   <a href="https://github.com/JhonItalo" target="_blank" rel="noreferrer">
                                         <AiFillGithub />
                                         <AccessibleButtonName name="github" />
-                                   </Link>
+                                   </a>
                               </div>
                          </S.InitialPromotionSpan>
                          <S.Content>

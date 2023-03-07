@@ -95,6 +95,7 @@ export const Sumary = styled.div`
      width: 30%;
      padding: 2rem 2rem 0;
      background-color: #e0de6ad6;
+     background-color: #71889c;
      .topic {
           display: flex;
           justify-content: space-between;
@@ -178,6 +179,7 @@ export const TotalCoast = styled.div`
           text-transform: uppercase;
           color: white;
           background-color: #7255b2;
+          background-color: #0b64b3;
           border: 1px solid grey;
           &:hover {
                filter: brightness(0.9);
