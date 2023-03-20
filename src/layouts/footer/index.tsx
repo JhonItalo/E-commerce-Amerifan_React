@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { GrFacebook } from "react-icons/gr";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaYoutubeSquare } from "react-icons/fa";
-import AccessibleButtonName from "../../components/acessibleButtonName";
+
 import { useLocation } from "react-router-dom";
 const Footer = () => {
      const { pathname } = useLocation();
@@ -26,15 +26,12 @@ const Footer = () => {
                                    <div className="icons">
                                         <Link to="/telefonia">
                                              <GrFacebook />
-                                             <AccessibleButtonName name="vá para o facebook" />
                                         </Link>
                                         <Link to="/telefonia">
                                              <AiFillTwitterSquare />
-                                             <AccessibleButtonName name="vá para o facebook" />
                                         </Link>
                                         <Link to="/telefonia">
                                              <FaYoutubeSquare />
-                                             <AccessibleButtonName name="vá para o facebook" />
                                         </Link>
                                    </div>
                               </div>
