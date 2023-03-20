@@ -1,6 +1,6 @@
 import { useContext, useState } from "react";
 import * as S from "./styles";
-import Card from "../card2";
+import Card from "../card";
 import Loading from "../loading";
 import { FilterProviderContext, FiltercontextType } from "../../contexts/FilterContext";
 import { pokemonInfo } from "../../types/types";

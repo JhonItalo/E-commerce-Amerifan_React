@@ -3,7 +3,7 @@ import BannerMain from "../../components/bannerMain";
 import ShowProducts from "../../components/showProducts";
 import RegistrationOffers from "../../components/registrationOffers";
 import SlideCategorys from "../../components/slideCategory";
-import React, { useContext } from "react";
+import { useContext } from "react";
 import { DataHomeContext } from "../../contexts/DataHomeProvider";
 
 const HomeContent = () => {

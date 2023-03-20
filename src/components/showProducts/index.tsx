@@ -5,7 +5,7 @@ import Loading from "../loading";
 import { pokemonInfo } from "../../types/types";
 import { DataHomeContext, DataHomeType } from "../../contexts/DataHomeProvider";
 
-import Card from "../card2";
+import Card from "../card";
 
 type props = {
      title: string;

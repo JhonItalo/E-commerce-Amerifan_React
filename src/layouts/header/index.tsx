@@ -3,9 +3,7 @@ import Search from "../../components/search";
 import Cart from "../../components/cart";
 import Logo from "../../components/logo";
 import { useLocation } from "react-router-dom";
-
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
-
 import AccessibleButtonName from "../../components/acessibleButtonName";
 import Account from "../../components/account";
 
