@@ -1,7 +1,4 @@
 import styled from "styled-components";
-interface propsLi {
-     active: boolean;
-}
 
 export const Nav = styled.nav`
      width: 100%;
@@ -16,6 +13,7 @@ export const Nav = styled.nav`
           align-items: center;
           color: white;
      }
+
      @media (max-width: 1920px) and (min-width: 1441px) {
           height: 60px;
      }
@@ -24,7 +22,7 @@ export const Nav = styled.nav`
      }
 `;
 
-export const Li = styled.li<propsLi>`
+export const Li = styled.li`
      height: 100%;
      a {
           height: 100%;
@@ -32,8 +30,9 @@ export const Li = styled.li<propsLi>`
           display: flex;
           align-items: center;
           text-transform: uppercase;
-          p {
-               border-bottom: ${({ active }) => (active ? "2px solid #cc0000" : "")};
+
+          .active {
+               border-bottom: 2px solid #cc0000;
           }
      }
 `;

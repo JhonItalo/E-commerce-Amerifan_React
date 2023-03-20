@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import AccessibleName from "../AcessibleName";
+import AccessibleName from "../acessibleName";
 import * as S from "./styles";
 import { useContext } from "react";
 import { CartContext, contextCartType } from "../../contexts/CartContext";

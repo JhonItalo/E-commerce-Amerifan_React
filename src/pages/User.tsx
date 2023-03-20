@@ -1,5 +1,5 @@
 import React from "react";
-import UserContent from "../components/userContent";
+import UserContent from "../content/userContent";
 
 const User = () => {
      return <UserContent />;

@@ -1,9 +1,8 @@
 import * as S from "./styles";
 import { Link } from "react-router-dom";
-import AccessibleName from "../AcessibleName";
+import AccessibleName from "../acessibleName";
 
 const Logo = () => {
-     console.log("logo render");
      return (
           <S.Conteiner>
                <Link to="/">

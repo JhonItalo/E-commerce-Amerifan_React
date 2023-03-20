@@ -1,26 +1,35 @@
 import React, { useContext, useState } from "react";
 import * as S from "./styles";
-import AccessibleButtonName from "../AcessibleButtonName";
+import AccessibleButtonName from "../acessibleButtonName";
 import { CartContext, contextCartType } from "../../contexts/CartContext";
+
+type cepType = {
+     cep?: string;
+     logradouro?: string;
+     complemento?: string;
+     bairro?: string;
+     localidade?: string;
+     uf?: string;
+     ibge?: string;
+     gia?: string;
+     ddd?: string;
+     siafi?: string;
+};
 
 type props = {
      pokemon: any;
 };
 
 const ProductsInfo = ({ pokemon }: props) => {
-     console.log("products info render");
      const [cep, setCep] = useState<string>("");
-     const [dataCep, setDataCep] = useState<any>(null);
+     const [dataCep, setDataCep] = useState<cepType | null>(null);
      const { addToCart } = useContext<contextCartType>(CartContext);
      const [color, setColor] = useState<string>("white");
      const [size, setSize] = useState<string>("s");
-     console.log(dataCep);
 
      const fetchCep = async (cep: string) => {
           const convert = cep.replace(/[^0-9]/g, "");
-          console.log(convert, "convert");
           const response = await fetch(`https://viacep.com.br/ws/${convert}/json/`).then((r) => r.json());
-
           setDataCep(response);
      };
      const changeCep = (e: React.FormEvent<HTMLInputElement>) => {

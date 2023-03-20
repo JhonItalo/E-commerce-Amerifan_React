@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import * as S from "./styles";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { Link } from "react-router-dom";
-import AccessibleButtonName from "../AcessibleButtonName";
-import AccessibleName from "../AcessibleName";
+import AccessibleButtonName from "../acessibleButtonName";
+import AccessibleName from "../acessibleName";
 
 const BannerMain = () => {
      const Carrosel = useRef<HTMLDivElement | null>(null);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as S from "./styles";
-import FilterSelect from "../filterSelect";
-import AllFilterPokemonsList from "../allFilterPokemonsList";
+import FilterSelect from "../../components/filterSelect";
+import AllFilterPokemonsList from "../../components/allFilterPokemonsList";
 import FilterProvider from "../../contexts/FilterContext";
 
 type props = {
@@ -11,8 +11,6 @@ type props = {
 const CategoryContent = ({ name }: props) => {
      const [type, setType] = useState<string>("");
      const [color, setColor] = useState<string>("");
-
-     console.log("Produtos by category render");
 
      return (
           <S.ProductsByCategory>

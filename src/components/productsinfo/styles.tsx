@@ -11,7 +11,7 @@ export const Conteiner = styled.div`
      display: flex;
      flex-direction: column;
      gap: 1rem;
-`;
+     `;
 export const TitleType = styled.div`
      display: flex;
      align-items: center;
@@ -83,6 +83,10 @@ export const Addtocart = styled.div`
                color: black;
           }
      }
+
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          width: 35%;
+     }
 `;
 export const Frete = styled.div`
      height: 80px;
@@ -116,6 +120,8 @@ export const Frete = styled.div`
           button {
                height: 60%;
                padding: 1rem 1.5rem;
+               display: flex;
+               align-items: center;
                font-size: 1rem;
                font-weight: bold;
                border-radius: 5px;

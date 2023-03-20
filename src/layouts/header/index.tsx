@@ -6,11 +6,10 @@ import { useLocation } from "react-router-dom";
 
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
-import AccessibleButtonName from "../../components/AcessibleButtonName";
+import AccessibleButtonName from "../../components/acessibleButtonName";
 import Account from "../../components/account";
 
 const Header = () => {
-     console.log("header render");
      const { pathname } = useLocation();
 
      return (

@@ -6,7 +6,6 @@ import { SlArrowDown } from "react-icons/sl";
 import ModalAllDepartaments from "../../components/modalAllDepartaments";
 
 const Nav = () => {
-     console.log("nave render");
      const { pathname } = useLocation();
      return (
           <>
@@ -20,46 +19,46 @@ const Nav = () => {
                                    <ModalAllDepartaments />
                               </S.Departments>
 
-                              <S.Li active={pathname === "/telefonia"}>
+                              <S.Li>
                                    <Link to="/telefonia">
-                                        <p>Telefonia</p>
+                                        <p className={pathname === "/telefonia" ? "active" : ""}>Telefonia</p>
                                    </Link>
                               </S.Li>
-                              <S.Li active={pathname === "/smartphones"}>
+                              <S.Li>
                                    <Link to="/smartphones">
-                                        <p>Smartphones</p>
+                                        <p className={pathname === "/smartphones" ? "active" : ""}>Smartphones</p>
                                    </Link>
                               </S.Li>
-                              <S.Li active={pathname === "/eletrodomesticos"}>
+                              <S.Li>
                                    <Link to="/eletrodomesticos">
-                                        <p>Eletrodomésticos</p>
+                                        <p className={pathname === "/eletrodomesticos" ? "active" : ""}>Eletrodomésticos</p>
                                    </Link>
                               </S.Li>
-                              <S.Li active={pathname === "/moveis"}>
+                              <S.Li>
                                    <Link to="/moveis">
-                                        <p>Movéis</p>
+                                        <p className={pathname === "/moveis" ? "active" : ""}>Movéis</p>
                                    </Link>
                               </S.Li>
 
-                              <S.Li active={pathname === "/tvevideo"}>
+                              <S.Li>
                                    <Link to="/tvevideo">
-                                        <p>Tv e vídeo</p>
+                                        <p className={pathname === "/tvevideo" ? "active" : ""}>Tv e vídeo</p>
                                    </Link>
                               </S.Li>
 
-                              <S.Li active={pathname === "/eletroportateis"}>
+                              <S.Li>
                                    <Link to="/">
-                                        <p>EletroPortáteis</p>
+                                        <p className={pathname === "/eletroportateis" ? "active" : ""}>EletroPortáteis</p>
                                    </Link>
                               </S.Li>
-                              <S.Li active={pathname === "/informatica"}>
+                              <S.Li>
                                    <Link to="/">
-                                        <p>Informática</p>
+                                        <p className={pathname === "/informatica" ? "active" : ""}>Informática</p>
                                    </Link>
                               </S.Li>
-                              <S.Li active={pathname === "/servicos"}>
+                              <S.Li>
                                    <Link to="/">
-                                        <p>Serviços</p>
+                                        <p className={pathname === "/servicos" ? "active" : ""}>Serviços</p>
                                    </Link>
                               </S.Li>
                          </ul>

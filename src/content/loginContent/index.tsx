@@ -8,7 +8,6 @@ import { RedirectLoginContext, page } from "../../contexts/RedirectLogin";
 import MinHeader from "../../layouts/minHeader";
 
 const LoginContent = () => {
-     console.log("login render");
      const { url, setUrl } = useContext<page>(RedirectLoginContext);
      const { authentication, token } = useContext<contextAuthUser>(AuthUserContext);
      const [email, setEmail] = useState<string>("");

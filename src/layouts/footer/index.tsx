@@ -3,11 +3,10 @@ import { Link } from "react-router-dom";
 import { GrFacebook } from "react-icons/gr";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaYoutubeSquare } from "react-icons/fa";
-import AccessibleName from "../../components/AcessibleName";
-import AccessibleButtonName from "../../components/AcessibleButtonName";
+import AccessibleName from "../../components/acessibleName";
+import AccessibleButtonName from "../../components/acessibleButtonName";
 import { useLocation } from "react-router-dom";
 const Footer = () => {
-     console.log("footer render");
      const { pathname } = useLocation();
      return (
           <>

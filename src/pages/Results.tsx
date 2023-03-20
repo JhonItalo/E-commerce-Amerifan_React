@@ -2,14 +2,13 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import useFirstRender from "../hooks/useFirstRender";
 import useResultsFetch from "../hooks/useResultsFetch";
-import ResultsContent from "../components/resultsContent";
+import ResultsContent from "../content/resultsContent";
 
 type Params = {
      params: string;
 };
 
 const Results = () => {
-     console.log("results render");
      const { params } = useParams<Params>() as Params;
      const { data, isLoading, error, refetch } = useResultsFetch({ params });
      const firstRender = useFirstRender();
@@ -19,7 +18,7 @@ const Results = () => {
      }, []);
 
      useEffect(() => {
-          if (firstRender === false) {
+          if (!firstRender) {
                refetch();
           }
      }, [params]);

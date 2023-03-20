@@ -14,8 +14,6 @@ type props = {
 };
 export const AuthUserProvider = ({ children }: props) => {
      const [user, setUser] = useState<user | null>(null);
-     console.log("auth context");
-     console.log(user, "user");
 
      useEffect(() => {
           const user = getUserLocalStorage();

@@ -11,6 +11,7 @@ export const Content = styled.div<contentprops>`
      text-align: center;
      font-size: 1rem;
      color: rgb(102, 102, 102);
+
      .title {
           display: flex;
           justify-content: center;
@@ -54,6 +55,9 @@ export const Content = styled.div<contentprops>`
           a {
                text-decoration: underline;
           }
+     }
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          width: 450px;
      }
 `;
 type propsForm = {
@@ -156,4 +160,8 @@ export const Modal = styled.div`
      position: absolute;
      top: 80%;
      left: 1%;
+
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          top: 40%;
+     }
 `;

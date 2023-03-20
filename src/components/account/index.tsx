@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import { useContext } from "react";
 import { AuthUserContext, contextAuthUser } from "../../contexts/AuthUser";
 import { MdKeyboardArrowDown } from "react-icons/md";
-import { BiUserCircle } from "react-icons/bi";
 import { FaRegUserCircle } from "react-icons/fa";
 
 const Account = () => {

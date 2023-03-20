@@ -7,7 +7,6 @@ import { pokemonInfo } from "../../types/types";
 import { DataCategoryContext, DataCategoryType } from "../../contexts/DataCategoryProvider";
 
 const AllFilterPokemonsList = () => {
-     console.log("list filter render");
      const { data, isloading, error } = useContext<DataCategoryType>(DataCategoryContext);
      const { type, color } = useContext<FiltercontextType>(FilterProviderContext);
      const [select, setSelect] = useState<string>("default");

@@ -5,12 +5,11 @@ import { pokemonSmall } from "../../types/types";
 import { FiSearch } from "react-icons/fi";
 import UseFilterPokemons from "../../hooks/useFilterPokemons";
 import { fetchData } from "../../request/BuscaFetch";
-import AccessibleButtonName from "../AcessibleButtonName";
+import AccessibleButtonName from "../acessibleButtonName";
 import { useNavigate } from "react-router-dom";
-import AccessibleName from "../AcessibleName";
+import AccessibleName from "../acessibleName";
 
 const Search = () => {
-     console.log("busca render");
      const navigate = useNavigate();
      const inputRef = useRef<HTMLInputElement>(null);
      const { search, setSearch, filterPokemons, setDataPokemons, activeModal, setActiveModal } = UseFilterPokemons();

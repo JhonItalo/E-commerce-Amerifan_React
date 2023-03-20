@@ -22,8 +22,6 @@ interface props {
 }
 
 const DataHomeProvider = ({ children, data, isloading, error }: props) => {
-     console.log("context data provider");
-
      return <DataHomeContext.Provider value={{ data, isloading, error }}>{children}</DataHomeContext.Provider>;
 };
 

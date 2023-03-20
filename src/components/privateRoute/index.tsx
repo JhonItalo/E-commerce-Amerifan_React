@@ -9,7 +9,6 @@ type props = {
 };
 
 const PrivateRoute = ({ children, redirect }: props) => {
-     console.log("private route render");
      const { token } = useContext<contextAuthUser>(AuthUserContext);
      const { setUrl } = useContext<page>(RedirectLoginContext);
 

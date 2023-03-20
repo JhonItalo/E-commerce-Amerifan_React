@@ -13,7 +13,6 @@ type props = {
 };
 
 const ShowProducts = ({ title, data }: props) => {
-     console.log("show products", title);
      const { isloading, error } = useContext<DataHomeType>(DataHomeContext);
      const Carrosel = useRef<HTMLDivElement | null>(null);
 
@@ -60,4 +59,3 @@ const ShowProducts = ({ title, data }: props) => {
 };
 
 export default ShowProducts;
-

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AccessibleName from "../AcessibleName";
+import AccessibleName from "../acessibleName";
 
 import * as S from "./styles";
 
@@ -8,7 +8,6 @@ type props = {
 };
 
 const ImageSelect = ({ pokemon }: props) => {
-     console.log("image sleect renser");
      const [imageSelect, setImageSelect] = useState<string>("1");
      return (
           <S.Conteiner>

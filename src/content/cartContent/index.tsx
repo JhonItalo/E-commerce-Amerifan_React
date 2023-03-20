@@ -2,12 +2,11 @@ import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import * as S from "./styles";
 import { CartContext, contextCartType } from "../../contexts/CartContext";
-import ItemCart from "../itemCart";
+import ItemCart from "../../components/itemCart";
 import { BsArrowLeft } from "react-icons/bs";
 import { storageType } from "../../types/types";
 
 const CartContent = () => {
-     console.log("my cart render");
      const { storage } = useContext<contextCartType>(CartContext);
      return (
           <S.MyCart>

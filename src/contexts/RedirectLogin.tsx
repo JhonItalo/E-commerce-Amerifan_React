@@ -12,9 +12,7 @@ type props = {
 };
 
 const RedirectLogin = ({ children }: props) => {
-     console.log("redirect context render");
      const [url, setUrl] = useState<string | null | undefined>(null);
-     console.log(url, "url");
      return <RedirectLoginContext.Provider value={{ url, setUrl }}>{children}</RedirectLoginContext.Provider>;
 };
 
