@@ -16,11 +16,11 @@ const Footer = () => {
                               <div>
                                    <p className="title">Baixe o nosso App</p>
                                    <Link to="telefonia">
-                                        <img src="/google.webp" alt="Google play" width="100px" height="45px" />
+                                        <img src="/assets/play/google.webp" alt="Google play" width="100px" height="45px" />
                                         <AccessibleName name="google play" />
                                    </Link>
                                    <Link to="telefonia">
-                                        <img src="/iphone.webp" alt="Apple store" width="90px" height="30px" />
+                                        <img src="/assets/play/iphone.webp" alt="Apple store" width="90px" height="30px" />
                                         <AccessibleName name="apple store" />
                                    </Link>
                               </div>

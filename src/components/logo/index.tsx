@@ -6,7 +6,7 @@ const Logo = () => {
      return (
           <S.Conteiner>
                <Link to="/">
-                    <img src="/logo.png" alt="Logo Amerifan" height="90%" width="200px" />
+                    <img src="/assets/logo/logo.png" alt="Logo Amerifan" height="90%" width="200px" />
                     <AccessibleName name="Logo Amerifan" />
                </Link>
           </S.Conteiner>
