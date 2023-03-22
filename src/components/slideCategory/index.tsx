@@ -2,8 +2,8 @@ import React, { useRef, useEffect } from "react";
 import * as S from "./styles";
 import { Link } from "react-router-dom";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import AccessibleButtonName from "../acessibleButtonName";
-import AccessibleName from "../acessibleName";
+import AccessibleButtonName from "../acessibleButtonName1";
+import AccessibleName from "../acessibleName1";
 
 const SlideCategorys = () => {
      const Carrosel = useRef<HTMLDivElement | null>(null);

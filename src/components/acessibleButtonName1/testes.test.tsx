@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import AccessibleButtonName from "./";
+import AccessibleButtonName from ".";
 
 describe("AccessibleButtonName Render corretctly", () => {
      const entrada = "entrada";

@@ -3,7 +3,8 @@ import { Link } from "react-router-dom";
 import { GrFacebook } from "react-icons/gr";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { FaYoutubeSquare } from "react-icons/fa";
-
+import AccessibleName from "../../components/acessibleName1";
+import AccessibleButtonName from "../../components/acessibleButtonName1";
 import { useLocation } from "react-router-dom";
 const Footer = () => {
      const { pathname } = useLocation();
@@ -16,9 +17,11 @@ const Footer = () => {
                                    <p className="title">Baixe o nosso App</p>
                                    <Link to="telefonia">
                                         <img src="/google.webp" alt="Google play" width="100px" height="45px" />
+                                        <AccessibleName name="google play" />
                                    </Link>
                                    <Link to="telefonia">
-                                        <img src="/iphone.webp" alt="Apple store" width="75px" height="30px" />
+                                        <img src="/iphone.webp" alt="Apple store" width="90px" height="30px" />
+                                        <AccessibleName name="apple store" />
                                    </Link>
                               </div>
                               <div className="redesSociais">
@@ -26,12 +29,15 @@ const Footer = () => {
                                    <div className="icons">
                                         <Link to="/telefonia">
                                              <GrFacebook />
+                                             <AccessibleButtonName name="vá para o facebook" />
                                         </Link>
                                         <Link to="/telefonia">
                                              <AiFillTwitterSquare />
+                                             <AccessibleButtonName name="vá para o facebook" />
                                         </Link>
                                         <Link to="/telefonia">
                                              <FaYoutubeSquare />
+                                             <AccessibleButtonName name="vá para o facebook" />
                                         </Link>
                                    </div>
                               </div>
@@ -115,8 +121,3 @@ const Footer = () => {
 };
 
 export default Footer;
-/*
-     <AccessibleName name="google play" />
-        <AccessibleName name="apple store" />
-
-*/

@@ -5,6 +5,7 @@ import RegistrationOffers from "../../components/registrationOffers";
 import SlideCategorys from "../../components/slideCategory";
 import { useContext } from "react";
 import { DataHomeContext } from "../../contexts/DataHomeProvider";
+import BannerSecondary from "../../components/bannerSecondary";
 
 const HomeContent = () => {
      const { data } = useContext(DataHomeContext);
@@ -13,10 +14,9 @@ const HomeContent = () => {
                <SlideCategorys />
                <PromotionSpan />
                <BannerMain />
-               <div className="sections">
-                    <ShowProducts title="Best Seller" data={data && data.bestSeller} />
-                    <ShowProducts title="New products" data={data && data.newProducts} />
-               </div>
+               <ShowProducts title="Best Seller" data={data && data.bestSeller} />
+               <BannerSecondary />
+               <ShowProducts title="New products" data={data && data.newProducts} />
                <RegistrationOffers />
           </>
      );

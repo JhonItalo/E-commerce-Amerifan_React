@@ -3,8 +3,10 @@ import Search from "../../components/search";
 import Cart from "../../components/cart";
 import Logo from "../../components/logo";
 import { useLocation } from "react-router-dom";
+
 import { AiFillLinkedin, AiFillGithub } from "react-icons/ai";
 
+import AccessibleButtonName from "../../components/acessibleButtonName1";
 import Account from "../../components/account";
 
 const Header = () => {
@@ -19,9 +21,11 @@ const Header = () => {
                               <div>
                                    <a href="https://www.linkedin.com/in/johnitalodev/" target="_blank" rel="noreferrer">
                                         <AiFillLinkedin />
+                                        <AccessibleButtonName name="linkedin" />
                                    </a>
                                    <a href="https://github.com/JhonItalo" target="_blank" rel="noreferrer">
                                         <AiFillGithub />
+                                        <AccessibleButtonName name="github" />
                                    </a>
                               </div>
                          </S.InitialPromotionSpan>
@@ -40,8 +44,3 @@ const Header = () => {
 };
 
 export default Header;
-/*
-
-  <AccessibleButtonName name="linkedin" />
-  <AccessibleButtonName name="github" />
-*/

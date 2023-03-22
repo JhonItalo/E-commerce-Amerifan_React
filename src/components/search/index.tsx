@@ -5,9 +5,9 @@ import { pokemonSmall } from "../../types/types";
 import { FiSearch } from "react-icons/fi";
 import UseFilterPokemons from "../../hooks/useFilterPokemons";
 import { fetchData } from "../../request/BuscaFetch";
-import AccessibleButtonName from "../acessibleButtonName";
+import AccessibleButtonName from "../acessibleButtonName1";
 import { useNavigate } from "react-router-dom";
-import AccessibleName from "../acessibleName";
+import AccessibleName from "../acessibleName1";
 
 const Search = () => {
      const navigate = useNavigate();

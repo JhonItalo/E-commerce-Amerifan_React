@@ -1,10 +1,9 @@
 import { Link } from "react-router-dom";
-import AccessibleName from "../acessibleName";
+import AccessibleName from "../acessibleName1";
 import * as S from "./styles";
 import { useContext } from "react";
 import { CartContext, contextCartType } from "../../contexts/CartContext";
 import { pokemonInfo } from "../../types/types";
-import { toast } from "react-toastify";
 
 type props = {
      pokemon: pokemonInfo | undefined;
@@ -36,7 +35,6 @@ const Card = ({ pokemon, width }: props) => {
                               className="addtocart"
                               onClick={() => {
                                    addToCart(pokemon.name, pokemon.image);
-                                   toast.success("Adicionado ao carrinho");
                               }}
                          >
                               Add to Cart

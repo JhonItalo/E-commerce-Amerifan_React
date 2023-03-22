@@ -3,7 +3,7 @@ import { useContext } from "react";
 import { CartContext } from "../../contexts/CartContext";
 import { Link } from "react-router-dom";
 import { BsCart3 } from "react-icons/bs";
-import AccessibleButtonName from "../acessibleButtonName";
+import AccessibleButtonName from "../acessibleButtonName1";
 const Cart = () => {
      const { storage } = useContext(CartContext);
      return (

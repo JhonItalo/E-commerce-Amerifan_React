@@ -1,7 +1,7 @@
 import React from "react";
 import * as S from "./styles";
 import { Link } from "react-router-dom";
-import AccessibleName from "../../components/acessibleName";
+import AccessibleName from "../../components/acessibleName1";
 
 const MinHeader = () => {
      return (

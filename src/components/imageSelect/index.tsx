@@ -1,5 +1,5 @@
 import { useState } from "react";
-import AccessibleName from "../acessibleName";
+import AccessibleName from "../acessibleName1";
 
 import * as S from "./styles";
 

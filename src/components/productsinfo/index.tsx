@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 import * as S from "./styles";
-import AccessibleButtonName from "../acessibleButtonName";
+import AccessibleButtonName from "../acessibleButtonName1";
 import { CartContext, contextCartType } from "../../contexts/CartContext";
 
 type cepType = {

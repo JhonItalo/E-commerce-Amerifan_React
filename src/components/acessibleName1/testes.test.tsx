@@ -1,5 +1,5 @@
 import { render, screen } from "@testing-library/react";
-import AccessibleName from "./";
+import AccessibleName from ".";
 
 describe("acessiblename Render corretctly", () => {
      const entrada = "entrada";
