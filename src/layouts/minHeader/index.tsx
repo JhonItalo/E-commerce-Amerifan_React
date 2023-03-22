@@ -7,7 +7,7 @@ const MinHeader = () => {
      return (
           <S.Header>
                <Link to="/">
-                    <img src="/logo.png" alt="Logo Amerifan" height="100%" width="170px" />
+                    <img src="/assets/logo/logo.png" alt="Logo Amerifan" height="100%" width="170px" />
                     <AccessibleName name="Logo Amerifan" />
                </Link>
           </S.Header>
