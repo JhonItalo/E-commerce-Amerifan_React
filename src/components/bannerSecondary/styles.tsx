@@ -6,12 +6,12 @@ export const Teste = styled.div`
      justify-content: space-between;
 
      a {
-          width: 550px;
+          width: 45%;
           height: 250px;
           padding: 2rem;
           border: 2px solid white;
           border-radius: 20px;
-          background-image: url("/teste1.png");
+          background-image: url("/assets/banner/backBannerSecondary.png");
           background-size: cover;
           background-position: center;
      }
