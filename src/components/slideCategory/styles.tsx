@@ -6,7 +6,7 @@ export const Conteiner = styled.div`
      position: relative;
 
      @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 140px;
+          height: 130px;
      }
      @media (max-width: 1440px) and (min-width: 1367px) {
           height: 130px;
@@ -34,7 +34,7 @@ export const ConteinerSlide = styled.div`
           left: -5%;
      }
      @media (max-width: 1920px) and (min-width: 1441px) {
-          max-width: 1440px;
+          max-width: 1360px;
      }
 `;
 export const Slide = styled.div`
@@ -55,16 +55,6 @@ export const Slide = styled.div`
           align-items: center;
           a {
                position: relative;
-               @media (max-width: 1920px) and (min-width: 1441px) {
-                    img {
-                         width: 130px;
-                         height: 130px;
-                    }
-                    .ball {
-                         width: 110px;
-                         height: 110px;
-                    }
-               }
           }
      }
 `;
