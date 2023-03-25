@@ -9,7 +9,9 @@ export const Nav = styled.nav`
      position: relative;
      background-color: #01022a;
      ul {
-          height: 88%;
+          flex: none;
+          width: 88%;
+          height: 100%;
           display: flex;
           justify-content: space-between;
           align-items: center;
