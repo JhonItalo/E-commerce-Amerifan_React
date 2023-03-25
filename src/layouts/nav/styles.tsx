@@ -12,11 +12,15 @@ export const Nav = styled.nav`
           justify-content: space-between;
           align-items: center;
           color: white;
+          @media (max-width: 1920px) and (min-width: 1441px) {
+               max-width: 1440px;
+          }
      }
 
      @media (max-width: 1920px) and (min-width: 1441px) {
           height: 60px;
      }
+
      @media (max-width: 1440px) and (min-width: 1367px) {
           height: 50px;
      }
