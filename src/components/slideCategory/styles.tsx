@@ -6,7 +6,7 @@ export const Conteiner = styled.div`
      position: relative;
 
      @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 150px;
+          height: 140px;
      }
      @media (max-width: 1440px) and (min-width: 1367px) {
           height: 130px;
@@ -32,6 +32,9 @@ export const ConteinerSlide = styled.div`
      }
      .previous {
           left: -5%;
+     }
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          max-width: 1440px;
      }
 `;
 export const Slide = styled.div`
