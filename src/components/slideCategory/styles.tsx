@@ -61,8 +61,8 @@ export const Slide = styled.div`
                          height: 110px;
                     }
                     .ball {
-                         width: 110px;
-                         height: 110px;
+                         width: 105px;
+                         height: 105px;
                     }
                }
           }
