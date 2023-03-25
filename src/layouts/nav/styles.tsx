@@ -3,11 +3,11 @@ import styled from "styled-components";
 export const Nav = styled.nav`
      width: 100%;
      height: 45px;
-     padding: 0 6%;
+     //padding: 0 6%;
      position: relative;
      background-color: #01022a;
      ul {
-          height: 100%;
+          height: 88%;
           display: flex;
           justify-content: space-between;
           align-items: center;
