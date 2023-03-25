@@ -24,11 +24,10 @@ const GlobalStyle = createGlobalStyle`
  }
  @media (max-width: 1920px) and (min-width: 1441px) {
           html{
-            font-size: 20px;
+            font-size: 18px;
           }
      }
    
-
 
 `;
 
