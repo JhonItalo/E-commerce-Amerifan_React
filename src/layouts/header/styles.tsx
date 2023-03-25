@@ -32,7 +32,6 @@ export const Content = styled.div`
      background-color: #000336;
 
      @media (max-width: 1920px) and (min-width: 1441px) {
-          max-width: 1440px;
           height: 150px;
      }
      @media (max-width: 1440px) and (min-width: 1367px) {
