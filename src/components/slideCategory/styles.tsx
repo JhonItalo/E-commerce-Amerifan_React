@@ -55,6 +55,16 @@ export const Slide = styled.div`
           align-items: center;
           a {
                position: relative;
+               @media (max-width: 1920px) and (min-width: 1441px) {
+                    img {
+                         width: 110px;
+                         height: 110px;
+                    }
+                    .ball {
+                         width: 110px;
+                         height: 110px;
+                    }
+               }
           }
      }
 `;
