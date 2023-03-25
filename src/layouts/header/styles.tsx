@@ -47,4 +47,9 @@ export const MainContent = styled.div`
      display: flex;
      justify-content: space-between;
      align-items: center;
+     background-color: red;
+
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          max-width: 1440px;
+     }
 `;
