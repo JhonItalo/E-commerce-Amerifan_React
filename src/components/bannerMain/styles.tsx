@@ -37,7 +37,7 @@ export const ConteinerSlide = styled.div`
           height: 450px;
      }
      @media (max-width: 1440px) and (min-width: 1367px) {
-          height: 420px;
+          height: 480px;
      }
 `;
 

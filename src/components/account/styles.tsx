@@ -51,7 +51,6 @@ export const Account = styled.div`
           position: absolute;
           left: -20%;
           background-color: transparent;
-
           z-index: 1;
 
           div {
@@ -65,6 +64,7 @@ export const Account = styled.div`
                position: relative;
                border-radius: 5px;
                background-color: white;
+               box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
                z-index: 2;
 
                button {
