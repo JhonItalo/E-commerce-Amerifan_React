@@ -10,4 +10,8 @@ background-Image: url("/bf2.svg");
 background-Repeat: no-repeat;
 background-Position: center;
 
+@media (max-width: 1920px) and (min-width: 1441px) {
+         max-width: 1200px
+     }
+    
 `
