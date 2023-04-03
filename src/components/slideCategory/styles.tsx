@@ -4,7 +4,8 @@ export const Conteiner = styled.div`
      width: 100%;
      height: 120px;
      position: relative;
-
+     background-Image: url('/assets/background/Background.webp');
+ 
      @media (max-width: 1920px) and (min-width: 1441px) {
           height: 110px;
      }

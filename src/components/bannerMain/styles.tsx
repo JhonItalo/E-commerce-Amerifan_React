@@ -2,17 +2,16 @@ import styled from "styled-components";
 
 export const Banner = styled.div`
      width: 94%;
-     margin: 2rem auto 0;
+     margin: 1rem auto 0;
      display: flex;
      flex-direction: column;
      @media (max-width: 1920px) and (min-width: 1441px) {
-          //width: 100%;
           max-width: 1200px;
      }
 `;
 export const ConteinerSlide = styled.div`
      width: 100%;
-     height: 400px;
+     height: 450px;
      position: relative;
      padding-bottom: 2.5rem;
 

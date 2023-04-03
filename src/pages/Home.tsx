@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import useHomeFetch from "../hooks/useHomeFetch";
 import DataHomeProvider from "../contexts/DataHomeProvider";
-import HomeContent from "../content/homeContent";
+import HomeContent from "../content/home";
 
 const Home = () => {
      const { data, isLoading, error } = useHomeFetch();

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const Account = styled.div`
      position: relative;
-
+     
      .user {
           display: flex;
           align-items: center;

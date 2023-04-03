@@ -8,21 +8,16 @@ type propsConteiner = {
 export const Conteiner = styled.div<propsConteiner>`
      flex: none;
      width: ${({ width }) => width};
-     height: 350px;
+     height: 380px;
      padding: 1rem 0;
      display: flex;
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     border-radius: 16px;
-     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-     backdrop-filter: blur(4.4px);
-     -webkit-backdrop-filter: blur(4.4px);
-     background: rgba(255, 255, 255, 0.24);
-     border: 1px solid rgba(255, 255, 255, 0.3);
-     &:hover {
-          border: 1px solid white;
-     }
+     border-radius: 10px;
+     background: white;
+     border: 1px solid white;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
      .info {
           margin-top: 0.5rem;
           display: flex;

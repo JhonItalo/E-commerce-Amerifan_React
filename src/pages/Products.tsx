@@ -2,7 +2,7 @@ import { useParams } from "react-router-dom";
 import { useEffect } from "react";
 import useProductsFetch from "../hooks/useProductsFetch";
 import useFirstRender from "../hooks/useFirstRender";
-import ProductsContent from "../content/ProductsContent";
+import ProductsContent from "../content/Products";
 
 type Params = {
      params: string;

@@ -8,6 +8,7 @@ export const Nav = styled.nav`
      align-items: center;
      position: relative;
      background-color: #01022a;
+     
      ul {
           flex: none;
           width: 88%;

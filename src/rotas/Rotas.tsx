@@ -32,9 +32,8 @@ const Rotas = () => {
                               <main
                                    style={{
                                         minHeight: "70vh",
-                                        backgroundImage: "url('/assets/background/Background.webp')",
-                                        backgroundRepeat: "repeat",
-                                        backgroundSize: "cover",
+                                        background: "#F1F1F1"
+                                     
                                    }}
                               >
                                    <React.Suspense>

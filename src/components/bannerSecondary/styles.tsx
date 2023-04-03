@@ -7,7 +7,7 @@ export const Teste = styled.div`
 
      a {
           width: 45%;
-          height: 250px;
+          height: 220px;
           padding: 2rem;
           border: 2px solid white;
           border-radius: 20px;
