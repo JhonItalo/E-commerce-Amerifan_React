@@ -6,7 +6,8 @@ export const Banner = styled.div`
      display: flex;
      flex-direction: column;
      @media (max-width: 1920px) and (min-width: 1441px) {
-          width: 100%;
+          //width: 100%;
+          max-width: 1200px;
      }
 `;
 export const ConteinerSlide = styled.div`
@@ -34,7 +35,7 @@ export const ConteinerSlide = styled.div`
           right: 7%;
      }
      @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 500px;
+          height: 450px;
      }
      @media (max-width: 1440px) and (min-width: 1367px) {
           height: 420px;

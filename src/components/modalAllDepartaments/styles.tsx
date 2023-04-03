@@ -13,6 +13,7 @@ export const Conteiner = styled.div`
      top: 102%;
      background-color: white;
      z-index: 1;
+    
 
      .items {
           all: initial;
@@ -27,5 +28,10 @@ export const Conteiner = styled.div`
           p {
                font-weight: bold;
           }
+     }
+
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          max-width: 1200px;
+          height: 500px;
      }
 `;

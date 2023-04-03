@@ -6,7 +6,10 @@ export const Conteiner = styled.div`
      padding: 1rem 1rem 1rem 2rem;
 
      @media (max-width: 1920px) and (min-width: 1441px) {
-          padding: 2rem 4rem;
+        padding: unset;
+          max-width: 1200px;
+          margin: 0 auto;
+       
      }
 `;
 
@@ -16,6 +19,10 @@ export const MainConteiner = styled.div`
      display: flex;
      gap: 2rem;
      background-color: white;
+   
+
+     
+   
 `;
 export const Describe = styled.section`
      margin: 2rem 0 4rem;

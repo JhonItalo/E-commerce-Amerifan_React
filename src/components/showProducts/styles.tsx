@@ -16,14 +16,15 @@ export const Conteiner = styled.section`
           color: white;
      }
      @media (max-width: 1920px) and (min-width: 1441px) {
-          max-width: 1500px;
-          height: 500px;
+          max-width: 1200px;
+       
      }
 `;
 export const ConteinerSlide = styled.div`
      width: 100%;
      height: 350px;
      position: relative;
+    
 
      .btn_slide {
           font-size: 3rem;
@@ -64,3 +65,18 @@ export const Slide = styled.div`
      overflow-x: hidden;
      scroll-behavior: smooth;
 `;
+
+export const Error = styled.div`
+width: 100%;
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+font-size: 1.5rem;
+position: absolute;
+top: 0;
+left: 0;
+
+
+`

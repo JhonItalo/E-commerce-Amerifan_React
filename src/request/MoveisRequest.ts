@@ -33,18 +33,23 @@ const generateArrayPromises = () => {
 
 const pokemonsListPromises = generateArrayPromises();
 
+
 export const resolveListRequests = async () => {
-     return Promise.all(pokemonsListPromises).then((pokemons) => {
-          pokemons.forEach((item, index) => {
-               if (item === 1) {
-                    pokemons.splice(index, 1);
-                    index = index - 1;
+     return Promise.all(pokemonsListPromises)
+          .then((data) => {
+               const pokemons: any[] = []
+           data.forEach((item)=> {
+               if(item === 1){
+                    return
                }
-          });
-          if (pokemons.length > 0) {
-               return pokemons;
-          } else {
-               Promise.reject(true);
-          }
-     });
+               pokemons.push(item)
+           })
+           if(pokemons.length > 0){
+               return pokemons
+           } else{
+            Promise.reject(true)   
+           }
+
+          })
+       
 };

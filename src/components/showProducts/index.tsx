@@ -31,6 +31,7 @@ const ShowProducts = ({ title, data }: props) => {
           <S.Conteiner>
                <>
                     <h2>{title}</h2>
+                    {error && <S.Error>Ocorreu algum problema nas busca dos dados. <br/> Verifique sua conexão e tente novamente!</S.Error>}
                     <S.ConteinerSlide>
                          {data && (
                               <>
@@ -51,7 +52,6 @@ const ShowProducts = ({ title, data }: props) => {
                               </>
                          )}
                     </S.ConteinerSlide>
-                    {error && <p>Ocorreu algum imprevisto! Tente novamente</p>}
                     {isloading && <Loading width="100px" height="100px" />}
                </>
           </S.Conteiner>

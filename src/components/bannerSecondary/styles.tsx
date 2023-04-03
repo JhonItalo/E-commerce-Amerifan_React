@@ -15,4 +15,7 @@ export const Teste = styled.div`
           background-size: cover;
           background-position: center;
      }
+     @media (max-width: 1920px) and (min-width: 1441px) {
+          max-width: 1200px;
+     }
 `;

@@ -17,12 +17,8 @@ export const Nav = styled.nav`
           align-items: center;
           color: white;
           @media (max-width: 1920px) and (min-width: 1441px) {
-               max-width: 1440px;
+               max-width: 1200px;
           }
-     }
-
-     @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 60px;
      }
 
      @media (max-width: 1440px) and (min-width: 1367px) {
@@ -40,7 +36,14 @@ export const Li = styled.li`
           text-transform: uppercase;
 
           .active {
-               border-bottom: 2px solid #cc0000;
+              height: 100%;
+              padding: 0.5rem;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+               background: white;
+               color: #01022a;
+
           }
      }
 `;
@@ -50,6 +53,7 @@ export const Departments = styled.li`
      align-items: center;
      text-transform: uppercase;
      gap: 0.7rem;
+    
      cursor: default;
      p {
           font-size: 0.8rem;

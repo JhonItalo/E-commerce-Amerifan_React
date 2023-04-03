@@ -35,12 +35,13 @@ const pokemonsListPromises = generateArrayPromises();
 
 export const resolveListRequests = async () => {
      return Promise.all(pokemonsListPromises)
-          .then((pokemons) => {
-           pokemons.forEach((item,index)=> {
+          .then((data) => {
+               const pokemons: any[] = []
+           data.forEach((item)=> {
                if(item === 1){
-                    pokemons.splice(index, 1);
-                    index = index - 1;
+                    return
                }
+               pokemons.push(item)
            })
            if(pokemons.length > 0){
                return pokemons

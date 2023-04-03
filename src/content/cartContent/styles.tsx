@@ -5,6 +5,7 @@ export const MyCart = styled.div`
      padding-top: 2rem;
      padding-bottom: 2rem;
      background-color: #e2dada;
+     
 `;
 export const Content = styled.div`
      width: 80%;
@@ -14,9 +15,10 @@ export const Content = styled.div`
      overflow: hidden;
      border-radius: 8px;
      background-color: white;
+  
 
      @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 750px;
+          height: 700px;
      }
      @media (max-width: 1440px) and (min-width: 1367px) {
           height: 600px;

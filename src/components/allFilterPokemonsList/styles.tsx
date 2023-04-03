@@ -27,8 +27,15 @@ export const ListPokemons = styled.div`
      flex-wrap: wrap;
 
      .controlParentStyle {
+          height: 350px;
           border: 1px solid rgb(200, 200, 200);
           margin-bottom: 2rem;
+        a{
+          img{
+               width: 150px;
+               height: 150px;
+          }
+        }
           &:hover {
                border: 1px solid grey;
           }

@@ -21,17 +21,13 @@ const SlideCategorys = () => {
      }, []);
 
      const handleNextSlide = () => {
-          if (Carrosel.current?.scrollLeft === 0) {
+          if (Carrosel.current && Carrosel.current.scrollLeft === 0) {
                Carrosel.current.scrollLeft = Carrosel.current.offsetWidth;
-          } else if (Carrosel.current?.scrollLeft === Carrosel.current?.offsetWidth) {
-               return;
           }
      };
      const handlePreviousSlide = () => {
           if (Carrosel.current && Carrosel.current.scrollLeft > 0) {
                Carrosel.current.scrollLeft = 0;
-          } else if (Carrosel.current && Carrosel.current.scrollLeft === 0) {
-               return;
           }
      };
 

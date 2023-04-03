@@ -53,13 +53,13 @@ export const Conteiner = styled.div<propsConteiner>`
                color: white;
           }
      }
+     
      @media (max-width: 1920px) and (min-width: 1441px) {
-          width: 260px;
-          height: 100%;
+          height: 340px;
           a {
                img {
-                    width: 160px;
-                    height: 160px;
+                    width: 120px;
+                    height: 120px;
                }
           }
      }

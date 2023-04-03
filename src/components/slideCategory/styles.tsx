@@ -6,7 +6,7 @@ export const Conteiner = styled.div`
      position: relative;
 
      @media (max-width: 1920px) and (min-width: 1441px) {
-          height: 130px;
+          height: 110px;
      }
      @media (max-width: 1440px) and (min-width: 1367px) {
           height: 130px;
@@ -34,7 +34,7 @@ export const ConteinerSlide = styled.div`
           left: -5%;
      }
      @media (max-width: 1920px) and (min-width: 1441px) {
-          max-width: 1360px;
+          max-width: calc(1200px*0.90);
      }
 `;
 export const Slide = styled.div`
@@ -57,12 +57,12 @@ export const Slide = styled.div`
                position: relative;
                @media (max-width: 1920px) and (min-width: 1441px) {
                     img {
-                         width: 110px;
-                         height: 110px;
+                         width: 90px;
+                         height: 90px;
                     }
                     .ball {
-                         width: 105px;
-                         height: 105px;
+                         width: 90px;
+                         height: 90px;
                     }
                }
           }

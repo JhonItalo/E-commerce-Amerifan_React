@@ -23,9 +23,7 @@ const GlobalStyle = createGlobalStyle`
    &:active{color:inherit;}
  }
  @media (max-width: 1920px) and (min-width: 1441px) {
-          html{
-            font-size: 18px;
-          }
+          
      }
    
 
