@@ -20,6 +20,7 @@ export const Conteiner = styled.section`
 export const ConteinerSlide = styled.div`
      width: 100%;
      position: relative;
+ 
      .btn_slide {
           font-size: 3rem;
           display: flex;
@@ -55,12 +56,14 @@ export const ConteinerSlide = styled.div`
 
 export const Slide = styled.div`
      height: 100%;
-     padding: 1rem 0;
+     padding: 1rem 0 1rem 0.9% ;
      display: flex;
      align-items: center;
-     gap: 4%;
+     gap: 3.4%;
      overflow-x: hidden;
      scroll-behavior: smooth;   
+   
+     
 `;
 
 export const Error = styled.div`
