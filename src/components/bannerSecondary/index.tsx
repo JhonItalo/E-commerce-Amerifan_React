@@ -1,18 +1,17 @@
 import React from "react";
 import * as S from "./styles";
 import { Link } from "react-router-dom";
-import AccessibleName from "../acessibleName1";
+
 import AccessibleButtonName from "../acessibleButtonName1";
 
 const BannerSecondary = () => {
      return (
           <S.Teste>
                <Link to="/smartphones">
-                    <AccessibleName name="promotion"/>
-                    <AccessibleButtonName name="teste"/>
+                    <AccessibleButtonName name="promotion"/>
                </Link>
                <Link to="/moveis">
-               <AccessibleName name="promotion2"/>
+               <AccessibleButtonName name="promotion 2"/>
                </Link>
           </S.Teste>
      );
