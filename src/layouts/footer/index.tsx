@@ -12,7 +12,7 @@ const Footer = () => {
           <>
                {pathname != "/login" && pathname != "/register" && (
                     <S.Footer>
-                         <div>
+                         <div className="list">
                          <S.ItemComposto>
                               <div>
                                    <p className="title">Baixe o nosso App</p>
