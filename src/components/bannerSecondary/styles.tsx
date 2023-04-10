@@ -9,6 +9,7 @@ export const Teste = styled.div`
           width: 45%;
           height: 220px;
           padding: 2rem;
+          position: relative;
           border: 2px solid white;
           border-radius: 20px;
           background-image: url("/assets/banner/backBannerSecondary.png");
