@@ -23,11 +23,9 @@ export const Content = styled.main`
           font-size: 1.1rem;
      }
 `;
-type propsFailure = {
-     active: boolean;
-};
-export const Failure = styled.div<propsFailure>`
-     display: ${({ active }) => (active ? "flex" : "none")};
+
+export const Failure = styled.div`
+    display: flex;
      width: 100%;
      height: 50px;
      margin-top: 2rem;
@@ -126,7 +124,6 @@ export const ItemSenha = styled.label`
 `;
 
 type propsInput = {
-     active: boolean | null;
      width?: string;
 };
 export const Input = styled.input<propsInput>`
@@ -136,15 +133,6 @@ export const Input = styled.input<propsInput>`
      padding: 1rem;
      font-size: 1rem;
      border-radius: 8px;
-     border: ${({ active }) => {
-          if (active === null) {
-               return "1px solid gray";
-          } else if (active) {
-               return "1px solid green";
-          } else if (active === false) {
-               return "1px solid red";
-          }
-     }};
      outline: none;
 `;
 
@@ -154,15 +142,5 @@ export const InputSenha = styled.input<propsInput>`
      padding: 1rem;
      padding-right: 3rem;
      border-radius: 8px;
-     border: ${({ active }) => {
-          if (active === null) {
-               return "1px solid gray";
-          } else if (active) {
-               return "1px solid green";
-          } else if (active === false) {
-               return "1px solid red";
-          }
-     }};
-
      outline: none;
 `;
