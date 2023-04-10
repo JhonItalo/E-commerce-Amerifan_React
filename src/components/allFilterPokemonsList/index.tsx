@@ -11,7 +11,7 @@ const AllFilterPokemonsList = () => {
     const { type, color } = useContext<FiltercontextType>(FilterProviderContext);
     const [select, setSelect] = useState<string>("default");
 
-    const selectOrder = useCallback((): pokemonInfo[] | undefined => {
+    const selectOrder = (): pokemonInfo[] | undefined => {
         if (data) {
             if (select === "name") {
                 const nameOrder = data.slice().sort((a, b) => {
@@ -35,7 +35,7 @@ const AllFilterPokemonsList = () => {
         }
         return data;
     
-  }, [select,data]);    
+  } 
     
     
     const order: pokemonInfo[] | undefined = selectOrder();
