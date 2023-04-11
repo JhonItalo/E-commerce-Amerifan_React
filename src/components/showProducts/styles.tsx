@@ -60,9 +60,13 @@ export const Slide = styled.div`
      padding: 1rem 0 1rem 0.9% ;
      display: flex;
      align-items: center;
-     gap: 3.4%;
+     gap: 3.7%;
      overflow-x: hidden;
      scroll-behavior: smooth;   
+    
+     .controlParentStyle:last-child {
+    margin-right: 0.9%;
+}
    
      
 `;
