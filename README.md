@@ -15,3 +15,15 @@ Next: https://nexts-e-commerce-amerifan.vercel.app/
 ## Screenshots
 
 ![App Screenshot](./readme/ecommerce.PNG)
+
+![App Screenshot](./readme/filtros.PNG)
+
+## Funcionalidades
+
+- Buscar produto
+- Listagem de produtos por: ordem de criação, nome e tipo
+- Filtragrem de produtos por: tipo e cor
+- Ver informações do produto
+- Selecionar atributos do produtos
+- Adiconar ao carrinho
+- Selecionar a quantidade de Itens no carrinho
