@@ -24,6 +24,8 @@ Cadastro
 ![App Screenshot](./readme/register.PNG)
 Carrinho
 ![App Screenshot](./readme/carrinho.PNG)
+PageSpeed
+![App Screenshot](./readme/speed.PNG)
 
 ## Funcionalidades
 
