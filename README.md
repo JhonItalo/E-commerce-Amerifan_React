@@ -14,12 +14,19 @@ Next: https://nexts-e-commerce-amerifan.vercel.app/
 
 ## Screenshots
 
+Home pAge
 ![App Screenshot](./readme/ecommerce.PNG)
-
+Filtragem
 ![App Screenshot](./readme/filtros.PNG)
+Login
+![App Screenshot](./readme/login.PNG)
+Cadastro
+![App Screenshot](./readme/register.PNG)
 
 ## Funcionalidades
 
+- Login
+- Cadastro
 - Buscar produto
 - Listagem de produtos por: ordem de criação, nome e tipo
 - Filtragrem de produtos por: tipo e cor
