@@ -14,4 +14,4 @@ Next: https://nexts-e-commerce-amerifan.vercel.app/
 
 ## Screenshots
 
-![App Screenshot]("./readme/ecommerce.PNG)
+![App Screenshot](./readme/ecommerce.PNG)
